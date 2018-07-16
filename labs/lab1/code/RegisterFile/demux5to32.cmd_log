@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/demux5to32.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/demux5to32.syr" 

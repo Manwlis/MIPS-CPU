@@ -1,0 +1,5 @@
+vhdl work "demux1bit.vhd"
+vhdl work "demux2to4.vhd"
+vhdl work "demux3to8.vhd"
+vhdl work "demux4to16.vhd"
+vhdl work "demux5to32.vhd"

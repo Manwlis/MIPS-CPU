@@ -1,0 +1,20 @@
+Release 13.4 - netgen O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm processor -w -dir
+netgen/synthesis -ofmt vhdl -sim processor.ngc processor_synthesis.vhd  
+
+Reading design 'processor.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\Mike\Desktop\organwsh\Processor\netgen\synthesis\processor_synthesis.v
+hd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 146624 kilobytes

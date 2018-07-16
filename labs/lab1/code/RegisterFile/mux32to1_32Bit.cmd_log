@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 mux32to1_32Bit.ngc mux32to1_32Bit.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o mux32to1_32Bit_map.ncd mux32to1_32Bit.ngd mux32to1_32Bit.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 mux32to1_32Bit.ngc mux32to1_32Bit.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o mux32to1_32Bit_map.ncd mux32to1_32Bit.ngd mux32to1_32Bit.pcf 

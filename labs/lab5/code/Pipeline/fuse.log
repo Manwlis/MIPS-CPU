@@ -1,0 +1,96 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/pipelineTest_isim_beh.exe -prj C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/pipelineTest_beh.prj pipelineTest 
+ISim O.87xd (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/demux1bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux4to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/flipflop.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/demux2to4.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg1Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux8to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/demux3to8.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg4Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg1BitR.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux16to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/demux4to16.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg4BitR.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux32to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux16bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/demux5to32.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/compareModule.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/top.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/RegisterFile.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Reg32BitR.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/mux5Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Incrementor.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/IF_MEM.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Extender16to32.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Adder.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Table.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/MEMSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/IFSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/DECODE.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/ALUSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Stall_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Forwarding_Unit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Datapath.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/Control.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/PipelinedProcessor.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/pipelineTest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture behavioral of entity flipflop [flipflop_default]
+Compiling architecture behavioral of entity Reg1BitR [reg1bitr_default]
+Compiling architecture behavioral of entity Reg4BitR [reg4bitr_default]
+Compiling architecture structural of entity Reg32BitR [reg32bitr_default]
+Compiling architecture syn of entity IF_MEM [if_mem_default]
+Compiling architecture behavioral of entity Incrementor [incrementor_default]
+Compiling architecture behavioral of entity Adder [adder_default]
+Compiling architecture behavioral of entity mux32Bit [mux32bit_default]
+Compiling architecture structral of entity IFSTAGE [ifstage_default]
+Compiling package numeric_std
+Compiling architecture behavioral of entity mux16Bit [mux16bit_default]
+Compiling architecture structural of entity ImmedBox [immedbox_default]
+Compiling architecture behavioral of entity mux5Bit [mux5bit_default]
+Compiling architecture behavioral of entity demux [demux_default]
+Compiling architecture behavioral of entity demux2to4 [demux2to4_default]
+Compiling architecture behavioral of entity demux3to8 [demux3to8_default]
+Compiling architecture behavioral of entity demux4to16 [demux4to16_default]
+Compiling architecture behavioral of entity Decoder5to32 [decoder5to32_default]
+Compiling architecture behavioral of entity Reg1Bit [reg1bit_default]
+Compiling architecture behavioral of entity Reg4Bit [reg4bit_default]
+Compiling architecture structural of entity Reg32Bit [reg32bit_default]
+Compiling architecture behavioral of entity mux4to1_32Bit [mux4to1_32bit_default]
+Compiling architecture behavioral of entity mux8to1_32Bit [mux8to1_32bit_default]
+Compiling architecture behavioral of entity mux16to1_32Bit [mux16to1_32bit_default]
+Compiling architecture behavioral of entity mux32to1_32Bit [mux32to1_32bit_default]
+Compiling architecture behavioral of entity compareModule [comparemodule_default]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity DECODE [decode_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ALUSTAGE [alustage_default]
+Compiling architecture syn of entity Data_MEM [data_mem_default]
+Compiling architecture behavioral of entity Datapath [datapath_default]
+Compiling architecture behavioral of entity Table [table_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity Forwarding_Unit [forwarding_unit_default]
+Compiling architecture behavioral of entity Stall_Unit [stall_unit_default]
+Compiling architecture behavioral of entity PipelinedProcessor [pipelinedprocessor_default]
+Compiling architecture behavior of entity pipelinetest
+Time Resolution for simulation is 1ps.
+Waiting for 23 sub-compilation(s) to finish...
+Compiled 82 VHDL Units
+Built simulation executable C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/pipelineTest_isim_beh.exe
+Fuse Memory Usage: 44696 KB
+Fuse CPU Usage: 1062 ms

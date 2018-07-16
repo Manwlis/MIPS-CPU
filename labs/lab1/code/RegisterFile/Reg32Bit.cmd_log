@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/Reg32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/Reg32Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 Reg32Bit.ngc Reg32Bit.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o Reg32Bit_map.ncd Reg32Bit.ngd Reg32Bit.pcf 
+par -w -intstyle ise -ol high -t 1 Reg32Bit_map.ncd Reg32Bit.ncd Reg32Bit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Reg32Bit.twx Reg32Bit.ncd -o Reg32Bit.twr Reg32Bit.pcf 

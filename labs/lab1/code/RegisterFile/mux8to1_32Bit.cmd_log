@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.syr" 

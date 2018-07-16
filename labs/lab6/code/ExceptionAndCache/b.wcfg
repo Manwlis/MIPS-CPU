@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFinder0/pc_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFinder0/fsmstart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmstart</obj_property>
+      <obj_property name="ObjectShortName">fsmstart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFinder0/killasynchronous" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">killasynchronous</obj_property>
+      <obj_property name="ObjectShortName">killasynchronous</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFinder0/jumpfound" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jumpfound</obj_property>
+      <obj_property name="ObjectShortName">jumpfound</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFinder0/cs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFSM0/fsmstart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmstart</obj_property>
+      <obj_property name="ObjectShortName">fsmstart</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFSM0/jumpfound" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">jumpfound</obj_property>
+      <obj_property name="ObjectShortName">jumpfound</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFSM0/killsynchronous" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">killsynchronous</obj_property>
+      <obj_property name="ObjectShortName">killsynchronous</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFSM0/epcenable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">epcenable</obj_property>
+      <obj_property name="ObjectShortName">epcenable</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/exceptionHandler0/exceptionFSM0/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in3[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/IFSTAGE0/Reg32BitR0/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">pc</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="754" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd</arg>&quot; line <arg fmt="%d" index="2">45</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">Zero</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd</arg>&quot; line <arg fmt="%d" index="2">45</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">Cout</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="754" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd</arg>&quot; line <arg fmt="%d" index="2">45</arg>: Unconnected inout port &apos;<arg fmt="%s" index="3">Ovf</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">Sl_Control</arg>&gt; in unit &lt;<arg fmt="%s" index="2">Table</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">CACHE</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">ROM</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;11:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Instr&lt;25:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Zf_Se_Control</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RF_B_sel</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALU_Bin_sel</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RF_WrData_sel</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALU_func</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">PC_immed</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">AdderOut</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">PCbeforeIMEM</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">decoderEn&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Instr&lt;31:26&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">CSreg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">exceptionHandler0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_DecodeR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1Bit1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4Bit0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1Bit0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4Bit0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_ALUR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1Bit1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4Bit0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1Bit0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4Bit0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_CacheR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">W_memR</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ArdReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg4BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OpcodeReg</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Reg4BitR1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">StallForwardReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">StallForwardReg0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">StallForwardReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg1BitR2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">StallForwardReg1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux31</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux30</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux29</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux28</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux27</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux26</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mux0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">mux32Bit1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">flipflop0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Reg32Bit0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">RegisterFile0</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">dout</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">dout</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Instr_ALUR/Reg4Bit0/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Instr_ALUR/Reg4Bit0/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Instr_DecodeR/Reg4Bit0/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Instr_DecodeR/Reg4Bit0/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Datapath</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">StallForwardReg1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">StallForwardReg1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">StallForwardReg0/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">StallForwardReg0/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit3/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit2/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit1/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit0/flipflop0/q</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PipelinedProcessor</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg1/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ArdReg0/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_ALUR/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_CacheR/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/W_memR/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR0/Reg1BitR3/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit1/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR1/Reg1BitR1/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit3/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR0/Reg1BitR1/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit0/Reg1Bit3/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR0/Reg1BitR2/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit0/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR3/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">14 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR2/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR1/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR0/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR3/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR2/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR1/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR0/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR3/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR2/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR1/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR0/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR2/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR1/flipflop0/q&gt; &lt;Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR0/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR1/Reg1BitR0/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit2/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">OpcodeReg/Reg4BitR0/Reg1BitR0/flipflop0/q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PipelinedProcessor</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Datapath0/Instr_DecodeR/Reg4Bit0/Reg1Bit2/flipflop0/q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,11 @@
+[Inputs]
+WrEn
+Clk
+=Ard1[4:0]=
+=Ard2[4:0]=
+=Awr[4:0]=
+=Din[31:0]=
+[Outputs]
+=Dout1[31:0]=
+=Dout2[31:0]=
+[BiDir]

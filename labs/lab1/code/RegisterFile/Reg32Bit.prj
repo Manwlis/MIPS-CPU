@@ -1,0 +1,5 @@
+vhdl work "mux.vhd"
+vhdl work "flipflop.vhd"
+vhdl work "Reg1Bit.vhd"
+vhdl work "Reg4Bit.vhd"
+vhdl work "Reg32Bit.vhd"

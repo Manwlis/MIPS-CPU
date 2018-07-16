@@ -1,0 +1,691 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: DECODE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DECODE.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DECODE"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : DECODE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/demux1bit.vhd" in Library work.
+Architecture behavioral of Entity demux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux4to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux4to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/flipflop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/demux2to4.vhd" in Library work.
+Architecture behavioral of Entity demux2to4 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux8to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux8to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/Reg1Bit.vhd" in Library work.
+Architecture behavioral of Entity reg1bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/demux3to8.vhd" in Library work.
+Architecture behavioral of Entity demux3to8 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux16to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux16to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/Reg4Bit.vhd" in Library work.
+Architecture behavioral of Entity reg4bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/demux4to16.vhd" in Library work.
+Architecture behavioral of Entity demux4to16 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/demux5to32.vhd" in Library work.
+Architecture behavioral of Entity decoder5to32 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/Reg32Bit.vhd" in Library work.
+Architecture structural of Entity reg32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux32to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/compareModule.vhd" in Library work.
+Architecture behavioral of Entity comparemodule is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/mux16bit.vhd" in Library work.
+Architecture behavioral of Entity mux16bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/Extender16to32.vhd" in Library work.
+Entity <immedbox> compiled.
+Entity <immedbox> (Architecture <structural>) compiled.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/rfer.vhd" in Library work.
+Architecture behavioral of Entity mux5bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.vhd" in Library work.
+Architecture behavioral of Entity decode is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DECODE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ImmedBox> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux5Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterFile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32Bit> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux32to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <compareModule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux4to16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux3to8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux2to4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DECODE> in library <work> (Architecture <behavioral>).
+Entity <DECODE> analyzed. Unit <DECODE> generated.
+
+Analyzing Entity <ImmedBox> in library <work> (Architecture <structural>).
+Entity <ImmedBox> analyzed. Unit <ImmedBox> generated.
+
+Analyzing Entity <mux16Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16Bit> analyzed. Unit <mux16Bit> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <mux5Bit> in library <work> (Architecture <behavioral>).
+Entity <mux5Bit> analyzed. Unit <mux5Bit> generated.
+
+Analyzing Entity <RegisterFile> in library <work> (Architecture <behavioral>).
+Entity <RegisterFile> analyzed. Unit <RegisterFile> generated.
+
+Analyzing Entity <Decoder5to32> in library <work> (Architecture <behavioral>).
+Entity <Decoder5to32> analyzed. Unit <Decoder5to32> generated.
+
+Analyzing Entity <demux> in library <work> (Architecture <behavioral>).
+Entity <demux> analyzed. Unit <demux> generated.
+
+Analyzing Entity <demux4to16> in library <work> (Architecture <behavioral>).
+Entity <demux4to16> analyzed. Unit <demux4to16> generated.
+
+Analyzing Entity <demux3to8> in library <work> (Architecture <behavioral>).
+Entity <demux3to8> analyzed. Unit <demux3to8> generated.
+
+Analyzing Entity <demux2to4> in library <work> (Architecture <behavioral>).
+Entity <demux2to4> analyzed. Unit <demux2to4> generated.
+
+Analyzing Entity <Reg32Bit> in library <work> (Architecture <structural>).
+Entity <Reg32Bit> analyzed. Unit <Reg32Bit> generated.
+
+Analyzing Entity <Reg4Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg4Bit> analyzed. Unit <Reg4Bit> generated.
+
+Analyzing Entity <Reg1Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg1Bit> analyzed. Unit <Reg1Bit> generated.
+
+Analyzing Entity <flipflop> in library <work> (Architecture <behavioral>).
+Entity <flipflop> analyzed. Unit <flipflop> generated.
+
+Analyzing Entity <mux32to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32to1_32Bit> analyzed. Unit <mux32to1_32Bit> generated.
+
+Analyzing Entity <mux16to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16to1_32Bit> analyzed. Unit <mux16to1_32Bit> generated.
+
+Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux8to1_32Bit> analyzed. Unit <mux8to1_32Bit> generated.
+
+Analyzing Entity <mux4to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux4to1_32Bit> analyzed. Unit <mux4to1_32Bit> generated.
+
+Analyzing Entity <compareModule> in library <work> (Architecture <behavioral>).
+Entity <compareModule> analyzed. Unit <compareModule> generated.
+
+Analyzing Entity <mux32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32Bit> analyzed. Unit <mux32Bit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <compareModule>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/compareModule.vhd".
+    Found 1-bit xor2 for signal <output$xor0000>.
+    Found 1-bit xor2 for signal <output$xor0001>.
+    Found 1-bit xor2 for signal <output$xor0002>.
+    Found 1-bit xor2 for signal <output$xor0003>.
+    Found 1-bit xor2 for signal <output$xor0004>.
+Unit <compareModule> synthesized.
+
+
+Synthesizing Unit <demux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/demux1bit.vhd".
+Unit <demux> synthesized.
+
+
+Synthesizing Unit <flipflop>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/flipflop.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflop> synthesized.
+
+
+Synthesizing Unit <mux5Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/rfer.vhd".
+Unit <mux5Bit> synthesized.
+
+
+Synthesizing Unit <mux32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux32Bit.vhd".
+Unit <mux32Bit> synthesized.
+
+
+Synthesizing Unit <mux16Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux16bit.vhd".
+Unit <mux16Bit> synthesized.
+
+
+Synthesizing Unit <demux2to4>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/demux2to4.vhd".
+Unit <demux2to4> synthesized.
+
+
+Synthesizing Unit <Reg1Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/Reg1Bit.vhd".
+Unit <Reg1Bit> synthesized.
+
+
+Synthesizing Unit <ImmedBox>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/Extender16to32.vhd".
+Unit <ImmedBox> synthesized.
+
+
+Synthesizing Unit <demux3to8>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/demux3to8.vhd".
+Unit <demux3to8> synthesized.
+
+
+Synthesizing Unit <Reg4Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/Reg4Bit.vhd".
+Unit <Reg4Bit> synthesized.
+
+
+Synthesizing Unit <mux4to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux4to1_32Bit.vhd".
+Unit <mux4to1_32Bit> synthesized.
+
+
+Synthesizing Unit <Reg32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/Reg32Bit.vhd".
+Unit <Reg32Bit> synthesized.
+
+
+Synthesizing Unit <demux4to16>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/demux4to16.vhd".
+Unit <demux4to16> synthesized.
+
+
+Synthesizing Unit <mux8to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux8to1_32Bit.vhd".
+Unit <mux8to1_32Bit> synthesized.
+
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/demux5to32.vhd".
+Unit <Decoder5to32> synthesized.
+
+
+Synthesizing Unit <mux16to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux16to1_32Bit.vhd".
+Unit <mux16to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux32to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/mux32to1_32Bit.vhd".
+Unit <mux32to1_32Bit> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/RegisterFile.vhd".
+WARNING:Xst:646 - Signal <decoderEn<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <RegisterFile> synthesized.
+
+
+Synthesizing Unit <DECODE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.vhd".
+WARNING:Xst:647 - Input <Instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <DECODE> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ 1-bit register                                        : 1024
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Reg32Bit0> is unconnected in block <RegisterFile0>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DECODE> ...
+
+Optimizing unit <Reg32Bit> ...
+
+Optimizing unit <RegisterFile> ...
+WARNING:Xst:1710 - FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <DECODE>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DECODE, actual ratio is 10.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 992
+ Flip-Flops                                            : 992
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DECODE.ngr
+Top Level Output File Name         : DECODE
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 198
+
+Cell Usage :
+# BELS                             : 1823
+#      LUT2                        : 3
+#      LUT3                        : 471
+#      LUT4                        : 1093
+#      MUXF5                       : 256
+# FlipFlops/Latches                : 992
+#      FDE                         : 992
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 191
+#      IBUF                        : 95
+#      OBUF                        : 96
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                     1340  out of  14752     9%  
+ Number of Slice Flip Flops:            992  out of  29504     3%  
+ Number of 4 input LUTs:               1567  out of  29504     5%  
+ Number of IOs:                         198
+ Number of bonded IOBs:                 192  out of    250    76%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 992   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 5.313ns
+   Maximum output required time after clock: 8.542ns
+   Maximum combinational path delay: 11.742ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 8928 / 1984
+-------------------------------------------------------------------------
+Offset:              5.313ns (Levels of Logic = 3)
+  Source:            Instr<20> (PAD)
+  Destination:       RegisterFile0/Reg32Bit15/Reg4Bit0/Reg1Bit3/flipflop0/q (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Instr<20> to RegisterFile0/Reg32Bit15/Reg4Bit0/Reg1Bit3/flipflop0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  Instr_20_IBUF (Instr_20_IBUF)
+     LUT3:I0->O            8   0.612   0.673  RegisterFile0/we<11>31 (RegisterFile0/we<11>_bdd4)
+     LUT4:I2->O           32   0.612   1.073  RegisterFile0/we<15>1 (RegisterFile0/we<15>)
+     FDE:CE                    0.483          RegisterFile0/Reg32Bit15/Reg4Bit0/Reg1Bit3/flipflop0/q
+    ----------------------------------------
+    Total                      5.313ns (2.813ns logic, 2.500ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2048 / 64
+-------------------------------------------------------------------------
+Offset:              8.542ns (Levels of Logic = 6)
+  Source:            RegisterFile0/Reg32Bit2/Reg4Bit7/Reg1Bit3/flipflop0/q (FF)
+  Destination:       RF_B<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: RegisterFile0/Reg32Bit2/Reg4Bit7/Reg1Bit3/flipflop0/q to RF_B<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.514   0.603  RegisterFile0/Reg32Bit2/Reg4Bit7/Reg1Bit3/flipflop0/q (RegisterFile0/Reg32Bit2/Reg4Bit7/Reg1Bit3/flipflop0/q)
+     LUT4:I0->O            1   0.612   0.000  RegisterFile0/mux32Bit_1/mux31/output514_F (N656)
+     MUXF5:I0->O           1   0.278   0.387  RegisterFile0/mux32Bit_1/mux31/output514 (RegisterFile0/mux32Bit_1/mux31/output514)
+     LUT4:I2->O            1   0.612   0.426  RegisterFile0/mux32Bit_1/mux31/output535 (RegisterFile0/mux32Bit_1/mux31/output535)
+     LUT4:I1->O            1   0.612   0.360  RegisterFile0/mux32Bit_1/mux31/output622_SW0 (N204)
+     LUT4:I3->O            1   0.612   0.357  RegisterFile0/mux32Bit_1/mux31/output622 (RF_B_31_OBUF)
+     OBUF:I->O                 3.169          RF_B_31_OBUF (RF_B<31>)
+    ----------------------------------------
+    Total                      8.542ns (6.409ns logic, 2.133ns route)
+                                       (75.0% logic, 25.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5870 / 96
+-------------------------------------------------------------------------
+Delay:               11.742ns (Levels of Logic = 8)
+  Source:            RF_B_sel (PAD)
+  Destination:       RF_B<31> (PAD)
+
+  Data Path: RF_B_sel to RF_B<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.106   1.226  RF_B_sel_IBUF (RF_B_sel_IBUF)
+     LUT3:I0->O          481   0.612   1.345  mux5Bit0/mux0/output1 (RF_in2<0>)
+     LUT3:I0->O            1   0.612   0.000  RegisterFile0/mux32Bit_1/mux9/output221_F (N454)
+     MUXF5:I0->O           1   0.278   0.387  RegisterFile0/mux32Bit_1/mux9/output221 (RegisterFile0/mux32Bit_1/mux9/output221)
+     LUT4:I2->O            1   0.612   0.387  RegisterFile0/mux32Bit_1/mux9/output249 (RegisterFile0/mux32Bit_1/mux9/output249)
+     LUT4:I2->O            1   0.612   0.426  RegisterFile0/mux32Bit_1/mux9/output293 (RegisterFile0/mux32Bit_1/mux9/output293)
+     LUT4:I1->O            1   0.612   0.357  RegisterFile0/mux32Bit_1/mux9/output622 (RF_B_9_OBUF)
+     OBUF:I->O                 3.169          RF_B_9_OBUF (RF_B<9>)
+    ----------------------------------------
+    Total                     11.742ns (7.613ns logic, 4.129ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.26 secs
+ 
+--> 
+
+Total memory usage is 308992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

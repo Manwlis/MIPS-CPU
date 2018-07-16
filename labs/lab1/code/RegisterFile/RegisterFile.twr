@@ -1,0 +1,880 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml RegisterFile.twx RegisterFile.ncd -o RegisterFile.twr
+RegisterFile.pcf
+
+Design file:              RegisterFile.ncd
+Physical constraint file: RegisterFile.pcf
+Device,package,speed:     xc3s1600e,fg320,-5 (PRODUCTION 1.27 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Awr<0>      |   12.142(R)|   -0.861(R)|Clk_BUFGP         |   0.000|
+Awr<1>      |   12.554(R)|   -0.802(R)|Clk_BUFGP         |   0.000|
+Awr<2>      |   12.841(R)|   -0.854(R)|Clk_BUFGP         |   0.000|
+Awr<3>      |   12.990(R)|   -1.233(R)|Clk_BUFGP         |   0.000|
+Awr<4>      |   12.113(R)|   -1.131(R)|Clk_BUFGP         |   0.000|
+Din<0>      |    1.975(R)|    0.531(R)|Clk_BUFGP         |   0.000|
+Din<1>      |    4.417(R)|   -0.943(R)|Clk_BUFGP         |   0.000|
+Din<2>      |    2.727(R)|    0.553(R)|Clk_BUFGP         |   0.000|
+Din<3>      |    2.089(R)|    1.034(R)|Clk_BUFGP         |   0.000|
+Din<4>      |    3.239(R)|    0.527(R)|Clk_BUFGP         |   0.000|
+Din<5>      |    2.041(R)|    0.528(R)|Clk_BUFGP         |   0.000|
+Din<6>      |    2.332(R)|    1.137(R)|Clk_BUFGP         |   0.000|
+Din<7>      |    3.152(R)|    0.819(R)|Clk_BUFGP         |   0.000|
+Din<8>      |    2.950(R)|    1.172(R)|Clk_BUFGP         |   0.000|
+Din<9>      |    3.288(R)|    1.038(R)|Clk_BUFGP         |   0.000|
+Din<10>     |    3.555(R)|    0.986(R)|Clk_BUFGP         |   0.000|
+Din<11>     |    3.124(R)|    0.667(R)|Clk_BUFGP         |   0.000|
+Din<12>     |    4.883(R)|    0.426(R)|Clk_BUFGP         |   0.000|
+Din<13>     |    2.609(R)|    0.600(R)|Clk_BUFGP         |   0.000|
+Din<14>     |    2.296(R)|    0.543(R)|Clk_BUFGP         |   0.000|
+Din<15>     |    3.688(R)|    0.019(R)|Clk_BUFGP         |   0.000|
+Din<16>     |    3.908(R)|   -0.061(R)|Clk_BUFGP         |   0.000|
+Din<17>     |    2.213(R)|    0.879(R)|Clk_BUFGP         |   0.000|
+Din<18>     |    1.966(R)|    1.492(R)|Clk_BUFGP         |   0.000|
+Din<19>     |    3.403(R)|    0.943(R)|Clk_BUFGP         |   0.000|
+Din<20>     |    3.716(R)|    1.588(R)|Clk_BUFGP         |   0.000|
+Din<21>     |    3.588(R)|    1.535(R)|Clk_BUFGP         |   0.000|
+Din<22>     |    1.578(R)|    1.321(R)|Clk_BUFGP         |   0.000|
+Din<23>     |    2.517(R)|    1.704(R)|Clk_BUFGP         |   0.000|
+Din<24>     |    3.528(R)|    1.346(R)|Clk_BUFGP         |   0.000|
+Din<25>     |    4.234(R)|    1.198(R)|Clk_BUFGP         |   0.000|
+Din<26>     |    2.397(R)|    1.411(R)|Clk_BUFGP         |   0.000|
+Din<27>     |    4.183(R)|    1.529(R)|Clk_BUFGP         |   0.000|
+Din<28>     |    4.644(R)|   -0.486(R)|Clk_BUFGP         |   0.000|
+Din<29>     |    5.163(R)|   -0.724(R)|Clk_BUFGP         |   0.000|
+Din<30>     |    3.148(R)|   -0.284(R)|Clk_BUFGP         |   0.000|
+Din<31>     |    2.824(R)|    1.636(R)|Clk_BUFGP         |   0.000|
+WrEn        |   12.527(R)|   -1.304(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Dout1<0>    |   12.800(R)|Clk_BUFGP         |   0.000|
+Dout1<1>    |   12.438(R)|Clk_BUFGP         |   0.000|
+Dout1<2>    |   13.415(R)|Clk_BUFGP         |   0.000|
+Dout1<3>    |   13.140(R)|Clk_BUFGP         |   0.000|
+Dout1<4>    |   13.445(R)|Clk_BUFGP         |   0.000|
+Dout1<5>    |   14.097(R)|Clk_BUFGP         |   0.000|
+Dout1<6>    |   14.618(R)|Clk_BUFGP         |   0.000|
+Dout1<7>    |   14.462(R)|Clk_BUFGP         |   0.000|
+Dout1<8>    |   13.527(R)|Clk_BUFGP         |   0.000|
+Dout1<9>    |   14.303(R)|Clk_BUFGP         |   0.000|
+Dout1<10>   |   12.451(R)|Clk_BUFGP         |   0.000|
+Dout1<11>   |   15.184(R)|Clk_BUFGP         |   0.000|
+Dout1<12>   |   13.663(R)|Clk_BUFGP         |   0.000|
+Dout1<13>   |   14.441(R)|Clk_BUFGP         |   0.000|
+Dout1<14>   |   13.121(R)|Clk_BUFGP         |   0.000|
+Dout1<15>   |   13.907(R)|Clk_BUFGP         |   0.000|
+Dout1<16>   |   13.500(R)|Clk_BUFGP         |   0.000|
+Dout1<17>   |   12.812(R)|Clk_BUFGP         |   0.000|
+Dout1<18>   |   13.979(R)|Clk_BUFGP         |   0.000|
+Dout1<19>   |   13.618(R)|Clk_BUFGP         |   0.000|
+Dout1<20>   |   14.798(R)|Clk_BUFGP         |   0.000|
+Dout1<21>   |   15.046(R)|Clk_BUFGP         |   0.000|
+Dout1<22>   |   13.517(R)|Clk_BUFGP         |   0.000|
+Dout1<23>   |   15.164(R)|Clk_BUFGP         |   0.000|
+Dout1<24>   |   15.195(R)|Clk_BUFGP         |   0.000|
+Dout1<25>   |   15.262(R)|Clk_BUFGP         |   0.000|
+Dout1<26>   |   14.483(R)|Clk_BUFGP         |   0.000|
+Dout1<27>   |   15.485(R)|Clk_BUFGP         |   0.000|
+Dout1<28>   |   15.379(R)|Clk_BUFGP         |   0.000|
+Dout1<29>   |   16.027(R)|Clk_BUFGP         |   0.000|
+Dout1<30>   |   15.059(R)|Clk_BUFGP         |   0.000|
+Dout1<31>   |   15.002(R)|Clk_BUFGP         |   0.000|
+Dout2<0>    |   13.150(R)|Clk_BUFGP         |   0.000|
+Dout2<1>    |   13.849(R)|Clk_BUFGP         |   0.000|
+Dout2<2>    |   15.506(R)|Clk_BUFGP         |   0.000|
+Dout2<3>    |   14.181(R)|Clk_BUFGP         |   0.000|
+Dout2<4>    |   13.988(R)|Clk_BUFGP         |   0.000|
+Dout2<5>    |   14.740(R)|Clk_BUFGP         |   0.000|
+Dout2<6>    |   15.279(R)|Clk_BUFGP         |   0.000|
+Dout2<7>    |   15.216(R)|Clk_BUFGP         |   0.000|
+Dout2<8>    |   14.239(R)|Clk_BUFGP         |   0.000|
+Dout2<9>    |   15.278(R)|Clk_BUFGP         |   0.000|
+Dout2<10>   |   13.421(R)|Clk_BUFGP         |   0.000|
+Dout2<11>   |   14.389(R)|Clk_BUFGP         |   0.000|
+Dout2<12>   |   15.594(R)|Clk_BUFGP         |   0.000|
+Dout2<13>   |   13.742(R)|Clk_BUFGP         |   0.000|
+Dout2<14>   |   13.070(R)|Clk_BUFGP         |   0.000|
+Dout2<15>   |   13.700(R)|Clk_BUFGP         |   0.000|
+Dout2<16>   |   13.488(R)|Clk_BUFGP         |   0.000|
+Dout2<17>   |   12.790(R)|Clk_BUFGP         |   0.000|
+Dout2<18>   |   13.639(R)|Clk_BUFGP         |   0.000|
+Dout2<19>   |   13.603(R)|Clk_BUFGP         |   0.000|
+Dout2<20>   |   14.985(R)|Clk_BUFGP         |   0.000|
+Dout2<21>   |   13.696(R)|Clk_BUFGP         |   0.000|
+Dout2<22>   |   14.232(R)|Clk_BUFGP         |   0.000|
+Dout2<23>   |   15.190(R)|Clk_BUFGP         |   0.000|
+Dout2<24>   |   14.158(R)|Clk_BUFGP         |   0.000|
+Dout2<25>   |   14.165(R)|Clk_BUFGP         |   0.000|
+Dout2<26>   |   14.236(R)|Clk_BUFGP         |   0.000|
+Dout2<27>   |   13.975(R)|Clk_BUFGP         |   0.000|
+Dout2<28>   |   13.070(R)|Clk_BUFGP         |   0.000|
+Dout2<29>   |   14.220(R)|Clk_BUFGP         |   0.000|
+Dout2<30>   |   12.945(R)|Clk_BUFGP         |   0.000|
+Dout2<31>   |   13.224(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Ard1<0>        |Dout1<0>       |   14.916|
+Ard1<0>        |Dout1<1>       |   16.174|
+Ard1<0>        |Dout1<2>       |   15.839|
+Ard1<0>        |Dout1<3>       |   13.826|
+Ard1<0>        |Dout1<4>       |   16.215|
+Ard1<0>        |Dout1<5>       |   18.919|
+Ard1<0>        |Dout1<6>       |   14.136|
+Ard1<0>        |Dout1<7>       |   14.017|
+Ard1<0>        |Dout1<8>       |   13.390|
+Ard1<0>        |Dout1<9>       |   19.791|
+Ard1<0>        |Dout1<10>      |   12.873|
+Ard1<0>        |Dout1<11>      |   15.251|
+Ard1<0>        |Dout1<12>      |   13.581|
+Ard1<0>        |Dout1<13>      |   13.939|
+Ard1<0>        |Dout1<14>      |   13.227|
+Ard1<0>        |Dout1<15>      |   13.250|
+Ard1<0>        |Dout1<16>      |   12.884|
+Ard1<0>        |Dout1<17>      |   12.459|
+Ard1<0>        |Dout1<18>      |   13.086|
+Ard1<0>        |Dout1<19>      |   13.094|
+Ard1<0>        |Dout1<20>      |   13.559|
+Ard1<0>        |Dout1<21>      |   14.174|
+Ard1<0>        |Dout1<22>      |   12.884|
+Ard1<0>        |Dout1<23>      |   13.648|
+Ard1<0>        |Dout1<24>      |   15.445|
+Ard1<0>        |Dout1<25>      |   15.507|
+Ard1<0>        |Dout1<26>      |   12.855|
+Ard1<0>        |Dout1<27>      |   17.374|
+Ard1<0>        |Dout1<28>      |   16.585|
+Ard1<0>        |Dout1<29>      |   17.886|
+Ard1<0>        |Dout1<30>      |   17.302|
+Ard1<0>        |Dout1<31>      |   15.005|
+Ard1<1>        |Dout1<0>       |   14.082|
+Ard1<1>        |Dout1<1>       |   13.295|
+Ard1<1>        |Dout1<2>       |   13.773|
+Ard1<1>        |Dout1<3>       |   13.485|
+Ard1<1>        |Dout1<4>       |   12.827|
+Ard1<1>        |Dout1<5>       |   13.255|
+Ard1<1>        |Dout1<6>       |   15.901|
+Ard1<1>        |Dout1<7>       |   13.661|
+Ard1<1>        |Dout1<8>       |   15.073|
+Ard1<1>        |Dout1<9>       |   13.831|
+Ard1<1>        |Dout1<10>      |   14.167|
+Ard1<1>        |Dout1<11>      |   14.417|
+Ard1<1>        |Dout1<12>      |   15.118|
+Ard1<1>        |Dout1<13>      |   13.375|
+Ard1<1>        |Dout1<14>      |   12.393|
+Ard1<1>        |Dout1<15>      |   12.781|
+Ard1<1>        |Dout1<16>      |   12.462|
+Ard1<1>        |Dout1<17>      |   11.850|
+Ard1<1>        |Dout1<18>      |   12.690|
+Ard1<1>        |Dout1<19>      |   12.587|
+Ard1<1>        |Dout1<20>      |   13.634|
+Ard1<1>        |Dout1<21>      |   13.719|
+Ard1<1>        |Dout1<22>      |   12.490|
+Ard1<1>        |Dout1<23>      |   13.622|
+Ard1<1>        |Dout1<24>      |   14.255|
+Ard1<1>        |Dout1<25>      |   14.247|
+Ard1<1>        |Dout1<26>      |   13.255|
+Ard1<1>        |Dout1<27>      |   15.340|
+Ard1<1>        |Dout1<28>      |   14.774|
+Ard1<1>        |Dout1<29>      |   15.869|
+Ard1<1>        |Dout1<30>      |   15.030|
+Ard1<1>        |Dout1<31>      |   14.450|
+Ard1<2>        |Dout1<0>       |   17.719|
+Ard1<2>        |Dout1<1>       |   16.932|
+Ard1<2>        |Dout1<2>       |   17.410|
+Ard1<2>        |Dout1<3>       |   16.629|
+Ard1<2>        |Dout1<4>       |   16.196|
+Ard1<2>        |Dout1<5>       |   15.379|
+Ard1<2>        |Dout1<6>       |   16.266|
+Ard1<2>        |Dout1<7>       |   15.782|
+Ard1<2>        |Dout1<8>       |   16.193|
+Ard1<2>        |Dout1<9>       |   15.300|
+Ard1<2>        |Dout1<10>      |   15.271|
+Ard1<2>        |Dout1<11>      |   18.054|
+Ard1<2>        |Dout1<12>      |   15.500|
+Ard1<2>        |Dout1<13>      |   15.498|
+Ard1<2>        |Dout1<14>      |   16.030|
+Ard1<2>        |Dout1<15>      |   14.611|
+Ard1<2>        |Dout1<16>      |   14.890|
+Ard1<2>        |Dout1<17>      |   15.262|
+Ard1<2>        |Dout1<18>      |   15.745|
+Ard1<2>        |Dout1<19>      |   14.496|
+Ard1<2>        |Dout1<20>      |   14.846|
+Ard1<2>        |Dout1<21>      |   15.049|
+Ard1<2>        |Dout1<22>      |   15.123|
+Ard1<2>        |Dout1<23>      |   14.363|
+Ard1<2>        |Dout1<24>      |   14.667|
+Ard1<2>        |Dout1<25>      |   15.256|
+Ard1<2>        |Dout1<26>      |   14.835|
+Ard1<2>        |Dout1<27>      |   15.854|
+Ard1<2>        |Dout1<28>      |   15.587|
+Ard1<2>        |Dout1<29>      |   15.662|
+Ard1<2>        |Dout1<30>      |   16.441|
+Ard1<2>        |Dout1<31>      |   15.653|
+Ard1<3>        |Dout1<0>       |   15.244|
+Ard1<3>        |Dout1<1>       |   14.457|
+Ard1<3>        |Dout1<2>       |   14.935|
+Ard1<3>        |Dout1<3>       |   14.154|
+Ard1<3>        |Dout1<4>       |   13.721|
+Ard1<3>        |Dout1<5>       |   12.904|
+Ard1<3>        |Dout1<6>       |   13.791|
+Ard1<3>        |Dout1<7>       |   13.307|
+Ard1<3>        |Dout1<8>       |   13.718|
+Ard1<3>        |Dout1<9>       |   12.825|
+Ard1<3>        |Dout1<10>      |   12.796|
+Ard1<3>        |Dout1<11>      |   15.579|
+Ard1<3>        |Dout1<12>      |   13.025|
+Ard1<3>        |Dout1<13>      |   13.023|
+Ard1<3>        |Dout1<14>      |   13.555|
+Ard1<3>        |Dout1<15>      |   12.136|
+Ard1<3>        |Dout1<16>      |   12.415|
+Ard1<3>        |Dout1<17>      |   12.787|
+Ard1<3>        |Dout1<18>      |   13.270|
+Ard1<3>        |Dout1<19>      |   12.021|
+Ard1<3>        |Dout1<20>      |   12.371|
+Ard1<3>        |Dout1<21>      |   12.574|
+Ard1<3>        |Dout1<22>      |   12.648|
+Ard1<3>        |Dout1<23>      |   11.888|
+Ard1<3>        |Dout1<24>      |   12.192|
+Ard1<3>        |Dout1<25>      |   12.781|
+Ard1<3>        |Dout1<26>      |   12.360|
+Ard1<3>        |Dout1<27>      |   12.959|
+Ard1<3>        |Dout1<28>      |   11.819|
+Ard1<3>        |Dout1<29>      |   12.408|
+Ard1<3>        |Dout1<30>      |   12.954|
+Ard1<3>        |Dout1<31>      |   11.415|
+Ard1<4>        |Dout1<0>       |   14.724|
+Ard1<4>        |Dout1<1>       |   13.937|
+Ard1<4>        |Dout1<2>       |   14.415|
+Ard1<4>        |Dout1<3>       |   13.634|
+Ard1<4>        |Dout1<4>       |   13.201|
+Ard1<4>        |Dout1<5>       |   12.384|
+Ard1<4>        |Dout1<6>       |   13.271|
+Ard1<4>        |Dout1<7>       |   12.787|
+Ard1<4>        |Dout1<8>       |   13.198|
+Ard1<4>        |Dout1<9>       |   12.305|
+Ard1<4>        |Dout1<10>      |   12.276|
+Ard1<4>        |Dout1<11>      |   15.059|
+Ard1<4>        |Dout1<12>      |   12.749|
+Ard1<4>        |Dout1<13>      |   12.503|
+Ard1<4>        |Dout1<14>      |   13.035|
+Ard1<4>        |Dout1<15>      |   11.616|
+Ard1<4>        |Dout1<16>      |   11.895|
+Ard1<4>        |Dout1<17>      |   12.267|
+Ard1<4>        |Dout1<18>      |   12.750|
+Ard1<4>        |Dout1<19>      |   11.501|
+Ard1<4>        |Dout1<20>      |   12.379|
+Ard1<4>        |Dout1<21>      |   12.054|
+Ard1<4>        |Dout1<22>      |   12.128|
+Ard1<4>        |Dout1<23>      |   11.368|
+Ard1<4>        |Dout1<24>      |   11.672|
+Ard1<4>        |Dout1<25>      |   12.261|
+Ard1<4>        |Dout1<26>      |   11.840|
+Ard1<4>        |Dout1<27>      |   12.439|
+Ard1<4>        |Dout1<28>      |   11.299|
+Ard1<4>        |Dout1<29>      |   11.888|
+Ard1<4>        |Dout1<30>      |   13.738|
+Ard1<4>        |Dout1<31>      |   11.341|
+Ard2<0>        |Dout2<0>       |   14.602|
+Ard2<0>        |Dout2<1>       |   15.029|
+Ard2<0>        |Dout2<2>       |   16.873|
+Ard2<0>        |Dout2<3>       |   15.759|
+Ard2<0>        |Dout2<4>       |   15.958|
+Ard2<0>        |Dout2<5>       |   14.131|
+Ard2<0>        |Dout2<6>       |   17.180|
+Ard2<0>        |Dout2<7>       |   14.551|
+Ard2<0>        |Dout2<8>       |   15.944|
+Ard2<0>        |Dout2<9>       |   15.870|
+Ard2<0>        |Dout2<10>      |   15.098|
+Ard2<0>        |Dout2<11>      |   14.124|
+Ard2<0>        |Dout2<12>      |   17.041|
+Ard2<0>        |Dout2<13>      |   13.109|
+Ard2<0>        |Dout2<14>      |   13.662|
+Ard2<0>        |Dout2<15>      |   12.910|
+Ard2<0>        |Dout2<16>      |   13.303|
+Ard2<0>        |Dout2<17>      |   12.702|
+Ard2<0>        |Dout2<18>      |   12.943|
+Ard2<0>        |Dout2<19>      |   13.072|
+Ard2<0>        |Dout2<20>      |   14.476|
+Ard2<0>        |Dout2<21>      |   13.282|
+Ard2<0>        |Dout2<22>      |   13.641|
+Ard2<0>        |Dout2<23>      |   13.902|
+Ard2<0>        |Dout2<24>      |   13.096|
+Ard2<0>        |Dout2<25>      |   13.297|
+Ard2<0>        |Dout2<26>      |   13.184|
+Ard2<0>        |Dout2<27>      |   13.109|
+Ard2<0>        |Dout2<28>      |   12.134|
+Ard2<0>        |Dout2<29>      |   14.327|
+Ard2<0>        |Dout2<30>      |   13.198|
+Ard2<0>        |Dout2<31>      |   12.461|
+Ard2<1>        |Dout2<0>       |   16.598|
+Ard2<1>        |Dout2<1>       |   17.232|
+Ard2<1>        |Dout2<2>       |   19.237|
+Ard2<1>        |Dout2<3>       |   15.633|
+Ard2<1>        |Dout2<4>       |   16.027|
+Ard2<1>        |Dout2<5>       |   15.269|
+Ard2<1>        |Dout2<6>       |   17.604|
+Ard2<1>        |Dout2<7>       |   14.607|
+Ard2<1>        |Dout2<8>       |   16.372|
+Ard2<1>        |Dout2<9>       |   16.212|
+Ard2<1>        |Dout2<10>      |   16.251|
+Ard2<1>        |Dout2<11>      |   13.656|
+Ard2<1>        |Dout2<12>      |   17.295|
+Ard2<1>        |Dout2<13>      |   12.832|
+Ard2<1>        |Dout2<14>      |   12.639|
+Ard2<1>        |Dout2<15>      |   12.850|
+Ard2<1>        |Dout2<16>      |   13.284|
+Ard2<1>        |Dout2<17>      |   12.261|
+Ard2<1>        |Dout2<18>      |   13.345|
+Ard2<1>        |Dout2<19>      |   12.955|
+Ard2<1>        |Dout2<20>      |   15.649|
+Ard2<1>        |Dout2<21>      |   12.830|
+Ard2<1>        |Dout2<22>      |   13.487|
+Ard2<1>        |Dout2<23>      |   13.901|
+Ard2<1>        |Dout2<24>      |   13.250|
+Ard2<1>        |Dout2<25>      |   13.436|
+Ard2<1>        |Dout2<26>      |   13.239|
+Ard2<1>        |Dout2<27>      |   13.261|
+Ard2<1>        |Dout2<28>      |   12.001|
+Ard2<1>        |Dout2<29>      |   13.586|
+Ard2<1>        |Dout2<30>      |   14.380|
+Ard2<1>        |Dout2<31>      |   12.264|
+Ard2<2>        |Dout2<0>       |   15.252|
+Ard2<2>        |Dout2<1>       |   15.426|
+Ard2<2>        |Dout2<2>       |   17.289|
+Ard2<2>        |Dout2<3>       |   14.974|
+Ard2<2>        |Dout2<4>       |   14.242|
+Ard2<2>        |Dout2<5>       |   13.765|
+Ard2<2>        |Dout2<6>       |   15.341|
+Ard2<2>        |Dout2<7>       |   14.624|
+Ard2<2>        |Dout2<8>       |   15.010|
+Ard2<2>        |Dout2<9>       |   14.930|
+Ard2<2>        |Dout2<10>      |   14.367|
+Ard2<2>        |Dout2<11>      |   13.284|
+Ard2<2>        |Dout2<12>      |   14.232|
+Ard2<2>        |Dout2<13>      |   12.924|
+Ard2<2>        |Dout2<14>      |   14.558|
+Ard2<2>        |Dout2<15>      |   12.893|
+Ard2<2>        |Dout2<16>      |   12.828|
+Ard2<2>        |Dout2<17>      |   13.030|
+Ard2<2>        |Dout2<18>      |   13.787|
+Ard2<2>        |Dout2<19>      |   13.492|
+Ard2<2>        |Dout2<20>      |   15.204|
+Ard2<2>        |Dout2<21>      |   13.755|
+Ard2<2>        |Dout2<22>      |   14.752|
+Ard2<2>        |Dout2<23>      |   15.244|
+Ard2<2>        |Dout2<24>      |   14.444|
+Ard2<2>        |Dout2<25>      |   13.881|
+Ard2<2>        |Dout2<26>      |   14.737|
+Ard2<2>        |Dout2<27>      |   14.948|
+Ard2<2>        |Dout2<28>      |   12.256|
+Ard2<2>        |Dout2<29>      |   13.496|
+Ard2<2>        |Dout2<30>      |   13.204|
+Ard2<2>        |Dout2<31>      |   12.058|
+Ard2<3>        |Dout2<0>       |   13.676|
+Ard2<3>        |Dout2<1>       |   13.908|
+Ard2<3>        |Dout2<2>       |   15.339|
+Ard2<3>        |Dout2<3>       |   14.313|
+Ard2<3>        |Dout2<4>       |   12.804|
+Ard2<3>        |Dout2<5>       |   12.262|
+Ard2<3>        |Dout2<6>       |   13.993|
+Ard2<3>        |Dout2<7>       |   12.089|
+Ard2<3>        |Dout2<8>       |   12.197|
+Ard2<3>        |Dout2<9>       |   12.329|
+Ard2<3>        |Dout2<10>      |   12.222|
+Ard2<3>        |Dout2<11>      |   11.399|
+Ard2<3>        |Dout2<12>      |   13.422|
+Ard2<3>        |Dout2<13>      |   10.738|
+Ard2<3>        |Dout2<14>      |   13.277|
+Ard2<3>        |Dout2<15>      |   10.831|
+Ard2<3>        |Dout2<16>      |   11.378|
+Ard2<3>        |Dout2<17>      |   11.749|
+Ard2<3>        |Dout2<18>      |   12.342|
+Ard2<3>        |Dout2<19>      |   12.230|
+Ard2<3>        |Dout2<20>      |   13.748|
+Ard2<3>        |Dout2<21>      |   11.736|
+Ard2<3>        |Dout2<22>      |   12.740|
+Ard2<3>        |Dout2<23>      |   11.460|
+Ard2<3>        |Dout2<24>      |   12.587|
+Ard2<3>        |Dout2<25>      |   11.004|
+Ard2<3>        |Dout2<26>      |   10.874|
+Ard2<3>        |Dout2<27>      |   12.515|
+Ard2<3>        |Dout2<28>      |   10.975|
+Ard2<3>        |Dout2<29>      |   12.215|
+Ard2<3>        |Dout2<30>      |   11.923|
+Ard2<3>        |Dout2<31>      |   10.777|
+Ard2<4>        |Dout2<0>       |   14.052|
+Ard2<4>        |Dout2<1>       |   16.185|
+Ard2<4>        |Dout2<2>       |   17.543|
+Ard2<4>        |Dout2<3>       |   15.785|
+Ard2<4>        |Dout2<4>       |   15.667|
+Ard2<4>        |Dout2<5>       |   12.731|
+Ard2<4>        |Dout2<6>       |   15.125|
+Ard2<4>        |Dout2<7>       |   13.222|
+Ard2<4>        |Dout2<8>       |   14.078|
+Ard2<4>        |Dout2<9>       |   14.130|
+Ard2<4>        |Dout2<10>      |   13.333|
+Ard2<4>        |Dout2<11>      |   13.094|
+Ard2<4>        |Dout2<12>      |   15.157|
+Ard2<4>        |Dout2<13>      |   10.447|
+Ard2<4>        |Dout2<14>      |   14.237|
+Ard2<4>        |Dout2<15>      |   11.832|
+Ard2<4>        |Dout2<16>      |   13.056|
+Ard2<4>        |Dout2<17>      |   12.244|
+Ard2<4>        |Dout2<18>      |   13.803|
+Ard2<4>        |Dout2<19>      |   13.134|
+Ard2<4>        |Dout2<20>      |   15.227|
+Ard2<4>        |Dout2<21>      |   12.988|
+Ard2<4>        |Dout2<22>      |   13.843|
+Ard2<4>        |Dout2<23>      |   11.641|
+Ard2<4>        |Dout2<24>      |   13.996|
+Ard2<4>        |Dout2<25>      |   11.979|
+Ard2<4>        |Dout2<26>      |   12.293|
+Ard2<4>        |Dout2<27>      |   12.717|
+Ard2<4>        |Dout2<28>      |   10.684|
+Ard2<4>        |Dout2<29>      |   11.924|
+Ard2<4>        |Dout2<30>      |   11.632|
+Ard2<4>        |Dout2<31>      |   10.486|
+Awr<0>         |Dout1<0>       |   14.236|
+Awr<0>         |Dout1<1>       |   13.449|
+Awr<0>         |Dout1<2>       |   13.927|
+Awr<0>         |Dout1<3>       |   13.146|
+Awr<0>         |Dout1<4>       |   12.713|
+Awr<0>         |Dout1<5>       |   11.896|
+Awr<0>         |Dout1<6>       |   12.783|
+Awr<0>         |Dout1<7>       |   12.299|
+Awr<0>         |Dout1<8>       |   12.710|
+Awr<0>         |Dout1<9>       |   11.817|
+Awr<0>         |Dout1<10>      |   11.788|
+Awr<0>         |Dout1<11>      |   14.571|
+Awr<0>         |Dout1<12>      |   12.017|
+Awr<0>         |Dout1<13>      |   12.015|
+Awr<0>         |Dout1<14>      |   12.547|
+Awr<0>         |Dout1<15>      |   11.128|
+Awr<0>         |Dout1<16>      |   11.407|
+Awr<0>         |Dout1<17>      |   11.779|
+Awr<0>         |Dout1<18>      |   12.262|
+Awr<0>         |Dout1<19>      |   11.013|
+Awr<0>         |Dout1<20>      |   11.363|
+Awr<0>         |Dout1<21>      |   11.566|
+Awr<0>         |Dout1<22>      |   11.640|
+Awr<0>         |Dout1<23>      |   10.880|
+Awr<0>         |Dout1<24>      |   11.184|
+Awr<0>         |Dout1<25>      |   11.773|
+Awr<0>         |Dout1<26>      |   11.352|
+Awr<0>         |Dout1<27>      |   11.951|
+Awr<0>         |Dout1<28>      |   10.811|
+Awr<0>         |Dout1<29>      |   11.400|
+Awr<0>         |Dout1<30>      |   11.460|
+Awr<0>         |Dout1<31>      |   10.407|
+Awr<0>         |Dout2<0>       |   11.451|
+Awr<0>         |Dout2<1>       |   11.582|
+Awr<0>         |Dout2<2>       |   13.530|
+Awr<0>         |Dout2<3>       |   11.442|
+Awr<0>         |Dout2<4>       |   11.760|
+Awr<0>         |Dout2<5>       |   11.218|
+Awr<0>         |Dout2<6>       |   11.171|
+Awr<0>         |Dout2<7>       |   11.045|
+Awr<0>         |Dout2<8>       |   10.729|
+Awr<0>         |Dout2<9>       |   11.029|
+Awr<0>         |Dout2<10>      |   11.178|
+Awr<0>         |Dout2<11>      |   10.355|
+Awr<0>         |Dout2<12>      |   10.546|
+Awr<0>         |Dout2<13>      |    9.694|
+Awr<0>         |Dout2<14>      |   12.233|
+Awr<0>         |Dout2<15>      |    9.787|
+Awr<0>         |Dout2<16>      |   10.334|
+Awr<0>         |Dout2<17>      |   10.705|
+Awr<0>         |Dout2<18>      |   10.347|
+Awr<0>         |Dout2<19>      |    9.104|
+Awr<0>         |Dout2<20>      |    8.777|
+Awr<0>         |Dout2<21>      |    9.228|
+Awr<0>         |Dout2<22>      |    9.336|
+Awr<0>         |Dout2<23>      |   10.416|
+Awr<0>         |Dout2<24>      |    9.932|
+Awr<0>         |Dout2<25>      |    9.960|
+Awr<0>         |Dout2<26>      |    9.319|
+Awr<0>         |Dout2<27>      |    9.436|
+Awr<0>         |Dout2<28>      |    9.931|
+Awr<0>         |Dout2<29>      |   11.171|
+Awr<0>         |Dout2<30>      |   10.879|
+Awr<0>         |Dout2<31>      |    9.733|
+Awr<1>         |Dout1<0>       |   14.228|
+Awr<1>         |Dout1<1>       |   13.441|
+Awr<1>         |Dout1<2>       |   13.919|
+Awr<1>         |Dout1<3>       |   13.138|
+Awr<1>         |Dout1<4>       |   12.705|
+Awr<1>         |Dout1<5>       |   11.888|
+Awr<1>         |Dout1<6>       |   12.775|
+Awr<1>         |Dout1<7>       |   12.291|
+Awr<1>         |Dout1<8>       |   12.702|
+Awr<1>         |Dout1<9>       |   11.809|
+Awr<1>         |Dout1<10>      |   11.780|
+Awr<1>         |Dout1<11>      |   14.563|
+Awr<1>         |Dout1<12>      |   12.009|
+Awr<1>         |Dout1<13>      |   12.007|
+Awr<1>         |Dout1<14>      |   12.539|
+Awr<1>         |Dout1<15>      |   11.120|
+Awr<1>         |Dout1<16>      |   11.399|
+Awr<1>         |Dout1<17>      |   11.771|
+Awr<1>         |Dout1<18>      |   12.254|
+Awr<1>         |Dout1<19>      |   11.005|
+Awr<1>         |Dout1<20>      |   11.355|
+Awr<1>         |Dout1<21>      |   11.558|
+Awr<1>         |Dout1<22>      |   11.632|
+Awr<1>         |Dout1<23>      |   10.872|
+Awr<1>         |Dout1<24>      |   11.176|
+Awr<1>         |Dout1<25>      |   11.765|
+Awr<1>         |Dout1<26>      |   11.344|
+Awr<1>         |Dout1<27>      |   11.943|
+Awr<1>         |Dout1<28>      |   10.803|
+Awr<1>         |Dout1<29>      |   11.392|
+Awr<1>         |Dout1<30>      |   11.452|
+Awr<1>         |Dout1<31>      |   10.399|
+Awr<1>         |Dout2<0>       |   11.591|
+Awr<1>         |Dout2<1>       |   11.722|
+Awr<1>         |Dout2<2>       |   13.670|
+Awr<1>         |Dout2<3>       |   11.582|
+Awr<1>         |Dout2<4>       |   11.900|
+Awr<1>         |Dout2<5>       |   11.358|
+Awr<1>         |Dout2<6>       |   11.311|
+Awr<1>         |Dout2<7>       |   11.185|
+Awr<1>         |Dout2<8>       |   10.869|
+Awr<1>         |Dout2<9>       |   11.169|
+Awr<1>         |Dout2<10>      |   11.318|
+Awr<1>         |Dout2<11>      |   10.495|
+Awr<1>         |Dout2<12>      |   10.686|
+Awr<1>         |Dout2<13>      |    9.834|
+Awr<1>         |Dout2<14>      |   12.373|
+Awr<1>         |Dout2<15>      |    9.927|
+Awr<1>         |Dout2<16>      |   10.474|
+Awr<1>         |Dout2<17>      |   10.845|
+Awr<1>         |Dout2<18>      |   10.487|
+Awr<1>         |Dout2<19>      |    9.244|
+Awr<1>         |Dout2<20>      |    8.917|
+Awr<1>         |Dout2<21>      |    9.368|
+Awr<1>         |Dout2<22>      |    9.476|
+Awr<1>         |Dout2<23>      |   10.556|
+Awr<1>         |Dout2<24>      |   10.072|
+Awr<1>         |Dout2<25>      |   10.100|
+Awr<1>         |Dout2<26>      |    9.459|
+Awr<1>         |Dout2<27>      |    9.576|
+Awr<1>         |Dout2<28>      |   10.071|
+Awr<1>         |Dout2<29>      |   11.311|
+Awr<1>         |Dout2<30>      |   11.019|
+Awr<1>         |Dout2<31>      |    9.873|
+Awr<2>         |Dout1<0>       |   16.143|
+Awr<2>         |Dout1<1>       |   15.356|
+Awr<2>         |Dout1<2>       |   15.834|
+Awr<2>         |Dout1<3>       |   15.053|
+Awr<2>         |Dout1<4>       |   14.620|
+Awr<2>         |Dout1<5>       |   13.803|
+Awr<2>         |Dout1<6>       |   14.690|
+Awr<2>         |Dout1<7>       |   14.206|
+Awr<2>         |Dout1<8>       |   14.617|
+Awr<2>         |Dout1<9>       |   13.724|
+Awr<2>         |Dout1<10>      |   13.695|
+Awr<2>         |Dout1<11>      |   16.478|
+Awr<2>         |Dout1<12>      |   13.924|
+Awr<2>         |Dout1<13>      |   13.922|
+Awr<2>         |Dout1<14>      |   14.454|
+Awr<2>         |Dout1<15>      |   13.035|
+Awr<2>         |Dout1<16>      |   13.314|
+Awr<2>         |Dout1<17>      |   13.686|
+Awr<2>         |Dout1<18>      |   14.169|
+Awr<2>         |Dout1<19>      |   12.920|
+Awr<2>         |Dout1<20>      |   13.270|
+Awr<2>         |Dout1<21>      |   13.473|
+Awr<2>         |Dout1<22>      |   13.547|
+Awr<2>         |Dout1<23>      |   12.787|
+Awr<2>         |Dout1<24>      |   13.091|
+Awr<2>         |Dout1<25>      |   13.680|
+Awr<2>         |Dout1<26>      |   13.259|
+Awr<2>         |Dout1<27>      |   13.858|
+Awr<2>         |Dout1<28>      |   12.718|
+Awr<2>         |Dout1<29>      |   13.307|
+Awr<2>         |Dout1<30>      |   13.367|
+Awr<2>         |Dout1<31>      |   12.314|
+Awr<2>         |Dout2<0>       |   13.036|
+Awr<2>         |Dout2<1>       |   13.167|
+Awr<2>         |Dout2<2>       |   15.115|
+Awr<2>         |Dout2<3>       |   13.027|
+Awr<2>         |Dout2<4>       |   13.345|
+Awr<2>         |Dout2<5>       |   12.803|
+Awr<2>         |Dout2<6>       |   12.756|
+Awr<2>         |Dout2<7>       |   12.630|
+Awr<2>         |Dout2<8>       |   12.314|
+Awr<2>         |Dout2<9>       |   12.614|
+Awr<2>         |Dout2<10>      |   12.763|
+Awr<2>         |Dout2<11>      |   11.940|
+Awr<2>         |Dout2<12>      |   12.131|
+Awr<2>         |Dout2<13>      |   11.279|
+Awr<2>         |Dout2<14>      |   13.818|
+Awr<2>         |Dout2<15>      |   11.372|
+Awr<2>         |Dout2<16>      |   11.919|
+Awr<2>         |Dout2<17>      |   12.290|
+Awr<2>         |Dout2<18>      |   11.932|
+Awr<2>         |Dout2<19>      |   10.689|
+Awr<2>         |Dout2<20>      |   10.362|
+Awr<2>         |Dout2<21>      |   10.813|
+Awr<2>         |Dout2<22>      |   10.921|
+Awr<2>         |Dout2<23>      |   12.001|
+Awr<2>         |Dout2<24>      |   11.517|
+Awr<2>         |Dout2<25>      |   11.545|
+Awr<2>         |Dout2<26>      |   10.904|
+Awr<2>         |Dout2<27>      |   11.021|
+Awr<2>         |Dout2<28>      |   11.516|
+Awr<2>         |Dout2<29>      |   12.756|
+Awr<2>         |Dout2<30>      |   12.464|
+Awr<2>         |Dout2<31>      |   11.318|
+Awr<3>         |Dout1<0>       |   16.492|
+Awr<3>         |Dout1<1>       |   15.705|
+Awr<3>         |Dout1<2>       |   16.183|
+Awr<3>         |Dout1<3>       |   15.402|
+Awr<3>         |Dout1<4>       |   14.969|
+Awr<3>         |Dout1<5>       |   14.152|
+Awr<3>         |Dout1<6>       |   15.039|
+Awr<3>         |Dout1<7>       |   14.555|
+Awr<3>         |Dout1<8>       |   14.966|
+Awr<3>         |Dout1<9>       |   14.073|
+Awr<3>         |Dout1<10>      |   14.044|
+Awr<3>         |Dout1<11>      |   16.827|
+Awr<3>         |Dout1<12>      |   14.273|
+Awr<3>         |Dout1<13>      |   14.271|
+Awr<3>         |Dout1<14>      |   14.803|
+Awr<3>         |Dout1<15>      |   13.384|
+Awr<3>         |Dout1<16>      |   13.663|
+Awr<3>         |Dout1<17>      |   14.035|
+Awr<3>         |Dout1<18>      |   14.518|
+Awr<3>         |Dout1<19>      |   13.269|
+Awr<3>         |Dout1<20>      |   13.619|
+Awr<3>         |Dout1<21>      |   13.822|
+Awr<3>         |Dout1<22>      |   13.896|
+Awr<3>         |Dout1<23>      |   13.136|
+Awr<3>         |Dout1<24>      |   13.440|
+Awr<3>         |Dout1<25>      |   14.029|
+Awr<3>         |Dout1<26>      |   13.608|
+Awr<3>         |Dout1<27>      |   14.207|
+Awr<3>         |Dout1<28>      |   13.067|
+Awr<3>         |Dout1<29>      |   13.656|
+Awr<3>         |Dout1<30>      |   13.716|
+Awr<3>         |Dout1<31>      |   12.663|
+Awr<3>         |Dout2<0>       |   13.362|
+Awr<3>         |Dout2<1>       |   13.493|
+Awr<3>         |Dout2<2>       |   15.441|
+Awr<3>         |Dout2<3>       |   13.353|
+Awr<3>         |Dout2<4>       |   13.671|
+Awr<3>         |Dout2<5>       |   13.129|
+Awr<3>         |Dout2<6>       |   13.082|
+Awr<3>         |Dout2<7>       |   12.956|
+Awr<3>         |Dout2<8>       |   12.640|
+Awr<3>         |Dout2<9>       |   12.940|
+Awr<3>         |Dout2<10>      |   13.089|
+Awr<3>         |Dout2<11>      |   12.266|
+Awr<3>         |Dout2<12>      |   12.457|
+Awr<3>         |Dout2<13>      |   11.605|
+Awr<3>         |Dout2<14>      |   14.144|
+Awr<3>         |Dout2<15>      |   11.698|
+Awr<3>         |Dout2<16>      |   12.245|
+Awr<3>         |Dout2<17>      |   12.616|
+Awr<3>         |Dout2<18>      |   12.258|
+Awr<3>         |Dout2<19>      |   11.015|
+Awr<3>         |Dout2<20>      |   10.688|
+Awr<3>         |Dout2<21>      |   11.139|
+Awr<3>         |Dout2<22>      |   11.247|
+Awr<3>         |Dout2<23>      |   12.327|
+Awr<3>         |Dout2<24>      |   11.843|
+Awr<3>         |Dout2<25>      |   11.871|
+Awr<3>         |Dout2<26>      |   11.230|
+Awr<3>         |Dout2<27>      |   11.347|
+Awr<3>         |Dout2<28>      |   11.842|
+Awr<3>         |Dout2<29>      |   13.082|
+Awr<3>         |Dout2<30>      |   12.790|
+Awr<3>         |Dout2<31>      |   11.644|
+Awr<4>         |Dout1<0>       |   14.578|
+Awr<4>         |Dout1<1>       |   13.791|
+Awr<4>         |Dout1<2>       |   14.269|
+Awr<4>         |Dout1<3>       |   13.488|
+Awr<4>         |Dout1<4>       |   13.055|
+Awr<4>         |Dout1<5>       |   12.238|
+Awr<4>         |Dout1<6>       |   13.125|
+Awr<4>         |Dout1<7>       |   12.641|
+Awr<4>         |Dout1<8>       |   13.052|
+Awr<4>         |Dout1<9>       |   12.159|
+Awr<4>         |Dout1<10>      |   12.130|
+Awr<4>         |Dout1<11>      |   14.913|
+Awr<4>         |Dout1<12>      |   12.359|
+Awr<4>         |Dout1<13>      |   12.357|
+Awr<4>         |Dout1<14>      |   12.889|
+Awr<4>         |Dout1<15>      |   11.470|
+Awr<4>         |Dout1<16>      |   11.749|
+Awr<4>         |Dout1<17>      |   12.121|
+Awr<4>         |Dout1<18>      |   12.604|
+Awr<4>         |Dout1<19>      |   11.355|
+Awr<4>         |Dout1<20>      |   11.705|
+Awr<4>         |Dout1<21>      |   11.908|
+Awr<4>         |Dout1<22>      |   11.982|
+Awr<4>         |Dout1<23>      |   11.222|
+Awr<4>         |Dout1<24>      |   11.526|
+Awr<4>         |Dout1<25>      |   12.115|
+Awr<4>         |Dout1<26>      |   11.694|
+Awr<4>         |Dout1<27>      |   12.293|
+Awr<4>         |Dout1<28>      |   11.153|
+Awr<4>         |Dout1<29>      |   11.742|
+Awr<4>         |Dout1<30>      |   11.802|
+Awr<4>         |Dout1<31>      |   10.749|
+Awr<4>         |Dout2<0>       |   11.760|
+Awr<4>         |Dout2<1>       |   11.891|
+Awr<4>         |Dout2<2>       |   13.839|
+Awr<4>         |Dout2<3>       |   11.751|
+Awr<4>         |Dout2<4>       |   12.069|
+Awr<4>         |Dout2<5>       |   11.527|
+Awr<4>         |Dout2<6>       |   11.480|
+Awr<4>         |Dout2<7>       |   11.354|
+Awr<4>         |Dout2<8>       |   11.038|
+Awr<4>         |Dout2<9>       |   11.338|
+Awr<4>         |Dout2<10>      |   11.487|
+Awr<4>         |Dout2<11>      |   10.664|
+Awr<4>         |Dout2<12>      |   10.855|
+Awr<4>         |Dout2<13>      |   10.003|
+Awr<4>         |Dout2<14>      |   12.542|
+Awr<4>         |Dout2<15>      |   10.096|
+Awr<4>         |Dout2<16>      |   10.643|
+Awr<4>         |Dout2<17>      |   11.014|
+Awr<4>         |Dout2<18>      |   10.656|
+Awr<4>         |Dout2<19>      |    9.413|
+Awr<4>         |Dout2<20>      |    9.086|
+Awr<4>         |Dout2<21>      |    9.537|
+Awr<4>         |Dout2<22>      |    9.645|
+Awr<4>         |Dout2<23>      |   10.725|
+Awr<4>         |Dout2<24>      |   10.241|
+Awr<4>         |Dout2<25>      |   10.269|
+Awr<4>         |Dout2<26>      |    9.628|
+Awr<4>         |Dout2<27>      |    9.745|
+Awr<4>         |Dout2<28>      |   10.240|
+Awr<4>         |Dout2<29>      |   11.480|
+Awr<4>         |Dout2<30>      |   11.188|
+Awr<4>         |Dout2<31>      |   10.042|
+Din<0>         |Dout1<0>       |    7.122|
+Din<0>         |Dout2<0>       |    8.725|
+Din<1>         |Dout1<1>       |    9.664|
+Din<1>         |Dout2<1>       |    8.956|
+Din<2>         |Dout1<2>       |    7.532|
+Din<2>         |Dout2<2>       |   11.326|
+Din<3>         |Dout1<3>       |    7.317|
+Din<3>         |Dout2<3>       |    9.194|
+Din<4>         |Dout1<4>       |    7.615|
+Din<4>         |Dout2<4>       |    8.064|
+Din<5>         |Dout1<5>       |    8.137|
+Din<5>         |Dout2<5>       |   10.484|
+Din<6>         |Dout1<6>       |    7.633|
+Din<6>         |Dout2<6>       |    8.356|
+Din<7>         |Dout1<7>       |    9.151|
+Din<7>         |Dout2<7>       |    9.298|
+Din<8>         |Dout1<8>       |    7.242|
+Din<8>         |Dout2<8>       |    7.068|
+Din<9>         |Dout1<9>       |    9.488|
+Din<9>         |Dout2<9>       |   10.821|
+Din<10>        |Dout1<10>      |    7.132|
+Din<10>        |Dout2<10>      |    8.408|
+Din<11>        |Dout1<11>      |   10.106|
+Din<11>        |Dout2<11>      |    9.232|
+Din<12>        |Dout1<12>      |    9.047|
+Din<12>        |Dout2<12>      |   10.935|
+Din<13>        |Dout1<13>      |    9.630|
+Din<13>        |Dout2<13>      |    7.819|
+Din<14>        |Dout1<14>      |    7.393|
+Din<14>        |Dout2<14>      |    8.797|
+Din<15>        |Dout1<15>      |    8.793|
+Din<15>        |Dout2<15>      |    9.688|
+Din<16>        |Dout1<16>      |    9.576|
+Din<16>        |Dout2<16>      |    8.819|
+Din<17>        |Dout1<17>      |    8.465|
+Din<17>        |Dout2<17>      |    7.971|
+Din<18>        |Dout1<18>      |    8.710|
+Din<18>        |Dout2<18>      |    8.160|
+Din<19>        |Dout1<19>      |    8.610|
+Din<19>        |Dout2<19>      |    8.100|
+Din<20>        |Dout1<20>      |    8.617|
+Din<20>        |Dout2<20>      |   10.288|
+Din<21>        |Dout1<21>      |    9.561|
+Din<21>        |Dout2<21>      |    8.108|
+Din<22>        |Dout1<22>      |    9.072|
+Din<22>        |Dout2<22>      |    7.218|
+Din<23>        |Dout1<23>      |    8.000|
+Din<23>        |Dout2<23>      |    9.127|
+Din<24>        |Dout1<24>      |    9.380|
+Din<24>        |Dout2<24>      |    8.293|
+Din<25>        |Dout1<25>      |   10.024|
+Din<25>        |Dout2<25>      |    9.120|
+Din<26>        |Dout1<26>      |    8.149|
+Din<26>        |Dout2<26>      |    7.733|
+Din<27>        |Dout1<27>      |    9.722|
+Din<27>        |Dout2<27>      |    7.570|
+Din<28>        |Dout1<28>      |    9.595|
+Din<28>        |Dout2<28>      |    9.512|
+Din<29>        |Dout1<29>      |   11.864|
+Din<29>        |Dout2<29>      |    9.778|
+Din<30>        |Dout1<30>      |   10.310|
+Din<30>        |Dout2<30>      |    8.342|
+Din<31>        |Dout1<31>      |    7.760|
+Din<31>        |Dout2<31>      |    7.096|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Feb 18 18:37:00 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+

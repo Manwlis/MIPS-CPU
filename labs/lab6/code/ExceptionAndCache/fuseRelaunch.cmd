@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/test_isim_beh.exe" -prj "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/test_beh.prj" "work.test" 

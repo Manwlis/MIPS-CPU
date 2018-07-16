@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Mike/Desktop/organwsh/test/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/instrout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instrout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instrout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/IFSTAGE0/Reg32BitR0/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">pc</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/CONTROL0/FSM0/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[28]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[28]</obj_property>
+      <obj_property name="ObjectShortName">ram[28]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[27]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[27]</obj_property>
+      <obj_property name="ObjectShortName">ram[27]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[26]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[26]</obj_property>
+      <obj_property name="ObjectShortName">ram[26]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[25]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[25]</obj_property>
+      <obj_property name="ObjectShortName">ram[25]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/Reg32Bit8/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">reg8</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group40" type="group">
+      <obj_property name="label">mux 0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/mux0/outt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">outt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">outt[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/mux0/a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group41" type="group">
+      <obj_property name="label">sign extend</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in2[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in3[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in4[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/in5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in5[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxMEMDataIn/output" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">output[31:0]</obj_property>
+         <obj_property name="ObjectShortName">output[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group44" type="group">
+      <obj_property name="label">b</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/BReg32BitR/wren" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wren</obj_property>
+         <obj_property name="ObjectShortName">wren</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/BReg32BitR/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">din[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/BReg32BitR/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group45" type="group">
+      <obj_property name="label">b in</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/muxBin/sel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxBin/a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">a[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxBin/b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/muxBin/outt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">outt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">outt[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/ard2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ard2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ard2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1662 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "processor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "processor"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : processor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/demux1bit.vhd" in Library work.
+Architecture behavioral of Entity demux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux4to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux4to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/flipflop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/demux2to4.vhd" in Library work.
+Architecture behavioral of Entity demux2to4 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux8to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux8to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg1Bit.vhd" in Library work.
+Architecture behavioral of Entity reg1bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/demux3to8.vhd" in Library work.
+Architecture behavioral of Entity demux3to8 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux16to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux16to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg4Bit.vhd" in Library work.
+Architecture behavioral of Entity reg4bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/demux4to16.vhd" in Library work.
+Architecture behavioral of Entity demux4to16 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg1BitR.vhd" in Library work.
+Architecture behavioral of Entity reg1bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/demux5to32.vhd" in Library work.
+Architecture behavioral of Entity decoder5to32 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg32Bit.vhd" in Library work.
+Architecture structural of Entity reg32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux32to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/compareModule.vhd" in Library work.
+Architecture behavioral of Entity comparemodule is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/mux16bit.vhd" in Library work.
+Architecture behavioral of Entity mux16bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg4BitR.vhd" in Library work.
+Architecture behavioral of Entity reg4bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/top.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Extender16to32.vhd" in Library work.
+Architecture structural of Entity immedbox is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/rfer.vhd" in Library work.
+Architecture behavioral of Entity mux5bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg32BitR.vhd" in Library work.
+Architecture structural of Entity reg32bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/IF_MEM.vhd" in Library work.
+Architecture syn of Entity if_mem is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Incrementor.vhd" in Library work.
+Architecture behavioral of Entity incrementor is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/IFSTAGE.vhd" in Library work.
+Architecture structral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/DECODE.vhd" in Library work.
+Architecture behavioral of Entity decode is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/ALUSTAGE.vhd" in Library work.
+Architecture behavioral of Entity alustage is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Reg8Bit.vhd" in Library work.
+Architecture behavioral of Entity reg8bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/MEMSTAGE.vhd" in Library work.
+Architecture syn of Entity data_mem is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Cmov_ControlUnit.vhd" in Library work.
+Architecture behavioral of Entity cmov_controlunit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/FSM.vhd" in Library work.
+Entity <fsm> compiled.
+Entity <fsm> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/ALU_Control.vhd" in Library work.
+Architecture behavioral of Entity alu_control is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Immed_Control.vhd" in Library work.
+Architecture behavioral of Entity immed_control is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/sizeContolUnit.vhd" in Library work.
+Architecture behavioral of Entity memoutcontolunit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/beqRM_MuxCtr.vhd" in Library work.
+Architecture behavioral of Entity beqrm_muxctr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/CONTROL.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/Datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/test/processor.vhd" in Library work.
+Architecture structural of Entity processor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <processor> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <CONTROL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Cmov_ControlUnit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FSM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU_Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Immed_Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MemOutContolUnit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <beqRM_MuxCtr> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFSTAGE> in library <work> (architecture <structral>).
+
+Analyzing hierarchy for entity <Reg32BitR> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <DECODE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALUSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg8Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Incrementor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Data_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IF_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Adder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ImmedBox> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux5Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterFile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32Bit> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux32to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <compareModule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux4to16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux3to8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux2to4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <processor> in library <work> (Architecture <structural>).
+Entity <processor> analyzed. Unit <processor> generated.
+
+Analyzing Entity <CONTROL> in library <work> (Architecture <behavioral>).
+Entity <CONTROL> analyzed. Unit <CONTROL> generated.
+
+Analyzing Entity <Cmov_ControlUnit> in library <work> (Architecture <behavioral>).
+Entity <Cmov_ControlUnit> analyzed. Unit <Cmov_ControlUnit> generated.
+
+Analyzing Entity <FSM> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <packByte23_16_WrEn> in unit <FSM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Reg8Bit15_8_WrEn> in unit <FSM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <FSM> analyzed. Unit <FSM> generated.
+
+Analyzing Entity <ALU_Control> in library <work> (Architecture <behavioral>).
+Entity <ALU_Control> analyzed. Unit <ALU_Control> generated.
+
+Analyzing Entity <Immed_Control> in library <work> (Architecture <behavioral>).
+Entity <Immed_Control> analyzed. Unit <Immed_Control> generated.
+
+Analyzing Entity <MemOutContolUnit> in library <work> (Architecture <behavioral>).
+Entity <MemOutContolUnit> analyzed. Unit <MemOutContolUnit> generated.
+
+Analyzing Entity <beqRM_MuxCtr> in library <work> (Architecture <behavioral>).
+Entity <beqRM_MuxCtr> analyzed. Unit <beqRM_MuxCtr> generated.
+
+Analyzing Entity <Datapath> in library <work> (Architecture <behavioral>).
+Entity <Datapath> analyzed. Unit <Datapath> generated.
+
+Analyzing Entity <mux32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32Bit> analyzed. Unit <mux32Bit> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <IFSTAGE> in library <work> (Architecture <structral>).
+Entity <IFSTAGE> analyzed. Unit <IFSTAGE> generated.
+
+Analyzing Entity <IF_MEM> in library <work> (Architecture <syn>).
+Entity <IF_MEM> analyzed. Unit <IF_MEM> generated.
+
+Analyzing Entity <Adder> in library <work> (Architecture <behavioral>).
+Entity <Adder> analyzed. Unit <Adder> generated.
+
+Analyzing Entity <Reg32BitR> in library <work> (Architecture <structural>).
+Entity <Reg32BitR> analyzed. Unit <Reg32BitR> generated.
+
+Analyzing Entity <Reg4BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg4BitR> analyzed. Unit <Reg4BitR> generated.
+
+Analyzing Entity <Reg1BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg1BitR> analyzed. Unit <Reg1BitR> generated.
+
+Analyzing Entity <flipflop> in library <work> (Architecture <behavioral>).
+Entity <flipflop> analyzed. Unit <flipflop> generated.
+
+Analyzing Entity <DECODE> in library <work> (Architecture <behavioral>).
+Entity <DECODE> analyzed. Unit <DECODE> generated.
+
+Analyzing Entity <ImmedBox> in library <work> (Architecture <structural>).
+Entity <ImmedBox> analyzed. Unit <ImmedBox> generated.
+
+Analyzing Entity <mux16Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16Bit> analyzed. Unit <mux16Bit> generated.
+
+Analyzing Entity <mux5Bit> in library <work> (Architecture <behavioral>).
+Entity <mux5Bit> analyzed. Unit <mux5Bit> generated.
+
+Analyzing Entity <RegisterFile> in library <work> (Architecture <behavioral>).
+Entity <RegisterFile> analyzed. Unit <RegisterFile> generated.
+
+Analyzing Entity <Decoder5to32> in library <work> (Architecture <behavioral>).
+Entity <Decoder5to32> analyzed. Unit <Decoder5to32> generated.
+
+Analyzing Entity <demux> in library <work> (Architecture <behavioral>).
+Entity <demux> analyzed. Unit <demux> generated.
+
+Analyzing Entity <demux4to16> in library <work> (Architecture <behavioral>).
+Entity <demux4to16> analyzed. Unit <demux4to16> generated.
+
+Analyzing Entity <demux3to8> in library <work> (Architecture <behavioral>).
+Entity <demux3to8> analyzed. Unit <demux3to8> generated.
+
+Analyzing Entity <demux2to4> in library <work> (Architecture <behavioral>).
+Entity <demux2to4> analyzed. Unit <demux2to4> generated.
+
+Analyzing Entity <Reg32Bit> in library <work> (Architecture <structural>).
+Entity <Reg32Bit> analyzed. Unit <Reg32Bit> generated.
+
+Analyzing Entity <Reg4Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg4Bit> analyzed. Unit <Reg4Bit> generated.
+
+Analyzing Entity <Reg1Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg1Bit> analyzed. Unit <Reg1Bit> generated.
+
+Analyzing Entity <mux32to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32to1_32Bit> analyzed. Unit <mux32to1_32Bit> generated.
+
+Analyzing Entity <mux16to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16to1_32Bit> analyzed. Unit <mux16to1_32Bit> generated.
+
+Analyzing Entity <compareModule> in library <work> (Architecture <behavioral>).
+Entity <compareModule> analyzed. Unit <compareModule> generated.
+
+Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux8to1_32Bit> analyzed. Unit <mux8to1_32Bit> generated.
+
+Analyzing Entity <ALUSTAGE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:754 - "C:/Users/Mike/Desktop/organwsh/test/ALUSTAGE.vhd" line 46: Unconnected inout port 'Cout' of component 'ALU'.
+WARNING:Xst:754 - "C:/Users/Mike/Desktop/organwsh/test/ALUSTAGE.vhd" line 46: Unconnected inout port 'Ovf' of component 'ALU'.
+Entity <ALUSTAGE> analyzed. Unit <ALUSTAGE> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Reg8Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg8Bit> analyzed. Unit <Reg8Bit> generated.
+
+Analyzing Entity <mux4to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux4to1_32Bit> analyzed. Unit <mux4to1_32Bit> generated.
+
+Analyzing Entity <Incrementor> in library <work> (Architecture <behavioral>).
+Entity <Incrementor> analyzed. Unit <Incrementor> generated.
+
+Analyzing Entity <Data_MEM> in library <work> (Architecture <syn>).
+Entity <Data_MEM> analyzed. Unit <Data_MEM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Cmov_ControlUnit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Cmov_ControlUnit.vhd".
+Unit <Cmov_ControlUnit> synthesized.
+
+
+Synthesizing Unit <FSM>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/FSM.vhd".
+WARNING:Xst:647 - Input <Instr<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 26                                             |
+    | Transitions        | 58                                             |
+    | Inputs             | 23                                             |
+    | Outputs            | 28                                             |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | resetstate                                     |
+    | Power Up State     | resetstate                                     |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <B_Control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <AddByte_Fill>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <MEM_DataINSel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <packByte7_0_WrEn>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RF_WrData_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC_SEL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Reg8Bit31_24_WrEn>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_Bin_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC_LdEn>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RF_B_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <packByte15_8_WrEn>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemtoBctr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <AddByte_Empty>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Reg8Bit23_16_WrEn>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Addrsel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <ASBtoMEMaddr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <ALUop>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR_Control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <S_control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <A_Control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <FSM> synthesized.
+
+
+Synthesizing Unit <ALU_Control>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/ALU_Control.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <ALUctr$mux0002> created at line 20.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <ALU_Control> synthesized.
+
+
+Synthesizing Unit <Immed_Control>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Immed_Control.vhd".
+Unit <Immed_Control> synthesized.
+
+
+Synthesizing Unit <MemOutContolUnit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/sizeContolUnit.vhd".
+WARNING:Xst:647 - Input <Instr<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <MemOutContolUnit> synthesized.
+
+
+Synthesizing Unit <beqRM_MuxCtr>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/beqRM_MuxCtr.vhd".
+WARNING:Xst:647 - Input <Instr<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <beqRM_MuxCtr> synthesized.
+
+
+Synthesizing Unit <Incrementor>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Incrementor.vhd".
+    Found 32-bit adder for signal <output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Incrementor> synthesized.
+
+
+Synthesizing Unit <Data_MEM>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/MEMSTAGE.vhd".
+    Found 1024x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Data_MEM> synthesized.
+
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <IF_MEM>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/IF_MEM.vhd".
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 1024x32-bit ROM for signal <$varindex0000> created at line 36.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IF_MEM> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Adder.vhd".
+WARNING:Xst:1780 - Signal <shiftedImmed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit subtractor for signal <output>.
+    Found 32-bit adder for signal <output$addsub0000> created at line 17.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <flipflop>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/flipflop.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflop> synthesized.
+
+
+Synthesizing Unit <compareModule>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/compareModule.vhd".
+    Found 1-bit xor2 for signal <output$xor0000>.
+    Found 1-bit xor2 for signal <output$xor0001>.
+    Found 1-bit xor2 for signal <output$xor0002>.
+    Found 1-bit xor2 for signal <output$xor0003>.
+    Found 1-bit xor2 for signal <output$xor0004>.
+Unit <compareModule> synthesized.
+
+
+Synthesizing Unit <demux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/demux1bit.vhd".
+Unit <demux> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/top.vhd".
+WARNING:Xst:646 - Signal <BEs> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <OutEs$add0000> created at line 41.
+    Found 33-bit adder for signal <OutEs$addsub0000>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <CONTROL>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/CONTROL.vhd".
+Unit <CONTROL> synthesized.
+
+
+Synthesizing Unit <mux32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux32Bit.vhd".
+Unit <mux32Bit> synthesized.
+
+
+Synthesizing Unit <Reg1BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg1BitR.vhd".
+Unit <Reg1BitR> synthesized.
+
+
+Synthesizing Unit <mux5Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/rfer.vhd".
+Unit <mux5Bit> synthesized.
+
+
+Synthesizing Unit <mux16Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux16bit.vhd".
+Unit <mux16Bit> synthesized.
+
+
+Synthesizing Unit <demux2to4>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/demux2to4.vhd".
+Unit <demux2to4> synthesized.
+
+
+Synthesizing Unit <Reg1Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg1Bit.vhd".
+Unit <Reg1Bit> synthesized.
+
+
+Synthesizing Unit <ALUSTAGE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/ALUSTAGE.vhd".
+Unit <ALUSTAGE> synthesized.
+
+
+Synthesizing Unit <mux4to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux4to1_32Bit.vhd".
+Unit <mux4to1_32Bit> synthesized.
+
+
+Synthesizing Unit <Reg4BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg4BitR.vhd".
+Unit <Reg4BitR> synthesized.
+
+
+Synthesizing Unit <ImmedBox>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Extender16to32.vhd".
+Unit <ImmedBox> synthesized.
+
+
+Synthesizing Unit <demux3to8>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/demux3to8.vhd".
+Unit <demux3to8> synthesized.
+
+
+Synthesizing Unit <Reg4Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg4Bit.vhd".
+Unit <Reg4Bit> synthesized.
+
+
+Synthesizing Unit <Reg32BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg32BitR.vhd".
+Unit <Reg32BitR> synthesized.
+
+
+Synthesizing Unit <mux8to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux8to1_32Bit.vhd".
+Unit <mux8to1_32Bit> synthesized.
+
+
+Synthesizing Unit <Reg8Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg8Bit.vhd".
+Unit <Reg8Bit> synthesized.
+
+
+Synthesizing Unit <Reg32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Reg32Bit.vhd".
+Unit <Reg32Bit> synthesized.
+
+
+Synthesizing Unit <demux4to16>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/demux4to16.vhd".
+Unit <demux4to16> synthesized.
+
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/IFSTAGE.vhd".
+Unit <IFSTAGE> synthesized.
+
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/demux5to32.vhd".
+Unit <Decoder5to32> synthesized.
+
+
+Synthesizing Unit <mux16to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux16to1_32Bit.vhd".
+Unit <mux16to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux32to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/mux32to1_32Bit.vhd".
+Unit <mux32to1_32Bit> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/RegisterFile.vhd".
+WARNING:Xst:646 - Signal <decoderEn<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <RegisterFile> synthesized.
+
+
+Synthesizing Unit <DECODE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/DECODE.vhd".
+WARNING:Xst:647 - Input <Instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <DECODE> synthesized.
+
+
+Synthesizing Unit <Datapath>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/Datapath.vhd".
+Unit <Datapath> synthesized.
+
+
+Synthesizing Unit <processor>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/test/processor.vhd".
+Unit <processor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port RAM                           : 1
+# ROMs                                                 : 1
+ 1024x32-bit ROM                                       : 1
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 1
+# Registers                                            : 1266
+ 1-bit register                                        : 1264
+ 32-bit register                                       : 2
+# Latches                                              : 20
+ 1-bit latch                                           : 16
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CONTROL0/FSM0/currentState/FSM> on signal <currentState[1:26]> with one-hot encoding.
+-----------------------------------------------
+ State           | Encoding
+-----------------------------------------------
+ resetstate      | 00000000000000000000000001
+ instrfetch      | 00000000000000000000000010
+ instrdecode_bsl | 00000000000000000000000100
+ instrdecode_ri  | 00000000000000000000001000
+ instrdecode_b   | 00000000000000000000100000
+ alustage_sli    | 00000000000000000001000000
+ alustage_rb     | 00000000000000000100000000
+ nop             | 00000000000000000000010000
+ store           | 00000000000010000000000000
+ load            | 00000010000000000000000000
+ registerstore   | 00000000001000000000000000
+ preload         | 00000000000100000000000000
+ addbytea        | 00000000000000001000000000
+ addbyteb        | 00100000000000000000000000
+ addbytec        | 01000000000000000000000000
+ addbyted        | 10000000000000000000000000
+ bnebtomem       | 00000000000000000010000000
+ bnememtob       | 00000000000000010000000000
+ bytepacka       | 00000000000001000000000000
+ bytepackb       | 00000000010000000000000000
+ bytepackc       | 00000000100000000000000000
+ bytepackd       | 00000001000000000000000000
+ byteunpacka     | 00000000000000100000000000
+ byteunpackb     | 00000100000000000000000000
+ byteunpackc     | 00001000000000000000000000
+ byteunpackd     | 00010000000000000000000000
+-----------------------------------------------
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux32Bit1> is unconnected in block <mux4to1_32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux32Bit1> is unconnected in block <mux4to1_32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux9> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux32Bit1> is unconnected in block <mux4to1_32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <q> (without init value) has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Reg32Bit0> is unconnected in block <RegisterFile0>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <Data_MEM>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Data_MEM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IF_MEM>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <dout>.
+INFO:Xst:3225 - The RAM <Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <IF_MEM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 1024x32-bit single-port block RAM                     : 2
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 1
+# Registers                                            : 1264
+ Flip-Flops                                            : 1264
+# Latches                                              : 20
+ 1-bit latch                                           : 16
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <processor> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <FSM> ...
+
+Optimizing unit <Reg32BitR> ...
+
+Optimizing unit <Reg32Bit> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <Datapath> ...
+WARNING:Xst:1710 - FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit3/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit2/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit1/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit0/flipflop0/q> (without init value) has a constant value of 0 in block <processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/AddrRegister/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <processor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <processor>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block processor, actual ratio is 14.
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR2/flipflop0/q has been replicated 1 time(s)
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR3/flipflop0/q has been replicated 2 time(s)
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR7/Reg1BitR0/flipflop0/q has been replicated 2 time(s)
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR7/Reg1BitR1/flipflop0/q has been replicated 1 time(s)
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR7/Reg1BitR2/flipflop0/q has been replicated 2 time(s)
+FlipFlop Datapath0/IRReg32BitR/Reg4BitR7/Reg1BitR3/flipflop0/q has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1226
+ Flip-Flops                                            : 1226
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : processor.ngr
+Top Level Output File Name         : processor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 2982
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 18
+#      LUT2                        : 90
+#      LUT2_D                      : 8
+#      LUT2_L                      : 3
+#      LUT3                        : 365
+#      LUT3_D                      : 38
+#      LUT3_L                      : 9
+#      LUT4                        : 1801
+#      LUT4_D                      : 57
+#      LUT4_L                      : 187
+#      MUXCY                       : 115
+#      MUXF5                       : 172
+#      VCC                         : 1
+#      XORCY                       : 106
+# FlipFlops/Latches                : 1253
+#      FDC                         : 151
+#      FDCE                        : 1074
+#      FDP                         : 1
+#      LD                          : 27
+# RAMS                             : 4
+#      RAMB16_S18                  : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                     1908  out of  14752    12%  
+ Number of Slice Flip Flops:           1253  out of  29504     4%  
+ Number of 4 input LUTs:               2587  out of  29504     8%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    250    13%  
+ Number of BRAMs:                         4  out of     36    11%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------+-----------------------------------------+-------+
+Clock Signal                                                                     | Clock buffer(FF name)                   | Load  |
+---------------------------------------------------------------------------------+-----------------------------------------+-------+
+Clk                                                                              | BUFGP                                   | 1230  |
+CONTROL0/FSM0/AddByte_Fill_or0000(CONTROL0/FSM0/AddByte_Fill_or0000:O)           | NONE(*)(CONTROL0/FSM0/AddByte_Fill_2)   | 4     |
+CONTROL0/FSM0/MEM_DataINSel_or0000(CONTROL0/FSM0/MEM_DataINSel_or0000:O)         | NONE(*)(CONTROL0/FSM0/MEM_DataINSel_2)  | 3     |
+CONTROL0/FSM0/ALU_Bin_sel_or0000(CONTROL0/FSM0/ALU_Bin_sel_or0000:O)             | NONE(*)(CONTROL0/FSM0/ALUop_2)          | 4     |
+CONTROL0/FSM0/ASBtoMEMaddr_or0000(CONTROL0/FSM0/ASBtoMEMaddr_or0000:O)           | NONE(*)(CONTROL0/FSM0/ASBtoMEMaddr_1)   | 2     |
+CONTROL0/FSM0/B_Control_or0000(CONTROL0/FSM0/B_Control_or000025:O)               | NONE(*)(CONTROL0/FSM0/B_Control)        | 1     |
+CONTROL0/FSM0/packByte7_0_WrEn_or0000(CONTROL0/FSM0/packByte7_0_WrEn_or00001:O)  | NONE(*)(CONTROL0/FSM0/packByte7_0_WrEn) | 1     |
+CONTROL0/FSM0/RF_WrData_sel_or0000(CONTROL0/FSM0/RF_WrData_sel_or00001:O)        | NONE(*)(CONTROL0/FSM0/RF_WrData_sel)    | 1     |
+CONTROL0/FSM0/PC_SEL_or0000(CONTROL0/FSM0/PC_SEL_or0000:O)                       | NONE(*)(CONTROL0/FSM0/PC_SEL)           | 1     |
+CONTROL0/FSM0/Reg8Bit31_24_WrEn_or0000(CONTROL0/FSM0/Reg8Bit31_24_WrEn_or00001:O)| NONE(*)(CONTROL0/FSM0/Reg8Bit31_24_WrEn)| 1     |
+CONTROL0/FSM0/PC_LdEn_or0000(CONTROL0/FSM0/PC_LdEn_or0000_wg_cy<6>:O)            | NONE(*)(CONTROL0/FSM0/PC_LdEn)          | 1     |
+CONTROL0/FSM0/RF_B_sel_or0000(CONTROL0/FSM0/RF_B_sel_or00001:O)                  | NONE(*)(CONTROL0/FSM0/RF_B_sel)         | 1     |
+CONTROL0/FSM0/packByte15_8_WrEn_or0000(CONTROL0/FSM0/packByte15_8_WrEn_or00001:O)| NONE(*)(CONTROL0/FSM0/packByte15_8_WrEn)| 1     |
+CONTROL0/FSM0/B_Control_mux0000(CONTROL0/FSM0/B_Control_mux00001:O)              | NONE(*)(CONTROL0/FSM0/MemtoBctr)        | 1     |
+CONTROL0/FSM0/AddByte_Fill_mux0000<1>(CONTROL0/FSM0/AddByte_Fill_mux0000<1>1:O)  | NONE(*)(CONTROL0/FSM0/Reg8Bit23_16_WrEn)| 1     |
+CONTROL0/FSM0/Addrsel_or0000(CONTROL0/FSM0/Addrsel_or000025:O)                   | NONE(*)(CONTROL0/FSM0/Addrsel)          | 1     |
+CONTROL0/FSM0/IR_Control_or0000(CONTROL0/FSM0/IR_Control_or000016_f5:O)          | NONE(*)(CONTROL0/FSM0/IR_Control)       | 1     |
+CONTROL0/FSM0/S_control_or0000(CONTROL0/FSM0/S_control_or00001:O)                | NONE(*)(CONTROL0/FSM0/S_control)        | 1     |
+CONTROL0/FSM0/A_Control_or0000(CONTROL0/FSM0/A_Control_or000010:O)               | NONE(*)(CONTROL0/FSM0/A_Control)        | 1     |
+---------------------------------------------------------------------------------+-----------------------------------------+-------+
+(*) These 18 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+Control Signal                                                               | Buffer(FF name)                                           | Load  |
+-----------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/muxOut(XST_GND:G)| NONE(Datapath0/AReg32BitR/Reg4BitR0/Reg1BitR0/flipflop0/q)| 1188  |
+Reset                                                                        | IBUF                                                      | 38    |
+-----------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 13.713ns (Maximum Frequency: 72.925MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.810ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 13.713ns (frequency: 72.925MHz)
+  Total number of paths / destination ports: 495850 / 2291
+-------------------------------------------------------------------------
+Delay:               13.713ns (Levels of Logic = 23)
+  Source:            Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR3/flipflop0/q_1 (FF)
+  Destination:       CONTROL0/FSM0/currentState_FSM_FFd21 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR3/flipflop0/q_1 to CONTROL0/FSM0/currentState_FSM_FFd21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.514   0.651  Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR3/flipflop0/q_1 (Datapath0/IRReg32BitR/Reg4BitR6/Reg1BitR3/flipflop0/q_1)
+     LUT2_L:I0->LO         1   0.612   0.103  CONTROL0/beqRM_MuxCtr0/ALU_in0ctr_and0000_SW0 (N102)
+     LUT4:I3->O           43   0.612   1.079  CONTROL0/beqRM_MuxCtr0/ALU_in0ctr_and0000 (CONTROL0/beqRM_MuxCtr0/ALU_in0ctr_and0000)
+     LUT4_D:I3->O         15   0.612   0.867  Datapath0/mux_beqRM_ALU/mux10/output21 (Datapath0/N8)
+     LUT4:I3->O            5   0.612   0.541  Datapath0/mux_beqRM_ALU/mux9/output1 (Datapath0/ALU_inA<9>)
+     LUT4:I3->O            1   0.612   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_lut<9> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_lut<9>)
+     MUXCY:S->O            1   0.404   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<9> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<10> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<11> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<12> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<13> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<14> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<15> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<16> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<17> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<18> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<19> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<20> (Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_cy<20>)
+     XORCY:CI->O           1   0.699   0.360  Datapath0/ALUSTAGE0/ALU0/Madd_OutEs_addsub0000_xor<21> (Datapath0/ALUSTAGE0/ALU0/OutEs_addsub0000<21>)
+     LUT4:I3->O            2   0.612   0.410  Datapath0/ALUSTAGE0/ALU0/Outt_21_mux000089 (Datapath0/ALUstage_out<21>)
+     LUT4:I2->O            1   0.612   0.360  Datapath0/ALUSTAGE0/ALU0/Zero314_SW0 (N164)
+     LUT4:I3->O            2   0.612   0.410  Datapath0/ALUSTAGE0/ALU0/Zero314 (Datapath0/ALUSTAGE0/ALU0/Zero314)
+     LUT4_D:I2->O          1   0.612   0.360  Datapath0/ALUSTAGE0/ALU0/Zero342 (Zero)
+     LUT4:I3->O            1   0.612   0.000  CONTROL0/FSM0/currentState_FSM_FFd21-In82 (CONTROL0/FSM0/currentState_FSM_FFd21-In)
+     FDC:D                     0.268          CONTROL0/FSM0/currentState_FSM_FFd21
+    ----------------------------------------
+    Total                     13.713ns (8.571ns logic, 5.141ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.810ns (Levels of Logic = 1)
+  Source:            Datapath0/IRReg32BitR/Reg4BitR5/Reg1BitR3/flipflop0/q (FF)
+  Destination:       instrOut<23> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Datapath0/IRReg32BitR/Reg4BitR5/Reg1BitR3/flipflop0/q to instrOut<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           233   0.514   1.127  Datapath0/IRReg32BitR/Reg4BitR5/Reg1BitR3/flipflop0/q (Datapath0/IRReg32BitR/Reg4BitR5/Reg1BitR3/flipflop0/q)
+     OBUF:I->O                 3.169          instrOut_23_OBUF (instrOut<23>)
+    ----------------------------------------
+    Total                      4.810ns (3.683ns logic, 1.127ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.97 secs
+ 
+--> 
+
+Total memory usage is 377732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  284 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

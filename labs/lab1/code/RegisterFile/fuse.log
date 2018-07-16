@@ -1,0 +1,53 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile_Test_isim_beh.exe -prj C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile_Test_beh.prj work.RegisterFile_Test 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/demux1bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux4to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/flipflop.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/demux2to4.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/Reg1Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/demux3to8.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/Reg4Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux16to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/demux4to16.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/Reg32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/demux5to32.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/compareModule.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile_Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 158976 KB
+Fuse CPU Usage: 328 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity demux [demux_default]
+Compiling architecture behavioral of entity demux2to4 [demux2to4_default]
+Compiling architecture behavioral of entity demux3to8 [demux3to8_default]
+Compiling architecture behavioral of entity demux4to16 [demux4to16_default]
+Compiling architecture behavioral of entity Decoder5to32 [decoder5to32_default]
+Compiling architecture behavioral of entity mux [mux_default]
+Compiling architecture behavioral of entity flipflop [flipflop_default]
+Compiling architecture behavioral of entity Reg1Bit [reg1bit_default]
+Compiling architecture behavioral of entity Reg4Bit [reg4bit_default]
+Compiling architecture structural of entity Reg32Bit [reg32bit_default]
+Compiling architecture behavioral of entity mux32Bit [mux32bit_default]
+Compiling architecture behavioral of entity mux4to1_32Bit [mux4to1_32bit_default]
+Compiling architecture behavioral of entity mux8to1_32Bit [mux8to1_32bit_default]
+Compiling architecture behavioral of entity mux16to1_32Bit [mux16to1_32bit_default]
+Compiling architecture behavioral of entity mux32to1_32Bit [mux32to1_32bit_default]
+Compiling architecture behavioral of entity compareModule [comparemodule_default]
+Compiling architecture behavioral of entity RegisterFile [registerfile_default]
+Compiling architecture behavior of entity registerfile_test
+Time Resolution for simulation is 1ps.
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 37 VHDL Units
+Built simulation executable C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile_Test_isim_beh.exe
+Fuse Memory Usage: 169928 KB
+Fuse CPU Usage: 577 ms

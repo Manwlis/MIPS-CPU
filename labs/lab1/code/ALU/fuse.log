@@ -1,0 +1,23 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Mike/Desktop/organwsh/lab1/testA_isim_beh.exe -prj C:/Users/Mike/Desktop/organwsh/lab1/testA_beh.prj work.testA 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1/top.vhd" into library work
+Parsing VHDL file "C:/Users/Mike/Desktop/organwsh/lab1/testA.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 158144 KB
+Fuse CPU Usage: 249 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavior of entity testa
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/Mike/Desktop/organwsh/lab1/testA_isim_beh.exe
+Fuse Memory Usage: 174152 KB
+Fuse CPU Usage: 359 ms

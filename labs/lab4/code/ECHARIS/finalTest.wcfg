@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/MHL-09/Desktop/lab4/ECHARIS/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/instrout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instrout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instrout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/CONTROL0/FSM0/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/uut/Datapath0/IFSTAGE0/Reg32BitR0/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group23" type="group">
+      <obj_property name="label">REGS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in0[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in2[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in3[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in4" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in4[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in5" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in5[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in6" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in6[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in6[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in7" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in7[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in8" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in8[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in8[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in9" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in9[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in9[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in14" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in14[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in14[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in15" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in15[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in15[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in16" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in16[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in16[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in17" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in17[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in17[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in18" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in18[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in18[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in21" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in21[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in21[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">ram[23]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">ram[22]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">ram[21]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">ram[20]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">ram[0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">ram[1]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">ram[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">ram[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">ram[25]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">ram[26]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">ram[27]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/Datapath0/Data_MEM0/ram[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">ram[28]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 processor.ngc processor.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o processor_map.ncd processor.ngd processor.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 processor.ngc processor.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o processor_map.ncd processor.ngd processor.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+netgen -intstyle ise -ar Structure -tm processor -w -dir netgen/synthesis -ofmt vhdl -sim processor.ngc processor_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/Processor/processor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/Processor/processor.syr" 

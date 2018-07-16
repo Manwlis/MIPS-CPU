@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 ALUSTAGE.ngc ALUSTAGE.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUSTAGE_map.ncd ALUSTAGE.ngd ALUSTAGE.pcf 
+par -w -intstyle ise -ol high -t 1 ALUSTAGE_map.ncd ALUSTAGE.ncd ALUSTAGE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALUSTAGE.twx ALUSTAGE.ncd -o ALUSTAGE.twr ALUSTAGE.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 ALUSTAGE.ngc ALUSTAGE.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUSTAGE_map.ncd ALUSTAGE.ngd ALUSTAGE.pcf 
+par -w -intstyle ise -ol high -t 1 ALUSTAGE_map.ncd ALUSTAGE.ncd ALUSTAGE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ALUSTAGE.twx ALUSTAGE.ncd -o ALUSTAGE.twr ALUSTAGE.pcf 
+bitgen -intstyle ise -f ALUSTAGE.ut ALUSTAGE.ncd 

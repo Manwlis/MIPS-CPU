@@ -1,0 +1,4 @@
+vhdl work "mux.vhd"
+vhdl work "mux16bit.vhd"
+vhdl work "Extender16to32.vhd"
+vhdl work "ext_test.vhd"

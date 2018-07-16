@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">ROM</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">dout</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit31_28/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit31_28/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit31_28/Reg1Bit2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit31_28/Reg1Bit3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit27_24/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit27_24/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit27_24/Reg1Bit2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit27_24/Reg1Bit3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit23_20/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit23_20/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit23_20/Reg1Bit2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit23_20/Reg1Bit3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit19_16/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit19_16/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit19_16/Reg1Bit2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit19_16/Reg1Bit3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit15_12/Reg1Bit0/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit15_12/Reg1Bit1/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit15_12/Reg1Bit2/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Reg32Bit0/Reg4Bit15_12/Reg1Bit3/flipflop0/q</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IFSTAGE</arg>&gt;.
+</msg>
+
+</messages>
+

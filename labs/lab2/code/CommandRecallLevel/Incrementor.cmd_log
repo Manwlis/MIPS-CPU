@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/Incrementor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 Incrementor.ngc Incrementor.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o Incrementor_map.ncd Incrementor.ngd Incrementor.pcf 
+par -w -intstyle ise -ol high -t 1 Incrementor_map.ncd Incrementor.ncd Incrementor.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Incrementor.twx Incrementor.ncd -o Incrementor.twr Incrementor.pcf 

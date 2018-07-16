@@ -1,0 +1,6 @@
+vhdl isim_temp "mux.vhd"
+vhdl isim_temp "flipflop.vhd"
+vhdl isim_temp "Reg1Bit.vhd"
+vhdl isim_temp "Reg4Bit.vhd"
+vhdl isim_temp "Reg32Bit.vhd"
+vhdl isim_temp "reg32bit_test.vhd"

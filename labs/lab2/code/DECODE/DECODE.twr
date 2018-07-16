@@ -1,0 +1,1150 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml DECODE.twx DECODE.ncd -o DECODE.twr DECODE.pcf
+
+Design file:              DECODE.ncd
+Physical constraint file: DECODE.pcf
+Device,package,speed:     xc3s1600e,fg320,-5 (PRODUCTION 1.27 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+-------------+------------+------------+------------------+--------+
+             |Max Setup to|Max Hold to |                  | Clock  |
+Source       | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------------+--------+
+ALU_out<0>   |    3.880(R)|    0.216(R)|Clk_BUFGP         |   0.000|
+ALU_out<1>   |    2.979(R)|    0.496(R)|Clk_BUFGP         |   0.000|
+ALU_out<2>   |    3.153(R)|    0.523(R)|Clk_BUFGP         |   0.000|
+ALU_out<3>   |    4.383(R)|    0.567(R)|Clk_BUFGP         |   0.000|
+ALU_out<4>   |    4.043(R)|    0.941(R)|Clk_BUFGP         |   0.000|
+ALU_out<5>   |    3.523(R)|    0.991(R)|Clk_BUFGP         |   0.000|
+ALU_out<6>   |    4.239(R)|    0.646(R)|Clk_BUFGP         |   0.000|
+ALU_out<7>   |    3.969(R)|   -0.070(R)|Clk_BUFGP         |   0.000|
+ALU_out<8>   |    5.652(R)|    0.222(R)|Clk_BUFGP         |   0.000|
+ALU_out<9>   |    3.434(R)|    0.546(R)|Clk_BUFGP         |   0.000|
+ALU_out<10>  |    5.148(R)|    0.226(R)|Clk_BUFGP         |   0.000|
+ALU_out<11>  |    3.056(R)|    0.986(R)|Clk_BUFGP         |   0.000|
+ALU_out<12>  |    5.311(R)|    0.167(R)|Clk_BUFGP         |   0.000|
+ALU_out<13>  |    3.543(R)|    0.557(R)|Clk_BUFGP         |   0.000|
+ALU_out<14>  |    3.887(R)|    0.293(R)|Clk_BUFGP         |   0.000|
+ALU_out<15>  |    4.547(R)|    0.269(R)|Clk_BUFGP         |   0.000|
+ALU_out<16>  |    5.140(R)|   -0.091(R)|Clk_BUFGP         |   0.000|
+ALU_out<17>  |    4.413(R)|    0.259(R)|Clk_BUFGP         |   0.000|
+ALU_out<18>  |    4.821(R)|    0.441(R)|Clk_BUFGP         |   0.000|
+ALU_out<19>  |    5.895(R)|    0.379(R)|Clk_BUFGP         |   0.000|
+ALU_out<20>  |    5.041(R)|    0.016(R)|Clk_BUFGP         |   0.000|
+ALU_out<21>  |    5.068(R)|    0.384(R)|Clk_BUFGP         |   0.000|
+ALU_out<22>  |    5.260(R)|    0.239(R)|Clk_BUFGP         |   0.000|
+ALU_out<23>  |    4.411(R)|    0.381(R)|Clk_BUFGP         |   0.000|
+ALU_out<24>  |    4.741(R)|    0.256(R)|Clk_BUFGP         |   0.000|
+ALU_out<25>  |    5.119(R)|    0.217(R)|Clk_BUFGP         |   0.000|
+ALU_out<26>  |    3.989(R)|    0.446(R)|Clk_BUFGP         |   0.000|
+ALU_out<27>  |    5.416(R)|   -0.262(R)|Clk_BUFGP         |   0.000|
+ALU_out<28>  |    4.254(R)|    0.320(R)|Clk_BUFGP         |   0.000|
+ALU_out<29>  |    3.791(R)|    0.473(R)|Clk_BUFGP         |   0.000|
+ALU_out<30>  |    4.907(R)|   -0.202(R)|Clk_BUFGP         |   0.000|
+ALU_out<31>  |    5.756(R)|    0.063(R)|Clk_BUFGP         |   0.000|
+Instr<16>    |   13.389(R)|   -3.073(R)|Clk_BUFGP         |   0.000|
+Instr<17>    |   13.290(R)|   -2.012(R)|Clk_BUFGP         |   0.000|
+Instr<18>    |   10.967(R)|   -1.485(R)|Clk_BUFGP         |   0.000|
+Instr<19>    |   12.881(R)|   -1.985(R)|Clk_BUFGP         |   0.000|
+Instr<20>    |   12.163(R)|   -2.244(R)|Clk_BUFGP         |   0.000|
+MEM_out<0>   |    4.899(R)|   -0.599(R)|Clk_BUFGP         |   0.000|
+MEM_out<1>   |    4.333(R)|   -0.587(R)|Clk_BUFGP         |   0.000|
+MEM_out<2>   |    5.535(R)|   -1.383(R)|Clk_BUFGP         |   0.000|
+MEM_out<3>   |    6.569(R)|   -1.181(R)|Clk_BUFGP         |   0.000|
+MEM_out<4>   |    6.712(R)|   -1.194(R)|Clk_BUFGP         |   0.000|
+MEM_out<5>   |    6.142(R)|   -1.104(R)|Clk_BUFGP         |   0.000|
+MEM_out<6>   |    6.732(R)|   -1.348(R)|Clk_BUFGP         |   0.000|
+MEM_out<7>   |    4.497(R)|   -0.493(R)|Clk_BUFGP         |   0.000|
+MEM_out<8>   |    6.897(R)|   -0.773(R)|Clk_BUFGP         |   0.000|
+MEM_out<9>   |    5.594(R)|   -1.181(R)|Clk_BUFGP         |   0.000|
+MEM_out<10>  |    5.704(R)|   -0.219(R)|Clk_BUFGP         |   0.000|
+MEM_out<11>  |    4.475(R)|   -0.150(R)|Clk_BUFGP         |   0.000|
+MEM_out<12>  |    5.691(R)|   -0.137(R)|Clk_BUFGP         |   0.000|
+MEM_out<13>  |    5.266(R)|   -0.822(R)|Clk_BUFGP         |   0.000|
+MEM_out<14>  |    5.395(R)|   -0.913(R)|Clk_BUFGP         |   0.000|
+MEM_out<15>  |    5.530(R)|   -0.517(R)|Clk_BUFGP         |   0.000|
+MEM_out<16>  |    5.762(R)|   -0.588(R)|Clk_BUFGP         |   0.000|
+MEM_out<17>  |    5.180(R)|   -0.354(R)|Clk_BUFGP         |   0.000|
+MEM_out<18>  |    6.029(R)|   -0.525(R)|Clk_BUFGP         |   0.000|
+MEM_out<19>  |    6.920(R)|   -0.442(R)|Clk_BUFGP         |   0.000|
+MEM_out<20>  |    5.738(R)|   -0.542(R)|Clk_BUFGP         |   0.000|
+MEM_out<21>  |    6.089(R)|   -0.432(R)|Clk_BUFGP         |   0.000|
+MEM_out<22>  |    5.876(R)|   -0.255(R)|Clk_BUFGP         |   0.000|
+MEM_out<23>  |    5.605(R)|   -0.574(R)|Clk_BUFGP         |   0.000|
+MEM_out<24>  |    5.432(R)|   -0.296(R)|Clk_BUFGP         |   0.000|
+MEM_out<25>  |    5.135(R)|    0.204(R)|Clk_BUFGP         |   0.000|
+MEM_out<26>  |    5.119(R)|   -0.458(R)|Clk_BUFGP         |   0.000|
+MEM_out<27>  |    5.157(R)|   -0.054(R)|Clk_BUFGP         |   0.000|
+MEM_out<28>  |    5.132(R)|   -0.382(R)|Clk_BUFGP         |   0.000|
+MEM_out<29>  |    4.402(R)|   -0.015(R)|Clk_BUFGP         |   0.000|
+MEM_out<30>  |    4.463(R)|    0.153(R)|Clk_BUFGP         |   0.000|
+MEM_out<31>  |    5.814(R)|    0.017(R)|Clk_BUFGP         |   0.000|
+RF_WrData_sel|   11.409(R)|   -0.376(R)|Clk_BUFGP         |   0.000|
+RF_WrEn      |   11.346(R)|   -1.773(R)|Clk_BUFGP         |   0.000|
+-------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+RF_A<0>     |   12.374(R)|Clk_BUFGP         |   0.000|
+RF_A<1>     |   12.878(R)|Clk_BUFGP         |   0.000|
+RF_A<2>     |   13.653(R)|Clk_BUFGP         |   0.000|
+RF_A<3>     |   14.237(R)|Clk_BUFGP         |   0.000|
+RF_A<4>     |   13.177(R)|Clk_BUFGP         |   0.000|
+RF_A<5>     |   14.430(R)|Clk_BUFGP         |   0.000|
+RF_A<6>     |   14.560(R)|Clk_BUFGP         |   0.000|
+RF_A<7>     |   13.772(R)|Clk_BUFGP         |   0.000|
+RF_A<8>     |   14.598(R)|Clk_BUFGP         |   0.000|
+RF_A<9>     |   12.541(R)|Clk_BUFGP         |   0.000|
+RF_A<10>    |   15.901(R)|Clk_BUFGP         |   0.000|
+RF_A<11>    |   14.614(R)|Clk_BUFGP         |   0.000|
+RF_A<12>    |   12.643(R)|Clk_BUFGP         |   0.000|
+RF_A<13>    |   14.187(R)|Clk_BUFGP         |   0.000|
+RF_A<14>    |   13.768(R)|Clk_BUFGP         |   0.000|
+RF_A<15>    |   13.548(R)|Clk_BUFGP         |   0.000|
+RF_A<16>    |   14.376(R)|Clk_BUFGP         |   0.000|
+RF_A<17>    |   14.648(R)|Clk_BUFGP         |   0.000|
+RF_A<18>    |   14.055(R)|Clk_BUFGP         |   0.000|
+RF_A<19>    |   15.130(R)|Clk_BUFGP         |   0.000|
+RF_A<20>    |   15.675(R)|Clk_BUFGP         |   0.000|
+RF_A<21>    |   13.977(R)|Clk_BUFGP         |   0.000|
+RF_A<22>    |   14.629(R)|Clk_BUFGP         |   0.000|
+RF_A<23>    |   14.539(R)|Clk_BUFGP         |   0.000|
+RF_A<24>    |   15.190(R)|Clk_BUFGP         |   0.000|
+RF_A<25>    |   14.735(R)|Clk_BUFGP         |   0.000|
+RF_A<26>    |   13.710(R)|Clk_BUFGP         |   0.000|
+RF_A<27>    |   15.364(R)|Clk_BUFGP         |   0.000|
+RF_A<28>    |   14.412(R)|Clk_BUFGP         |   0.000|
+RF_A<29>    |   14.123(R)|Clk_BUFGP         |   0.000|
+RF_A<30>    |   14.760(R)|Clk_BUFGP         |   0.000|
+RF_A<31>    |   14.465(R)|Clk_BUFGP         |   0.000|
+RF_B<0>     |   12.949(R)|Clk_BUFGP         |   0.000|
+RF_B<1>     |   12.351(R)|Clk_BUFGP         |   0.000|
+RF_B<2>     |   13.286(R)|Clk_BUFGP         |   0.000|
+RF_B<3>     |   13.250(R)|Clk_BUFGP         |   0.000|
+RF_B<4>     |   12.834(R)|Clk_BUFGP         |   0.000|
+RF_B<5>     |   13.223(R)|Clk_BUFGP         |   0.000|
+RF_B<6>     |   13.692(R)|Clk_BUFGP         |   0.000|
+RF_B<7>     |   13.083(R)|Clk_BUFGP         |   0.000|
+RF_B<8>     |   12.850(R)|Clk_BUFGP         |   0.000|
+RF_B<9>     |   12.680(R)|Clk_BUFGP         |   0.000|
+RF_B<10>    |   12.755(R)|Clk_BUFGP         |   0.000|
+RF_B<11>    |   12.870(R)|Clk_BUFGP         |   0.000|
+RF_B<12>    |   13.104(R)|Clk_BUFGP         |   0.000|
+RF_B<13>    |   14.530(R)|Clk_BUFGP         |   0.000|
+RF_B<14>    |   13.150(R)|Clk_BUFGP         |   0.000|
+RF_B<15>    |   13.284(R)|Clk_BUFGP         |   0.000|
+RF_B<16>    |   14.789(R)|Clk_BUFGP         |   0.000|
+RF_B<17>    |   13.472(R)|Clk_BUFGP         |   0.000|
+RF_B<18>    |   14.674(R)|Clk_BUFGP         |   0.000|
+RF_B<19>    |   13.954(R)|Clk_BUFGP         |   0.000|
+RF_B<20>    |   14.112(R)|Clk_BUFGP         |   0.000|
+RF_B<21>    |   14.760(R)|Clk_BUFGP         |   0.000|
+RF_B<22>    |   14.241(R)|Clk_BUFGP         |   0.000|
+RF_B<23>    |   13.529(R)|Clk_BUFGP         |   0.000|
+RF_B<24>    |   13.325(R)|Clk_BUFGP         |   0.000|
+RF_B<25>    |   13.304(R)|Clk_BUFGP         |   0.000|
+RF_B<26>    |   13.449(R)|Clk_BUFGP         |   0.000|
+RF_B<27>    |   12.734(R)|Clk_BUFGP         |   0.000|
+RF_B<28>    |   13.601(R)|Clk_BUFGP         |   0.000|
+RF_B<29>    |   12.729(R)|Clk_BUFGP         |   0.000|
+RF_B<30>    |   13.190(R)|Clk_BUFGP         |   0.000|
+RF_B<31>    |   13.379(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ALU_out<0>     |RF_A<0>        |    9.418|
+ALU_out<0>     |RF_B<0>        |    8.772|
+ALU_out<1>     |RF_A<1>        |    9.507|
+ALU_out<1>     |RF_B<1>        |    8.282|
+ALU_out<2>     |RF_A<2>        |    9.989|
+ALU_out<2>     |RF_B<2>        |    9.729|
+ALU_out<3>     |RF_A<3>        |   10.388|
+ALU_out<3>     |RF_B<3>        |    9.329|
+ALU_out<4>     |RF_A<4>        |    9.369|
+ALU_out<4>     |RF_B<4>        |    9.515|
+ALU_out<5>     |RF_A<5>        |    9.336|
+ALU_out<5>     |RF_B<5>        |    7.785|
+ALU_out<6>     |RF_A<6>        |   10.518|
+ALU_out<6>     |RF_B<6>        |    9.122|
+ALU_out<7>     |RF_A<7>        |   10.024|
+ALU_out<7>     |RF_B<7>        |    9.930|
+ALU_out<8>     |RF_A<8>        |   11.384|
+ALU_out<8>     |RF_B<8>        |    9.777|
+ALU_out<9>     |RF_A<9>        |    9.596|
+ALU_out<9>     |RF_B<9>        |    9.735|
+ALU_out<10>    |RF_A<10>       |   11.671|
+ALU_out<10>    |RF_B<10>       |    9.019|
+ALU_out<11>    |RF_A<11>       |   10.495|
+ALU_out<11>    |RF_B<11>       |    7.786|
+ALU_out<12>    |RF_A<12>       |   11.014|
+ALU_out<12>    |RF_B<12>       |    8.885|
+ALU_out<13>    |RF_A<13>       |   10.871|
+ALU_out<13>    |RF_B<13>       |   10.376|
+ALU_out<14>    |RF_A<14>       |   10.357|
+ALU_out<14>    |RF_B<14>       |    9.709|
+ALU_out<15>    |RF_A<15>       |   10.597|
+ALU_out<15>    |RF_B<15>       |   10.667|
+ALU_out<16>    |RF_A<16>       |   11.868|
+ALU_out<16>    |RF_B<16>       |   11.251|
+ALU_out<17>    |RF_A<17>       |   10.126|
+ALU_out<17>    |RF_B<17>       |    9.988|
+ALU_out<18>    |RF_A<18>       |   10.773|
+ALU_out<18>    |RF_B<18>       |   11.078|
+ALU_out<19>    |RF_A<19>       |   11.961|
+ALU_out<19>    |RF_B<19>       |    9.484|
+ALU_out<20>    |RF_A<20>       |   12.009|
+ALU_out<20>    |RF_B<20>       |   10.174|
+ALU_out<21>    |RF_A<21>       |   10.999|
+ALU_out<21>    |RF_B<21>       |   10.516|
+ALU_out<22>    |RF_A<22>       |   12.389|
+ALU_out<22>    |RF_B<22>       |    9.920|
+ALU_out<23>    |RF_A<23>       |   11.639|
+ALU_out<23>    |RF_B<23>       |    8.921|
+ALU_out<24>    |RF_A<24>       |   11.530|
+ALU_out<24>    |RF_B<24>       |    8.704|
+ALU_out<25>    |RF_A<25>       |   10.822|
+ALU_out<25>    |RF_B<25>       |    9.364|
+ALU_out<26>    |RF_A<26>       |   11.177|
+ALU_out<26>    |RF_B<26>       |    9.724|
+ALU_out<27>    |RF_A<27>       |   12.499|
+ALU_out<27>    |RF_B<27>       |    8.725|
+ALU_out<28>    |RF_A<28>       |   10.679|
+ALU_out<28>    |RF_B<28>       |   10.075|
+ALU_out<29>    |RF_A<29>       |   11.109|
+ALU_out<29>    |RF_B<29>       |    8.922|
+ALU_out<30>    |RF_A<30>       |   12.628|
+ALU_out<30>    |RF_B<30>       |    9.928|
+ALU_out<31>    |RF_A<31>       |   11.458|
+ALU_out<31>    |RF_B<31>       |    9.436|
+Instr<0>       |Immed<0>       |    6.140|
+Instr<0>       |Immed<2>       |    6.143|
+Instr<1>       |Immed<1>       |    6.076|
+Instr<1>       |Immed<3>       |    5.837|
+Instr<2>       |Immed<2>       |    6.270|
+Instr<2>       |Immed<4>       |    6.187|
+Instr<3>       |Immed<3>       |    6.692|
+Instr<3>       |Immed<5>       |    6.530|
+Instr<4>       |Immed<4>       |    6.814|
+Instr<4>       |Immed<6>       |    5.987|
+Instr<5>       |Immed<5>       |    6.752|
+Instr<5>       |Immed<7>       |    6.769|
+Instr<6>       |Immed<6>       |    6.480|
+Instr<6>       |Immed<8>       |    5.962|
+Instr<7>       |Immed<7>       |    6.999|
+Instr<7>       |Immed<9>       |    5.726|
+Instr<8>       |Immed<8>       |    5.934|
+Instr<8>       |Immed<10>      |    5.757|
+Instr<9>       |Immed<9>       |    6.505|
+Instr<9>       |Immed<11>      |    6.289|
+Instr<10>      |Immed<10>      |    5.195|
+Instr<10>      |Immed<12>      |    5.833|
+Instr<11>      |Immed<11>      |    6.205|
+Instr<11>      |Immed<13>      |    5.461|
+Instr<11>      |RF_B<0>        |   15.207|
+Instr<11>      |RF_B<1>        |   14.497|
+Instr<11>      |RF_B<2>        |   15.425|
+Instr<11>      |RF_B<3>        |   15.538|
+Instr<11>      |RF_B<4>        |   15.308|
+Instr<11>      |RF_B<5>        |   15.184|
+Instr<11>      |RF_B<6>        |   15.645|
+Instr<11>      |RF_B<7>        |   18.575|
+Instr<11>      |RF_B<8>        |   17.604|
+Instr<11>      |RF_B<9>        |   14.909|
+Instr<11>      |RF_B<10>       |   18.799|
+Instr<11>      |RF_B<11>       |   19.016|
+Instr<11>      |RF_B<12>       |   19.499|
+Instr<11>      |RF_B<13>       |   18.837|
+Instr<11>      |RF_B<14>       |   15.425|
+Instr<11>      |RF_B<15>       |   16.992|
+Instr<11>      |RF_B<16>       |   16.739|
+Instr<11>      |RF_B<17>       |   16.976|
+Instr<11>      |RF_B<18>       |   17.584|
+Instr<11>      |RF_B<19>       |   17.793|
+Instr<11>      |RF_B<20>       |   17.345|
+Instr<11>      |RF_B<21>       |   17.804|
+Instr<11>      |RF_B<22>       |   18.079|
+Instr<11>      |RF_B<23>       |   18.506|
+Instr<11>      |RF_B<24>       |   17.099|
+Instr<11>      |RF_B<25>       |   18.471|
+Instr<11>      |RF_B<26>       |   18.212|
+Instr<11>      |RF_B<27>       |   18.526|
+Instr<11>      |RF_B<28>       |   18.210|
+Instr<11>      |RF_B<29>       |   17.931|
+Instr<11>      |RF_B<30>       |   18.903|
+Instr<11>      |RF_B<31>       |   18.860|
+Instr<12>      |Immed<12>      |    7.427|
+Instr<12>      |Immed<14>      |    6.076|
+Instr<12>      |RF_B<0>        |   19.195|
+Instr<12>      |RF_B<1>        |   16.740|
+Instr<12>      |RF_B<2>        |   17.250|
+Instr<12>      |RF_B<3>        |   18.578|
+Instr<12>      |RF_B<4>        |   19.248|
+Instr<12>      |RF_B<5>        |   18.037|
+Instr<12>      |RF_B<6>        |   18.018|
+Instr<12>      |RF_B<7>        |   18.602|
+Instr<12>      |RF_B<8>        |   18.652|
+Instr<12>      |RF_B<9>        |   15.782|
+Instr<12>      |RF_B<10>       |   19.490|
+Instr<12>      |RF_B<11>       |   19.300|
+Instr<12>      |RF_B<12>       |   19.468|
+Instr<12>      |RF_B<13>       |   20.004|
+Instr<12>      |RF_B<14>       |   16.471|
+Instr<12>      |RF_B<15>       |   16.744|
+Instr<12>      |RF_B<16>       |   18.388|
+Instr<12>      |RF_B<17>       |   18.609|
+Instr<12>      |RF_B<18>       |   18.703|
+Instr<12>      |RF_B<19>       |   20.418|
+Instr<12>      |RF_B<20>       |   20.044|
+Instr<12>      |RF_B<21>       |   19.489|
+Instr<12>      |RF_B<22>       |   20.415|
+Instr<12>      |RF_B<23>       |   20.667|
+Instr<12>      |RF_B<24>       |   19.767|
+Instr<12>      |RF_B<25>       |   20.305|
+Instr<12>      |RF_B<26>       |   19.319|
+Instr<12>      |RF_B<27>       |   20.187|
+Instr<12>      |RF_B<28>       |   20.029|
+Instr<12>      |RF_B<29>       |   18.952|
+Instr<12>      |RF_B<30>       |   19.959|
+Instr<12>      |RF_B<31>       |   19.995|
+Instr<13>      |Immed<13>      |    5.603|
+Instr<13>      |Immed<15>      |    5.793|
+Instr<13>      |RF_B<0>        |   15.584|
+Instr<13>      |RF_B<1>        |   14.755|
+Instr<13>      |RF_B<2>        |   14.716|
+Instr<13>      |RF_B<3>        |   16.340|
+Instr<13>      |RF_B<4>        |   15.993|
+Instr<13>      |RF_B<5>        |   16.066|
+Instr<13>      |RF_B<6>        |   15.295|
+Instr<13>      |RF_B<7>        |   15.279|
+Instr<13>      |RF_B<8>        |   13.864|
+Instr<13>      |RF_B<9>        |   12.758|
+Instr<13>      |RF_B<10>       |   14.563|
+Instr<13>      |RF_B<11>       |   15.065|
+Instr<13>      |RF_B<12>       |   15.064|
+Instr<13>      |RF_B<13>       |   16.115|
+Instr<13>      |RF_B<14>       |   14.130|
+Instr<13>      |RF_B<15>       |   14.415|
+Instr<13>      |RF_B<16>       |   16.139|
+Instr<13>      |RF_B<17>       |   15.590|
+Instr<13>      |RF_B<18>       |   17.005|
+Instr<13>      |RF_B<19>       |   17.345|
+Instr<13>      |RF_B<20>       |   16.926|
+Instr<13>      |RF_B<21>       |   16.781|
+Instr<13>      |RF_B<22>       |   17.053|
+Instr<13>      |RF_B<23>       |   15.808|
+Instr<13>      |RF_B<24>       |   15.656|
+Instr<13>      |RF_B<25>       |   16.756|
+Instr<13>      |RF_B<26>       |   16.495|
+Instr<13>      |RF_B<27>       |   15.482|
+Instr<13>      |RF_B<28>       |   16.244|
+Instr<13>      |RF_B<29>       |   15.893|
+Instr<13>      |RF_B<30>       |   15.393|
+Instr<13>      |RF_B<31>       |   16.383|
+Instr<14>      |Immed<14>      |    5.572|
+Instr<14>      |RF_B<0>        |   13.343|
+Instr<14>      |RF_B<1>        |   13.182|
+Instr<14>      |RF_B<2>        |   12.581|
+Instr<14>      |RF_B<3>        |   12.127|
+Instr<14>      |RF_B<4>        |   13.772|
+Instr<14>      |RF_B<5>        |   11.977|
+Instr<14>      |RF_B<6>        |   13.241|
+Instr<14>      |RF_B<7>        |   14.086|
+Instr<14>      |RF_B<8>        |   12.655|
+Instr<14>      |RF_B<9>        |   11.676|
+Instr<14>      |RF_B<10>       |   14.113|
+Instr<14>      |RF_B<11>       |   13.911|
+Instr<14>      |RF_B<12>       |   14.425|
+Instr<14>      |RF_B<13>       |   15.286|
+Instr<14>      |RF_B<14>       |   12.546|
+Instr<14>      |RF_B<15>       |   14.003|
+Instr<14>      |RF_B<16>       |   14.116|
+Instr<14>      |RF_B<17>       |   13.665|
+Instr<14>      |RF_B<18>       |   15.603|
+Instr<14>      |RF_B<19>       |   15.519|
+Instr<14>      |RF_B<20>       |   15.307|
+Instr<14>      |RF_B<21>       |   14.893|
+Instr<14>      |RF_B<22>       |   14.631|
+Instr<14>      |RF_B<23>       |   13.870|
+Instr<14>      |RF_B<24>       |   13.771|
+Instr<14>      |RF_B<25>       |   14.712|
+Instr<14>      |RF_B<26>       |   13.837|
+Instr<14>      |RF_B<27>       |   15.201|
+Instr<14>      |RF_B<28>       |   13.806|
+Instr<14>      |RF_B<29>       |   13.514|
+Instr<14>      |RF_B<30>       |   14.837|
+Instr<14>      |RF_B<31>       |   14.593|
+Instr<15>      |Immed<15>      |    5.912|
+Instr<15>      |Immed<16>      |    8.672|
+Instr<15>      |Immed<17>      |    6.994|
+Instr<15>      |Immed<18>      |    7.458|
+Instr<15>      |Immed<19>      |    6.993|
+Instr<15>      |Immed<20>      |    6.967|
+Instr<15>      |Immed<21>      |    8.432|
+Instr<15>      |Immed<22>      |    8.414|
+Instr<15>      |Immed<23>      |    6.223|
+Instr<15>      |Immed<24>      |    6.970|
+Instr<15>      |Immed<25>      |    8.731|
+Instr<15>      |Immed<26>      |    6.538|
+Instr<15>      |Immed<27>      |    7.209|
+Instr<15>      |Immed<28>      |    6.996|
+Instr<15>      |Immed<29>      |    6.276|
+Instr<15>      |Immed<30>      |    7.208|
+Instr<15>      |Immed<31>      |    6.869|
+Instr<15>      |RF_B<0>        |   13.399|
+Instr<15>      |RF_B<1>        |   13.467|
+Instr<15>      |RF_B<2>        |   12.637|
+Instr<15>      |RF_B<3>        |   12.183|
+Instr<15>      |RF_B<4>        |   13.828|
+Instr<15>      |RF_B<5>        |   12.033|
+Instr<15>      |RF_B<6>        |   13.955|
+Instr<15>      |RF_B<7>        |   14.142|
+Instr<15>      |RF_B<8>        |   13.091|
+Instr<15>      |RF_B<9>        |   11.732|
+Instr<15>      |RF_B<10>       |   14.169|
+Instr<15>      |RF_B<11>       |   13.967|
+Instr<15>      |RF_B<12>       |   14.481|
+Instr<15>      |RF_B<13>       |   15.342|
+Instr<15>      |RF_B<14>       |   12.552|
+Instr<15>      |RF_B<15>       |   14.059|
+Instr<15>      |RF_B<16>       |   15.049|
+Instr<15>      |RF_B<17>       |   14.282|
+Instr<15>      |RF_B<18>       |   16.149|
+Instr<15>      |RF_B<19>       |   15.703|
+Instr<15>      |RF_B<20>       |   15.945|
+Instr<15>      |RF_B<21>       |   15.668|
+Instr<15>      |RF_B<22>       |   14.625|
+Instr<15>      |RF_B<23>       |   13.926|
+Instr<15>      |RF_B<24>       |   14.282|
+Instr<15>      |RF_B<25>       |   14.975|
+Instr<15>      |RF_B<26>       |   13.893|
+Instr<15>      |RF_B<27>       |   15.326|
+Instr<15>      |RF_B<28>       |   14.015|
+Instr<15>      |RF_B<29>       |   13.570|
+Instr<15>      |RF_B<30>       |   14.893|
+Instr<15>      |RF_B<31>       |   14.649|
+Instr<16>      |RF_A<0>        |   13.011|
+Instr<16>      |RF_A<1>        |   12.554|
+Instr<16>      |RF_A<2>        |   13.571|
+Instr<16>      |RF_A<3>        |   12.823|
+Instr<16>      |RF_A<4>        |   13.491|
+Instr<16>      |RF_A<5>        |   12.493|
+Instr<16>      |RF_A<6>        |   12.234|
+Instr<16>      |RF_A<7>        |   12.853|
+Instr<16>      |RF_A<8>        |   12.855|
+Instr<16>      |RF_A<9>        |   11.710|
+Instr<16>      |RF_A<10>       |   15.263|
+Instr<16>      |RF_A<11>       |   15.114|
+Instr<16>      |RF_A<12>       |   13.602|
+Instr<16>      |RF_A<13>       |   12.871|
+Instr<16>      |RF_A<14>       |   11.661|
+Instr<16>      |RF_A<15>       |   12.334|
+Instr<16>      |RF_A<16>       |   12.142|
+Instr<16>      |RF_A<17>       |   12.044|
+Instr<16>      |RF_A<18>       |   12.390|
+Instr<16>      |RF_A<19>       |   13.369|
+Instr<16>      |RF_A<20>       |   12.933|
+Instr<16>      |RF_A<21>       |   13.083|
+Instr<16>      |RF_A<22>       |   12.364|
+Instr<16>      |RF_A<23>       |   13.233|
+Instr<16>      |RF_A<24>       |   14.129|
+Instr<16>      |RF_A<25>       |   14.711|
+Instr<16>      |RF_A<26>       |   12.906|
+Instr<16>      |RF_A<27>       |   15.349|
+Instr<16>      |RF_A<28>       |   14.109|
+Instr<16>      |RF_A<29>       |   14.018|
+Instr<16>      |RF_A<30>       |   14.869|
+Instr<16>      |RF_A<31>       |   14.632|
+Instr<16>      |RF_B<0>        |   15.200|
+Instr<16>      |RF_B<1>        |   14.490|
+Instr<16>      |RF_B<2>        |   15.418|
+Instr<16>      |RF_B<3>        |   15.531|
+Instr<16>      |RF_B<4>        |   15.301|
+Instr<16>      |RF_B<5>        |   15.177|
+Instr<16>      |RF_B<6>        |   15.638|
+Instr<16>      |RF_B<7>        |   18.568|
+Instr<16>      |RF_B<8>        |   17.597|
+Instr<16>      |RF_B<9>        |   14.902|
+Instr<16>      |RF_B<10>       |   18.792|
+Instr<16>      |RF_B<11>       |   19.009|
+Instr<16>      |RF_B<12>       |   19.492|
+Instr<16>      |RF_B<13>       |   18.830|
+Instr<16>      |RF_B<14>       |   15.418|
+Instr<16>      |RF_B<15>       |   16.985|
+Instr<16>      |RF_B<16>       |   16.732|
+Instr<16>      |RF_B<17>       |   16.969|
+Instr<16>      |RF_B<18>       |   17.577|
+Instr<16>      |RF_B<19>       |   17.786|
+Instr<16>      |RF_B<20>       |   17.338|
+Instr<16>      |RF_B<21>       |   17.797|
+Instr<16>      |RF_B<22>       |   18.072|
+Instr<16>      |RF_B<23>       |   18.499|
+Instr<16>      |RF_B<24>       |   17.092|
+Instr<16>      |RF_B<25>       |   18.464|
+Instr<16>      |RF_B<26>       |   18.205|
+Instr<16>      |RF_B<27>       |   18.519|
+Instr<16>      |RF_B<28>       |   18.203|
+Instr<16>      |RF_B<29>       |   17.924|
+Instr<16>      |RF_B<30>       |   18.896|
+Instr<16>      |RF_B<31>       |   18.853|
+Instr<17>      |RF_A<0>        |   12.540|
+Instr<17>      |RF_A<1>        |   12.083|
+Instr<17>      |RF_A<2>        |   13.100|
+Instr<17>      |RF_A<3>        |   12.352|
+Instr<17>      |RF_A<4>        |   13.020|
+Instr<17>      |RF_A<5>        |   12.022|
+Instr<17>      |RF_A<6>        |   11.763|
+Instr<17>      |RF_A<7>        |   12.382|
+Instr<17>      |RF_A<8>        |   12.384|
+Instr<17>      |RF_A<9>        |   11.239|
+Instr<17>      |RF_A<10>       |   14.792|
+Instr<17>      |RF_A<11>       |   14.643|
+Instr<17>      |RF_A<12>       |   13.131|
+Instr<17>      |RF_A<13>       |   12.400|
+Instr<17>      |RF_A<14>       |   11.190|
+Instr<17>      |RF_A<15>       |   11.863|
+Instr<17>      |RF_A<16>       |   11.671|
+Instr<17>      |RF_A<17>       |   11.573|
+Instr<17>      |RF_A<18>       |   11.919|
+Instr<17>      |RF_A<19>       |   12.898|
+Instr<17>      |RF_A<20>       |   12.462|
+Instr<17>      |RF_A<21>       |   12.612|
+Instr<17>      |RF_A<22>       |   11.893|
+Instr<17>      |RF_A<23>       |   12.762|
+Instr<17>      |RF_A<24>       |   13.658|
+Instr<17>      |RF_A<25>       |   14.240|
+Instr<17>      |RF_A<26>       |   12.435|
+Instr<17>      |RF_A<27>       |   14.878|
+Instr<17>      |RF_A<28>       |   13.638|
+Instr<17>      |RF_A<29>       |   13.547|
+Instr<17>      |RF_A<30>       |   14.398|
+Instr<17>      |RF_A<31>       |   14.161|
+Instr<17>      |RF_B<0>        |   18.869|
+Instr<17>      |RF_B<1>        |   16.414|
+Instr<17>      |RF_B<2>        |   16.924|
+Instr<17>      |RF_B<3>        |   18.252|
+Instr<17>      |RF_B<4>        |   18.922|
+Instr<17>      |RF_B<5>        |   17.711|
+Instr<17>      |RF_B<6>        |   17.692|
+Instr<17>      |RF_B<7>        |   18.276|
+Instr<17>      |RF_B<8>        |   18.326|
+Instr<17>      |RF_B<9>        |   15.456|
+Instr<17>      |RF_B<10>       |   19.164|
+Instr<17>      |RF_B<11>       |   18.974|
+Instr<17>      |RF_B<12>       |   19.142|
+Instr<17>      |RF_B<13>       |   19.678|
+Instr<17>      |RF_B<14>       |   16.145|
+Instr<17>      |RF_B<15>       |   16.418|
+Instr<17>      |RF_B<16>       |   18.062|
+Instr<17>      |RF_B<17>       |   18.283|
+Instr<17>      |RF_B<18>       |   18.377|
+Instr<17>      |RF_B<19>       |   20.092|
+Instr<17>      |RF_B<20>       |   19.718|
+Instr<17>      |RF_B<21>       |   19.163|
+Instr<17>      |RF_B<22>       |   20.089|
+Instr<17>      |RF_B<23>       |   20.341|
+Instr<17>      |RF_B<24>       |   19.441|
+Instr<17>      |RF_B<25>       |   19.979|
+Instr<17>      |RF_B<26>       |   18.993|
+Instr<17>      |RF_B<27>       |   19.861|
+Instr<17>      |RF_B<28>       |   19.703|
+Instr<17>      |RF_B<29>       |   18.626|
+Instr<17>      |RF_B<30>       |   19.633|
+Instr<17>      |RF_B<31>       |   19.669|
+Instr<18>      |RF_A<0>        |   13.153|
+Instr<18>      |RF_A<1>        |   12.696|
+Instr<18>      |RF_A<2>        |   13.713|
+Instr<18>      |RF_A<3>        |   12.965|
+Instr<18>      |RF_A<4>        |   13.633|
+Instr<18>      |RF_A<5>        |   12.635|
+Instr<18>      |RF_A<6>        |   12.376|
+Instr<18>      |RF_A<7>        |   12.995|
+Instr<18>      |RF_A<8>        |   12.997|
+Instr<18>      |RF_A<9>        |   11.852|
+Instr<18>      |RF_A<10>       |   15.405|
+Instr<18>      |RF_A<11>       |   15.256|
+Instr<18>      |RF_A<12>       |   13.744|
+Instr<18>      |RF_A<13>       |   13.013|
+Instr<18>      |RF_A<14>       |   11.803|
+Instr<18>      |RF_A<15>       |   12.476|
+Instr<18>      |RF_A<16>       |   12.284|
+Instr<18>      |RF_A<17>       |   12.186|
+Instr<18>      |RF_A<18>       |   12.532|
+Instr<18>      |RF_A<19>       |   13.511|
+Instr<18>      |RF_A<20>       |   13.075|
+Instr<18>      |RF_A<21>       |   13.225|
+Instr<18>      |RF_A<22>       |   12.506|
+Instr<18>      |RF_A<23>       |   13.375|
+Instr<18>      |RF_A<24>       |   14.271|
+Instr<18>      |RF_A<25>       |   14.853|
+Instr<18>      |RF_A<26>       |   13.048|
+Instr<18>      |RF_A<27>       |   15.491|
+Instr<18>      |RF_A<28>       |   14.251|
+Instr<18>      |RF_A<29>       |   14.160|
+Instr<18>      |RF_A<30>       |   15.011|
+Instr<18>      |RF_A<31>       |   14.774|
+Instr<18>      |RF_B<0>        |   16.161|
+Instr<18>      |RF_B<1>        |   15.332|
+Instr<18>      |RF_B<2>        |   15.293|
+Instr<18>      |RF_B<3>        |   16.917|
+Instr<18>      |RF_B<4>        |   16.570|
+Instr<18>      |RF_B<5>        |   16.643|
+Instr<18>      |RF_B<6>        |   15.872|
+Instr<18>      |RF_B<7>        |   15.856|
+Instr<18>      |RF_B<8>        |   14.441|
+Instr<18>      |RF_B<9>        |   13.335|
+Instr<18>      |RF_B<10>       |   15.140|
+Instr<18>      |RF_B<11>       |   15.642|
+Instr<18>      |RF_B<12>       |   15.641|
+Instr<18>      |RF_B<13>       |   16.692|
+Instr<18>      |RF_B<14>       |   14.707|
+Instr<18>      |RF_B<15>       |   14.992|
+Instr<18>      |RF_B<16>       |   16.716|
+Instr<18>      |RF_B<17>       |   16.167|
+Instr<18>      |RF_B<18>       |   17.582|
+Instr<18>      |RF_B<19>       |   17.922|
+Instr<18>      |RF_B<20>       |   17.503|
+Instr<18>      |RF_B<21>       |   17.358|
+Instr<18>      |RF_B<22>       |   17.630|
+Instr<18>      |RF_B<23>       |   16.385|
+Instr<18>      |RF_B<24>       |   16.233|
+Instr<18>      |RF_B<25>       |   17.333|
+Instr<18>      |RF_B<26>       |   17.072|
+Instr<18>      |RF_B<27>       |   16.059|
+Instr<18>      |RF_B<28>       |   16.821|
+Instr<18>      |RF_B<29>       |   16.470|
+Instr<18>      |RF_B<30>       |   15.970|
+Instr<18>      |RF_B<31>       |   16.960|
+Instr<19>      |RF_A<0>        |   13.994|
+Instr<19>      |RF_A<1>        |   13.537|
+Instr<19>      |RF_A<2>        |   14.554|
+Instr<19>      |RF_A<3>        |   13.806|
+Instr<19>      |RF_A<4>        |   14.474|
+Instr<19>      |RF_A<5>        |   13.476|
+Instr<19>      |RF_A<6>        |   13.217|
+Instr<19>      |RF_A<7>        |   13.836|
+Instr<19>      |RF_A<8>        |   13.838|
+Instr<19>      |RF_A<9>        |   12.693|
+Instr<19>      |RF_A<10>       |   16.246|
+Instr<19>      |RF_A<11>       |   16.097|
+Instr<19>      |RF_A<12>       |   14.585|
+Instr<19>      |RF_A<13>       |   13.854|
+Instr<19>      |RF_A<14>       |   12.644|
+Instr<19>      |RF_A<15>       |   13.317|
+Instr<19>      |RF_A<16>       |   13.125|
+Instr<19>      |RF_A<17>       |   13.027|
+Instr<19>      |RF_A<18>       |   13.373|
+Instr<19>      |RF_A<19>       |   14.352|
+Instr<19>      |RF_A<20>       |   13.916|
+Instr<19>      |RF_A<21>       |   14.066|
+Instr<19>      |RF_A<22>       |   13.347|
+Instr<19>      |RF_A<23>       |   14.216|
+Instr<19>      |RF_A<24>       |   15.112|
+Instr<19>      |RF_A<25>       |   15.694|
+Instr<19>      |RF_A<26>       |   13.889|
+Instr<19>      |RF_A<27>       |   16.332|
+Instr<19>      |RF_A<28>       |   15.092|
+Instr<19>      |RF_A<29>       |   15.001|
+Instr<19>      |RF_A<30>       |   15.852|
+Instr<19>      |RF_A<31>       |   15.615|
+Instr<19>      |RF_B<0>        |   14.535|
+Instr<19>      |RF_B<1>        |   14.374|
+Instr<19>      |RF_B<2>        |   13.773|
+Instr<19>      |RF_B<3>        |   13.319|
+Instr<19>      |RF_B<4>        |   14.964|
+Instr<19>      |RF_B<5>        |   13.169|
+Instr<19>      |RF_B<6>        |   14.433|
+Instr<19>      |RF_B<7>        |   15.278|
+Instr<19>      |RF_B<8>        |   13.847|
+Instr<19>      |RF_B<9>        |   12.868|
+Instr<19>      |RF_B<10>       |   15.305|
+Instr<19>      |RF_B<11>       |   15.103|
+Instr<19>      |RF_B<12>       |   15.617|
+Instr<19>      |RF_B<13>       |   16.478|
+Instr<19>      |RF_B<14>       |   13.738|
+Instr<19>      |RF_B<15>       |   15.195|
+Instr<19>      |RF_B<16>       |   15.308|
+Instr<19>      |RF_B<17>       |   14.857|
+Instr<19>      |RF_B<18>       |   16.795|
+Instr<19>      |RF_B<19>       |   16.711|
+Instr<19>      |RF_B<20>       |   16.499|
+Instr<19>      |RF_B<21>       |   16.085|
+Instr<19>      |RF_B<22>       |   15.823|
+Instr<19>      |RF_B<23>       |   15.062|
+Instr<19>      |RF_B<24>       |   14.963|
+Instr<19>      |RF_B<25>       |   15.904|
+Instr<19>      |RF_B<26>       |   15.029|
+Instr<19>      |RF_B<27>       |   16.393|
+Instr<19>      |RF_B<28>       |   14.998|
+Instr<19>      |RF_B<29>       |   14.706|
+Instr<19>      |RF_B<30>       |   16.029|
+Instr<19>      |RF_B<31>       |   15.785|
+Instr<20>      |RF_A<0>        |   12.666|
+Instr<20>      |RF_A<1>        |   12.209|
+Instr<20>      |RF_A<2>        |   13.226|
+Instr<20>      |RF_A<3>        |   12.478|
+Instr<20>      |RF_A<4>        |   13.146|
+Instr<20>      |RF_A<5>        |   12.148|
+Instr<20>      |RF_A<6>        |   11.889|
+Instr<20>      |RF_A<7>        |   12.508|
+Instr<20>      |RF_A<8>        |   12.510|
+Instr<20>      |RF_A<9>        |   11.365|
+Instr<20>      |RF_A<10>       |   14.918|
+Instr<20>      |RF_A<11>       |   14.769|
+Instr<20>      |RF_A<12>       |   13.257|
+Instr<20>      |RF_A<13>       |   12.526|
+Instr<20>      |RF_A<14>       |   11.316|
+Instr<20>      |RF_A<15>       |   11.989|
+Instr<20>      |RF_A<16>       |   11.797|
+Instr<20>      |RF_A<17>       |   11.699|
+Instr<20>      |RF_A<18>       |   12.045|
+Instr<20>      |RF_A<19>       |   13.024|
+Instr<20>      |RF_A<20>       |   12.588|
+Instr<20>      |RF_A<21>       |   12.738|
+Instr<20>      |RF_A<22>       |   12.019|
+Instr<20>      |RF_A<23>       |   12.888|
+Instr<20>      |RF_A<24>       |   13.784|
+Instr<20>      |RF_A<25>       |   14.366|
+Instr<20>      |RF_A<26>       |   12.561|
+Instr<20>      |RF_A<27>       |   15.004|
+Instr<20>      |RF_A<28>       |   13.764|
+Instr<20>      |RF_A<29>       |   13.673|
+Instr<20>      |RF_A<30>       |   14.524|
+Instr<20>      |RF_A<31>       |   14.287|
+Instr<20>      |RF_B<0>        |   13.578|
+Instr<20>      |RF_B<1>        |   13.646|
+Instr<20>      |RF_B<2>        |   12.816|
+Instr<20>      |RF_B<3>        |   12.362|
+Instr<20>      |RF_B<4>        |   14.007|
+Instr<20>      |RF_B<5>        |   12.212|
+Instr<20>      |RF_B<6>        |   14.134|
+Instr<20>      |RF_B<7>        |   14.321|
+Instr<20>      |RF_B<8>        |   13.270|
+Instr<20>      |RF_B<9>        |   11.911|
+Instr<20>      |RF_B<10>       |   14.348|
+Instr<20>      |RF_B<11>       |   14.146|
+Instr<20>      |RF_B<12>       |   14.660|
+Instr<20>      |RF_B<13>       |   15.521|
+Instr<20>      |RF_B<14>       |   12.731|
+Instr<20>      |RF_B<15>       |   14.238|
+Instr<20>      |RF_B<16>       |   15.228|
+Instr<20>      |RF_B<17>       |   14.461|
+Instr<20>      |RF_B<18>       |   16.328|
+Instr<20>      |RF_B<19>       |   15.882|
+Instr<20>      |RF_B<20>       |   16.124|
+Instr<20>      |RF_B<21>       |   15.847|
+Instr<20>      |RF_B<22>       |   14.804|
+Instr<20>      |RF_B<23>       |   14.105|
+Instr<20>      |RF_B<24>       |   14.461|
+Instr<20>      |RF_B<25>       |   15.154|
+Instr<20>      |RF_B<26>       |   14.072|
+Instr<20>      |RF_B<27>       |   15.505|
+Instr<20>      |RF_B<28>       |   14.194|
+Instr<20>      |RF_B<29>       |   13.749|
+Instr<20>      |RF_B<30>       |   15.072|
+Instr<20>      |RF_B<31>       |   14.828|
+Instr<21>      |RF_A<0>        |   12.275|
+Instr<21>      |RF_A<1>        |   12.769|
+Instr<21>      |RF_A<2>        |   13.229|
+Instr<21>      |RF_A<3>        |   14.111|
+Instr<21>      |RF_A<4>        |   12.755|
+Instr<21>      |RF_A<5>        |   13.622|
+Instr<21>      |RF_A<6>        |   16.015|
+Instr<21>      |RF_A<7>        |   16.488|
+Instr<21>      |RF_A<8>        |   16.118|
+Instr<21>      |RF_A<9>        |   12.620|
+Instr<21>      |RF_A<10>       |   17.717|
+Instr<21>      |RF_A<11>       |   17.447|
+Instr<21>      |RF_A<12>       |   15.642|
+Instr<21>      |RF_A<13>       |   16.081|
+Instr<21>      |RF_A<14>       |   13.727|
+Instr<21>      |RF_A<15>       |   14.164|
+Instr<21>      |RF_A<16>       |   13.998|
+Instr<21>      |RF_A<17>       |   15.941|
+Instr<21>      |RF_A<18>       |   14.294|
+Instr<21>      |RF_A<19>       |   16.293|
+Instr<21>      |RF_A<20>       |   17.095|
+Instr<21>      |RF_A<21>       |   14.247|
+Instr<21>      |RF_A<22>       |   17.529|
+Instr<21>      |RF_A<23>       |   16.758|
+Instr<21>      |RF_A<24>       |   16.623|
+Instr<21>      |RF_A<25>       |   17.674|
+Instr<21>      |RF_A<26>       |   18.220|
+Instr<21>      |RF_A<27>       |   18.392|
+Instr<21>      |RF_A<28>       |   17.242|
+Instr<21>      |RF_A<29>       |   16.180|
+Instr<21>      |RF_A<30>       |   17.854|
+Instr<21>      |RF_A<31>       |   17.836|
+Instr<22>      |RF_A<0>        |   12.062|
+Instr<22>      |RF_A<1>        |   12.527|
+Instr<22>      |RF_A<2>        |   13.009|
+Instr<22>      |RF_A<3>        |   13.424|
+Instr<22>      |RF_A<4>        |   12.542|
+Instr<22>      |RF_A<5>        |   14.016|
+Instr<22>      |RF_A<6>        |   13.172|
+Instr<22>      |RF_A<7>        |   14.196|
+Instr<22>      |RF_A<8>        |   14.584|
+Instr<22>      |RF_A<9>        |   12.605|
+Instr<22>      |RF_A<10>       |   17.114|
+Instr<22>      |RF_A<11>       |   15.597|
+Instr<22>      |RF_A<12>       |   13.509|
+Instr<22>      |RF_A<13>       |   15.838|
+Instr<22>      |RF_A<14>       |   13.401|
+Instr<22>      |RF_A<15>       |   14.157|
+Instr<22>      |RF_A<16>       |   13.732|
+Instr<22>      |RF_A<17>       |   16.528|
+Instr<22>      |RF_A<18>       |   15.009|
+Instr<22>      |RF_A<19>       |   16.729|
+Instr<22>      |RF_A<20>       |   18.472|
+Instr<22>      |RF_A<21>       |   15.981|
+Instr<22>      |RF_A<22>       |   16.987|
+Instr<22>      |RF_A<23>       |   15.861|
+Instr<22>      |RF_A<24>       |   18.455|
+Instr<22>      |RF_A<25>       |   18.960|
+Instr<22>      |RF_A<26>       |   16.974|
+Instr<22>      |RF_A<27>       |   20.714|
+Instr<22>      |RF_A<28>       |   16.784|
+Instr<22>      |RF_A<29>       |   17.305|
+Instr<22>      |RF_A<30>       |   18.065|
+Instr<22>      |RF_A<31>       |   17.624|
+Instr<23>      |RF_A<0>        |   15.073|
+Instr<23>      |RF_A<1>        |   14.616|
+Instr<23>      |RF_A<2>        |   15.633|
+Instr<23>      |RF_A<3>        |   14.885|
+Instr<23>      |RF_A<4>        |   15.553|
+Instr<23>      |RF_A<5>        |   14.555|
+Instr<23>      |RF_A<6>        |   14.296|
+Instr<23>      |RF_A<7>        |   14.915|
+Instr<23>      |RF_A<8>        |   14.917|
+Instr<23>      |RF_A<9>        |   13.772|
+Instr<23>      |RF_A<10>       |   17.325|
+Instr<23>      |RF_A<11>       |   17.176|
+Instr<23>      |RF_A<12>       |   15.664|
+Instr<23>      |RF_A<13>       |   14.933|
+Instr<23>      |RF_A<14>       |   14.413|
+Instr<23>      |RF_A<15>       |   14.396|
+Instr<23>      |RF_A<16>       |   16.401|
+Instr<23>      |RF_A<17>       |   16.292|
+Instr<23>      |RF_A<18>       |   16.294|
+Instr<23>      |RF_A<19>       |   15.431|
+Instr<23>      |RF_A<20>       |   16.404|
+Instr<23>      |RF_A<21>       |   15.145|
+Instr<23>      |RF_A<22>       |   16.357|
+Instr<23>      |RF_A<23>       |   16.110|
+Instr<23>      |RF_A<24>       |   16.191|
+Instr<23>      |RF_A<25>       |   16.773|
+Instr<23>      |RF_A<26>       |   16.156|
+Instr<23>      |RF_A<27>       |   18.285|
+Instr<23>      |RF_A<28>       |   17.252|
+Instr<23>      |RF_A<29>       |   17.951|
+Instr<23>      |RF_A<30>       |   17.455|
+Instr<23>      |RF_A<31>       |   17.407|
+Instr<24>      |RF_A<0>        |   14.177|
+Instr<24>      |RF_A<1>        |   13.720|
+Instr<24>      |RF_A<2>        |   14.737|
+Instr<24>      |RF_A<3>        |   13.989|
+Instr<24>      |RF_A<4>        |   14.657|
+Instr<24>      |RF_A<5>        |   13.659|
+Instr<24>      |RF_A<6>        |   13.400|
+Instr<24>      |RF_A<7>        |   14.019|
+Instr<24>      |RF_A<8>        |   14.021|
+Instr<24>      |RF_A<9>        |   12.876|
+Instr<24>      |RF_A<10>       |   16.429|
+Instr<24>      |RF_A<11>       |   16.280|
+Instr<24>      |RF_A<12>       |   14.768|
+Instr<24>      |RF_A<13>       |   14.037|
+Instr<24>      |RF_A<14>       |   12.827|
+Instr<24>      |RF_A<15>       |   13.500|
+Instr<24>      |RF_A<16>       |   13.308|
+Instr<24>      |RF_A<17>       |   14.161|
+Instr<24>      |RF_A<18>       |   13.556|
+Instr<24>      |RF_A<19>       |   14.535|
+Instr<24>      |RF_A<20>       |   15.067|
+Instr<24>      |RF_A<21>       |   14.249|
+Instr<24>      |RF_A<22>       |   14.580|
+Instr<24>      |RF_A<23>       |   14.399|
+Instr<24>      |RF_A<24>       |   15.295|
+Instr<24>      |RF_A<25>       |   15.877|
+Instr<24>      |RF_A<26>       |   14.072|
+Instr<24>      |RF_A<27>       |   16.515|
+Instr<24>      |RF_A<28>       |   15.275|
+Instr<24>      |RF_A<29>       |   15.184|
+Instr<24>      |RF_A<30>       |   16.035|
+Instr<24>      |RF_A<31>       |   15.798|
+Instr<25>      |RF_A<0>        |   13.089|
+Instr<25>      |RF_A<1>        |   12.632|
+Instr<25>      |RF_A<2>        |   13.649|
+Instr<25>      |RF_A<3>        |   12.901|
+Instr<25>      |RF_A<4>        |   13.569|
+Instr<25>      |RF_A<5>        |   12.571|
+Instr<25>      |RF_A<6>        |   12.312|
+Instr<25>      |RF_A<7>        |   12.931|
+Instr<25>      |RF_A<8>        |   13.555|
+Instr<25>      |RF_A<9>        |   11.788|
+Instr<25>      |RF_A<10>       |   15.341|
+Instr<25>      |RF_A<11>       |   15.192|
+Instr<25>      |RF_A<12>       |   13.680|
+Instr<25>      |RF_A<13>       |   12.949|
+Instr<25>      |RF_A<14>       |   11.739|
+Instr<25>      |RF_A<15>       |   12.412|
+Instr<25>      |RF_A<16>       |   12.933|
+Instr<25>      |RF_A<17>       |   12.803|
+Instr<25>      |RF_A<18>       |   13.156|
+Instr<25>      |RF_A<19>       |   13.793|
+Instr<25>      |RF_A<20>       |   14.261|
+Instr<25>      |RF_A<21>       |   13.161|
+Instr<25>      |RF_A<22>       |   13.472|
+Instr<25>      |RF_A<23>       |   13.378|
+Instr<25>      |RF_A<24>       |   14.207|
+Instr<25>      |RF_A<25>       |   14.789|
+Instr<25>      |RF_A<26>       |   14.289|
+Instr<25>      |RF_A<27>       |   15.427|
+Instr<25>      |RF_A<28>       |   14.187|
+Instr<25>      |RF_A<29>       |   14.096|
+Instr<25>      |RF_A<30>       |   14.947|
+Instr<25>      |RF_A<31>       |   14.710|
+MEM_out<0>     |RF_A<0>        |   10.437|
+MEM_out<0>     |RF_B<0>        |    9.791|
+MEM_out<1>     |RF_A<1>        |   10.861|
+MEM_out<1>     |RF_B<1>        |    9.636|
+MEM_out<2>     |RF_A<2>        |   12.371|
+MEM_out<2>     |RF_B<2>        |   12.111|
+MEM_out<3>     |RF_A<3>        |   12.574|
+MEM_out<3>     |RF_B<3>        |   11.515|
+MEM_out<4>     |RF_A<4>        |   12.038|
+MEM_out<4>     |RF_B<4>        |   12.184|
+MEM_out<5>     |RF_A<5>        |   11.955|
+MEM_out<5>     |RF_B<5>        |   10.404|
+MEM_out<6>     |RF_A<6>        |   13.011|
+MEM_out<6>     |RF_B<6>        |   11.615|
+MEM_out<7>     |RF_A<7>        |   10.552|
+MEM_out<7>     |RF_B<7>        |   10.458|
+MEM_out<8>     |RF_A<8>        |   12.629|
+MEM_out<8>     |RF_B<8>        |   11.022|
+MEM_out<9>     |RF_A<9>        |   11.756|
+MEM_out<9>     |RF_B<9>        |   11.895|
+MEM_out<10>    |RF_A<10>       |   12.227|
+MEM_out<10>    |RF_B<10>       |    9.575|
+MEM_out<11>    |RF_A<11>       |   11.914|
+MEM_out<11>    |RF_B<11>       |    9.205|
+MEM_out<12>    |RF_A<12>       |   11.394|
+MEM_out<12>    |RF_B<12>       |    9.265|
+MEM_out<13>    |RF_A<13>       |   12.594|
+MEM_out<13>    |RF_B<13>       |   12.099|
+MEM_out<14>    |RF_A<14>       |   11.865|
+MEM_out<14>    |RF_B<14>       |   11.217|
+MEM_out<15>    |RF_A<15>       |   11.580|
+MEM_out<15>    |RF_B<15>       |   11.650|
+MEM_out<16>    |RF_A<16>       |   12.490|
+MEM_out<16>    |RF_B<16>       |   11.873|
+MEM_out<17>    |RF_A<17>       |   10.893|
+MEM_out<17>    |RF_B<17>       |   10.755|
+MEM_out<18>    |RF_A<18>       |   11.981|
+MEM_out<18>    |RF_B<18>       |   12.286|
+MEM_out<19>    |RF_A<19>       |   12.986|
+MEM_out<19>    |RF_B<19>       |   10.509|
+MEM_out<20>    |RF_A<20>       |   12.706|
+MEM_out<20>    |RF_B<20>       |   10.871|
+MEM_out<21>    |RF_A<21>       |   12.020|
+MEM_out<21>    |RF_B<21>       |   11.537|
+MEM_out<22>    |RF_A<22>       |   13.005|
+MEM_out<22>    |RF_B<22>       |   10.536|
+MEM_out<23>    |RF_A<23>       |   12.833|
+MEM_out<23>    |RF_B<23>       |   10.115|
+MEM_out<24>    |RF_A<24>       |   12.221|
+MEM_out<24>    |RF_B<24>       |    9.395|
+MEM_out<25>    |RF_A<25>       |   10.838|
+MEM_out<25>    |RF_B<25>       |    9.380|
+MEM_out<26>    |RF_A<26>       |   12.307|
+MEM_out<26>    |RF_B<26>       |   10.854|
+MEM_out<27>    |RF_A<27>       |   12.240|
+MEM_out<27>    |RF_B<27>       |    8.466|
+MEM_out<28>    |RF_A<28>       |   11.557|
+MEM_out<28>    |RF_B<28>       |   10.953|
+MEM_out<29>    |RF_A<29>       |   11.720|
+MEM_out<29>    |RF_B<29>       |    9.533|
+MEM_out<30>    |RF_A<30>       |   12.184|
+MEM_out<30>    |RF_B<30>       |    9.484|
+MEM_out<31>    |RF_A<31>       |   11.516|
+MEM_out<31>    |RF_B<31>       |    9.494|
+RF_B_sel       |RF_B<0>        |   19.443|
+RF_B_sel       |RF_B<1>        |   16.988|
+RF_B_sel       |RF_B<2>        |   17.618|
+RF_B_sel       |RF_B<3>        |   18.826|
+RF_B_sel       |RF_B<4>        |   19.496|
+RF_B_sel       |RF_B<5>        |   18.285|
+RF_B_sel       |RF_B<6>        |   18.266|
+RF_B_sel       |RF_B<7>        |   20.768|
+RF_B_sel       |RF_B<8>        |   19.797|
+RF_B_sel       |RF_B<9>        |   17.102|
+RF_B_sel       |RF_B<10>       |   20.992|
+RF_B_sel       |RF_B<11>       |   21.209|
+RF_B_sel       |RF_B<12>       |   21.692|
+RF_B_sel       |RF_B<13>       |   21.030|
+RF_B_sel       |RF_B<14>       |   17.618|
+RF_B_sel       |RF_B<15>       |   19.185|
+RF_B_sel       |RF_B<16>       |   18.932|
+RF_B_sel       |RF_B<17>       |   19.169|
+RF_B_sel       |RF_B<18>       |   19.777|
+RF_B_sel       |RF_B<19>       |   20.666|
+RF_B_sel       |RF_B<20>       |   20.292|
+RF_B_sel       |RF_B<21>       |   19.997|
+RF_B_sel       |RF_B<22>       |   20.663|
+RF_B_sel       |RF_B<23>       |   20.915|
+RF_B_sel       |RF_B<24>       |   20.015|
+RF_B_sel       |RF_B<25>       |   20.664|
+RF_B_sel       |RF_B<26>       |   20.405|
+RF_B_sel       |RF_B<27>       |   20.719|
+RF_B_sel       |RF_B<28>       |   20.403|
+RF_B_sel       |RF_B<29>       |   20.124|
+RF_B_sel       |RF_B<30>       |   21.096|
+RF_B_sel       |RF_B<31>       |   21.053|
+RF_WrData_sel  |RF_A<0>        |   14.046|
+RF_WrData_sel  |RF_A<1>        |   13.650|
+RF_WrData_sel  |RF_A<2>        |   15.027|
+RF_WrData_sel  |RF_A<3>        |   14.794|
+RF_WrData_sel  |RF_A<4>        |   13.994|
+RF_WrData_sel  |RF_A<5>        |   13.991|
+RF_WrData_sel  |RF_A<6>        |   15.166|
+RF_WrData_sel  |RF_A<7>        |   15.053|
+RF_WrData_sel  |RF_A<8>        |   17.141|
+RF_WrData_sel  |RF_A<9>        |   12.977|
+RF_WrData_sel  |RF_A<10>       |   15.825|
+RF_WrData_sel  |RF_A<11>       |   15.518|
+RF_WrData_sel  |RF_A<12>       |   15.400|
+RF_WrData_sel  |RF_A<13>       |   14.946|
+RF_WrData_sel  |RF_A<14>       |   13.847|
+RF_WrData_sel  |RF_A<15>       |   13.430|
+RF_WrData_sel  |RF_A<16>       |   13.598|
+RF_WrData_sel  |RF_A<17>       |   11.810|
+RF_WrData_sel  |RF_A<18>       |   12.957|
+RF_WrData_sel  |RF_A<19>       |   15.565|
+RF_WrData_sel  |RF_A<20>       |   13.091|
+RF_WrData_sel  |RF_A<21>       |   12.919|
+RF_WrData_sel  |RF_A<22>       |   13.650|
+RF_WrData_sel  |RF_A<23>       |   14.554|
+RF_WrData_sel  |RF_A<24>       |   13.817|
+RF_WrData_sel  |RF_A<25>       |   12.116|
+RF_WrData_sel  |RF_A<26>       |   13.259|
+RF_WrData_sel  |RF_A<27>       |   12.859|
+RF_WrData_sel  |RF_A<28>       |   12.796|
+RF_WrData_sel  |RF_A<29>       |   13.244|
+RF_WrData_sel  |RF_A<30>       |   12.845|
+RF_WrData_sel  |RF_A<31>       |   12.436|
+RF_WrData_sel  |RF_B<0>        |   13.400|
+RF_WrData_sel  |RF_B<1>        |   12.425|
+RF_WrData_sel  |RF_B<2>        |   14.767|
+RF_WrData_sel  |RF_B<3>        |   13.735|
+RF_WrData_sel  |RF_B<4>        |   14.140|
+RF_WrData_sel  |RF_B<5>        |   12.440|
+RF_WrData_sel  |RF_B<6>        |   13.770|
+RF_WrData_sel  |RF_B<7>        |   14.959|
+RF_WrData_sel  |RF_B<8>        |   15.534|
+RF_WrData_sel  |RF_B<9>        |   13.116|
+RF_WrData_sel  |RF_B<10>       |   13.173|
+RF_WrData_sel  |RF_B<11>       |   12.809|
+RF_WrData_sel  |RF_B<12>       |   13.271|
+RF_WrData_sel  |RF_B<13>       |   14.451|
+RF_WrData_sel  |RF_B<14>       |   13.199|
+RF_WrData_sel  |RF_B<15>       |   13.500|
+RF_WrData_sel  |RF_B<16>       |   12.981|
+RF_WrData_sel  |RF_B<17>       |   11.672|
+RF_WrData_sel  |RF_B<18>       |   13.262|
+RF_WrData_sel  |RF_B<19>       |   13.088|
+RF_WrData_sel  |RF_B<20>       |   11.256|
+RF_WrData_sel  |RF_B<21>       |   12.436|
+RF_WrData_sel  |RF_B<22>       |   11.181|
+RF_WrData_sel  |RF_B<23>       |   11.836|
+RF_WrData_sel  |RF_B<24>       |   10.991|
+RF_WrData_sel  |RF_B<25>       |   10.658|
+RF_WrData_sel  |RF_B<26>       |   11.806|
+RF_WrData_sel  |RF_B<27>       |    9.085|
+RF_WrData_sel  |RF_B<28>       |   12.192|
+RF_WrData_sel  |RF_B<29>       |   11.057|
+RF_WrData_sel  |RF_B<30>       |   10.145|
+RF_WrData_sel  |RF_B<31>       |   10.414|
+Sl_Control     |Immed<0>       |   10.079|
+Sl_Control     |Immed<1>       |   11.412|
+Sl_Control     |Immed<2>       |   11.130|
+Sl_Control     |Immed<3>       |   11.178|
+Sl_Control     |Immed<4>       |   11.160|
+Sl_Control     |Immed<5>       |   10.338|
+Sl_Control     |Immed<6>       |   10.389|
+Sl_Control     |Immed<7>       |   10.326|
+Sl_Control     |Immed<8>       |   11.128|
+Sl_Control     |Immed<9>       |   10.463|
+Sl_Control     |Immed<10>      |   10.697|
+Sl_Control     |Immed<11>      |   10.191|
+Sl_Control     |Immed<12>      |   10.381|
+Sl_Control     |Immed<13>      |   11.511|
+Sl_Control     |Immed<14>      |   10.715|
+Sl_Control     |Immed<15>      |   11.788|
+Zf_Se_Control  |Immed<16>      |    8.182|
+Zf_Se_Control  |Immed<17>      |    6.504|
+Zf_Se_Control  |Immed<18>      |    6.968|
+Zf_Se_Control  |Immed<19>      |    6.503|
+Zf_Se_Control  |Immed<20>      |    6.477|
+Zf_Se_Control  |Immed<21>      |    7.942|
+Zf_Se_Control  |Immed<22>      |    7.924|
+Zf_Se_Control  |Immed<23>      |    5.733|
+Zf_Se_Control  |Immed<24>      |    6.480|
+Zf_Se_Control  |Immed<25>      |    8.241|
+Zf_Se_Control  |Immed<26>      |    6.048|
+Zf_Se_Control  |Immed<27>      |    6.719|
+Zf_Se_Control  |Immed<28>      |    6.506|
+Zf_Se_Control  |Immed<29>      |    5.786|
+Zf_Se_Control  |Immed<30>      |    6.718|
+Zf_Se_Control  |Immed<31>      |    6.379|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Feb 19 19:35:38 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 172 MB
+
+
+

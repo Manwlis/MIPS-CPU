@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/pipelineTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="pipelinetest" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="group29" type="group">
+      <obj_property name="label">a</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in7" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in7[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg7 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in8" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in8[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in8[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg8 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in9" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in9[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in9[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg9 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in10" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in10[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in10[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg10 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in1" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in1[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg1 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in2" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in2[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg2 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in3" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in3[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg3 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in4" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in4[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg4 out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in5" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in5[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">Reg5 out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/IFSTAGE0/Reg32BitR0/dout" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="label"> PC</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Stall_Unit0/killcommand" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">killcommand</obj_property>
+      <obj_property name="ObjectShortName">killcommand</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in6" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in6[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Reg6 out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in18" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in18[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in18[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Reg18 out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in19" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in19[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in19[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Reg19 out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/DECODE0/RegisterFile0/mux32to1_32Bit_0/in20" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in20[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in20[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">Reg20 out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/Data_MEM0/ram[2]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">ram[2]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelinetest/uut/Datapath0/Data_MEM0/ram[4]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[4]</obj_property>
+      <obj_property name="ObjectShortName">ram[4]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

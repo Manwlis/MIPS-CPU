@@ -1,0 +1,4 @@
+vhdl work "mux.vhd"
+vhdl work "top.vhd"
+vhdl work "mux32Bit.vhd"
+vhdl work "ALUSTAGE.vhd"

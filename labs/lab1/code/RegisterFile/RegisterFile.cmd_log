@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 RegisterFile.ngc RegisterFile.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o RegisterFile_map.ncd RegisterFile.ngd RegisterFile.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 RegisterFile.ngc RegisterFile.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o RegisterFile_map.ncd RegisterFile.ngd RegisterFile.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterFile_map.ncd RegisterFile.ncd RegisterFile.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RegisterFile.twx RegisterFile.ncd -o RegisterFile.twr RegisterFile.pcf 
+vhdtdtfi -lib work mux.vhd -lib work mux32Bit.vhd -lib work demux1bit.vhd -lib work mux4to1_32Bit.vhd -lib work flipflop.vhd -lib work demux2to4.vhd -lib work Reg1Bit.vhd -lib work mux8to1_32Bit.vhd -lib work demux3to8.vhd -lib work Reg4Bit.vhd -lib work mux16to1_32Bit.vhd -lib work demux4to16.vhd -lib work Reg32Bit.vhd -lib work mux32to1_32Bit.vhd -lib work demux5to32.vhd -lib work compareModule.vhd -lib work RegisterFile.vhd -prj lab1b -o RegisterFile.spl -module RegisterFile -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RegisterFile.spl C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.sym 
+vhdtdtfi -prj lab1b -o C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.vhi -module RegisterFile -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux.vhd -lib work mux32Bit.vhd -lib work demux1bit.vhd -lib work mux4to1_32Bit.vhd -lib work flipflop.vhd -lib work demux2to4.vhd -lib work Reg1Bit.vhd -lib work mux8to1_32Bit.vhd -lib work demux3to8.vhd -lib work Reg4Bit.vhd -lib work mux16to1_32Bit.vhd -lib work demux4to16.vhd -lib work Reg32Bit.vhd -lib work mux32to1_32Bit.vhd -lib work demux5to32.vhd -lib work compareModule.vhd -lib work RegisterFile.vhd 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab1b/RegisterFile.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 RegisterFile.ngc RegisterFile.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o RegisterFile_map.ncd RegisterFile.ngd RegisterFile.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterFile_map.ncd RegisterFile.ncd RegisterFile.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RegisterFile.twx RegisterFile.ncd -o RegisterFile.twr RegisterFile.pcf 

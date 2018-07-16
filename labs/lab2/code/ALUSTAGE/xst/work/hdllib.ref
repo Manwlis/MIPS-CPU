@@ -1,0 +1,8 @@
+EN mux32bit NULL C:/Users/Mike/Desktop/organwsh/ALUSTAGE/mux32Bit.vhd sub00/vhpl02 1487613009
+EN alustage NULL C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.vhd sub00/vhpl06 1487613013
+AR alu behavioral C:/Users/Mike/Desktop/organwsh/ALUSTAGE/top.vhd sub00/vhpl05 1487613012
+AR mux behavioral C:/Users/Mike/Desktop/organwsh/ALUSTAGE/mux.vhd sub00/vhpl01 1487613008
+AR alustage behavioral C:/Users/Mike/Desktop/organwsh/ALUSTAGE/ALUSTAGE.vhd sub00/vhpl07 1487613014
+AR mux32bit behavioral C:/Users/Mike/Desktop/organwsh/ALUSTAGE/mux32Bit.vhd sub00/vhpl03 1487613010
+EN mux NULL C:/Users/Mike/Desktop/organwsh/ALUSTAGE/mux.vhd sub00/vhpl00 1487613007
+EN alu NULL C:/Users/Mike/Desktop/organwsh/ALUSTAGE/top.vhd sub00/vhpl04 1487613011

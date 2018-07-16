@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 IFSTAGE.ngc IFSTAGE.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o IFSTAGE_map.ncd IFSTAGE.ngd IFSTAGE.pcf 
+par -w -intstyle ise -ol high -t 1 IFSTAGE_map.ncd IFSTAGE.ncd IFSTAGE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IFSTAGE.twx IFSTAGE.ncd -o IFSTAGE.twr IFSTAGE.pcf 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/CommandRecallLevel/IFSTAGE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 IFSTAGE.ngc IFSTAGE.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o IFSTAGE_map.ncd IFSTAGE.ngd IFSTAGE.pcf 
+par -w -intstyle ise -ol high -t 1 IFSTAGE_map.ncd IFSTAGE.ncd IFSTAGE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IFSTAGE.twx IFSTAGE.ncd -o IFSTAGE.twr IFSTAGE.pcf 

@@ -1,0 +1,1724 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: PipelinedProcessor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PipelinedProcessor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PipelinedProcessor"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : PipelinedProcessor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux1bit.vhd" in Library work.
+Architecture behavioral of Entity demux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux4to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux4to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/flipflop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux2to4.vhd" in Library work.
+Architecture behavioral of Entity demux2to4 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux8to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux8to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg1Bit.vhd" in Library work.
+Architecture behavioral of Entity reg1bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux3to8.vhd" in Library work.
+Architecture behavioral of Entity demux3to8 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg1BitR.vhd" in Library work.
+Architecture behavioral of Entity reg1bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux16to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux16to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg4Bit.vhd" in Library work.
+Architecture behavioral of Entity reg4bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux4to16.vhd" in Library work.
+Architecture behavioral of Entity demux4to16 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg4BitR.vhd" in Library work.
+Architecture behavioral of Entity reg4bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux5to32.vhd" in Library work.
+Architecture behavioral of Entity decoder5to32 is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg32Bit.vhd" in Library work.
+Architecture structural of Entity reg32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux32to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/compareModule.vhd" in Library work.
+Architecture behavioral of Entity comparemodule is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux16bit.vhd" in Library work.
+Architecture behavioral of Entity mux16bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg32BitR.vhd" in Library work.
+Architecture structural of Entity reg32bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/top.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Extender16to32.vhd" in Library work.
+Architecture structural of Entity immedbox is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux5Bit.vhd" in Library work.
+Architecture behavioral of Entity mux5bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionFinder.vhd" in Library work.
+Architecture behavioral of Entity exceptionfinder is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionFSM.vhd" in Library work.
+Architecture behavioral of Entity exceptionfsm is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/IF_MEM.vhd" in Library work.
+Architecture syn of Entity if_mem is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Incrementor.vhd" in Library work.
+Architecture behavioral of Entity incrementor is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Table.vhd" in Library work.
+Architecture behavioral of Entity table is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/IFSTAGE.vhd" in Library work.
+Architecture structral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionHandler.vhd" in Library work.
+Entity <exceptionhandler> compiled.
+Entity <exceptionhandler> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/DECODE.vhd" in Library work.
+Architecture behavioral of Entity decode is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Adder.vhd" in Library work.
+Architecture behavioral of Entity adder is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg8Bit.vhd" in Library work.
+Architecture behavioral of Entity reg8bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd" in Library work.
+Architecture behavioral of Entity alustage is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Cache.vhd" in Library work.
+Architecture syn of Entity cache is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/hitFinder.vhd" in Library work.
+Entity <hitfinder> compiled.
+Entity <hitfinder> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg128BitR.vhd" in Library work.
+Architecture behavioral of Entity reg128bitr is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Forwarding_Unit.vhd" in Library work.
+Architecture behavioral of Entity forwarding_unit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Stall_Unit.vhd" in Library work.
+Architecture behavioral of Entity stall_unit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/PipelinedProcessor.vhd" in Library work.
+Architecture behavioral of Entity pipelinedprocessor is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PipelinedProcessor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32BitR> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Forwarding_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Stall_Unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IFSTAGE> in library <work> (architecture <structral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <exceptionHandler> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DECODE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Adder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg8Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALUSTAGE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Cache> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <hitFinder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg128BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Table> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32BitR> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <IF_MEM> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <Incrementor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <exceptionFinder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <exceptionFSM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ImmedBox> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux5Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterFile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder5to32> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg32Bit> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mux32to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <compareModule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1BitR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux4to16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg4Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux3to8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg1Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux2to4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PipelinedProcessor> in library <work> (Architecture <behavioral>).
+Entity <PipelinedProcessor> analyzed. Unit <PipelinedProcessor> generated.
+
+Analyzing Entity <Datapath> in library <work> (Architecture <behavioral>).
+Entity <Datapath> analyzed. Unit <Datapath> generated.
+
+Analyzing Entity <IFSTAGE> in library <work> (Architecture <structral>).
+Entity <IFSTAGE> analyzed. Unit <IFSTAGE> generated.
+
+Analyzing Entity <IF_MEM> in library <work> (Architecture <syn>).
+Entity <IF_MEM> analyzed. Unit <IF_MEM> generated.
+
+Analyzing Entity <Incrementor> in library <work> (Architecture <behavioral>).
+Entity <Incrementor> analyzed. Unit <Incrementor> generated.
+
+Analyzing Entity <Reg1BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg1BitR> analyzed. Unit <Reg1BitR> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <flipflop> in library <work> (Architecture <behavioral>).
+Entity <flipflop> analyzed. Unit <flipflop> generated.
+
+Analyzing Entity <mux32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32Bit> analyzed. Unit <mux32Bit> generated.
+
+Analyzing Entity <exceptionHandler> in library <work> (Architecture <behavioral>).
+Entity <exceptionHandler> analyzed. Unit <exceptionHandler> generated.
+
+Analyzing Entity <exceptionFinder> in library <work> (Architecture <behavioral>).
+Entity <exceptionFinder> analyzed. Unit <exceptionFinder> generated.
+
+Analyzing Entity <exceptionFSM> in library <work> (Architecture <behavioral>).
+Entity <exceptionFSM> analyzed. Unit <exceptionFSM> generated.
+
+Analyzing Entity <DECODE> in library <work> (Architecture <behavioral>).
+Entity <DECODE> analyzed. Unit <DECODE> generated.
+
+Analyzing Entity <ImmedBox> in library <work> (Architecture <structural>).
+Entity <ImmedBox> analyzed. Unit <ImmedBox> generated.
+
+Analyzing Entity <mux16Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16Bit> analyzed. Unit <mux16Bit> generated.
+
+Analyzing Entity <mux5Bit> in library <work> (Architecture <behavioral>).
+Entity <mux5Bit> analyzed. Unit <mux5Bit> generated.
+
+Analyzing Entity <RegisterFile> in library <work> (Architecture <behavioral>).
+Entity <RegisterFile> analyzed. Unit <RegisterFile> generated.
+
+Analyzing Entity <Decoder5to32> in library <work> (Architecture <behavioral>).
+Entity <Decoder5to32> analyzed. Unit <Decoder5to32> generated.
+
+Analyzing Entity <demux> in library <work> (Architecture <behavioral>).
+Entity <demux> analyzed. Unit <demux> generated.
+
+Analyzing Entity <demux4to16> in library <work> (Architecture <behavioral>).
+Entity <demux4to16> analyzed. Unit <demux4to16> generated.
+
+Analyzing Entity <demux3to8> in library <work> (Architecture <behavioral>).
+Entity <demux3to8> analyzed. Unit <demux3to8> generated.
+
+Analyzing Entity <demux2to4> in library <work> (Architecture <behavioral>).
+Entity <demux2to4> analyzed. Unit <demux2to4> generated.
+
+Analyzing Entity <Reg32Bit> in library <work> (Architecture <structural>).
+Entity <Reg32Bit> analyzed. Unit <Reg32Bit> generated.
+
+Analyzing Entity <Reg4Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg4Bit> analyzed. Unit <Reg4Bit> generated.
+
+Analyzing Entity <Reg1Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg1Bit> analyzed. Unit <Reg1Bit> generated.
+
+Analyzing Entity <mux32to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32to1_32Bit> analyzed. Unit <mux32to1_32Bit> generated.
+
+Analyzing Entity <mux16to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16to1_32Bit> analyzed. Unit <mux16to1_32Bit> generated.
+
+Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux8to1_32Bit> analyzed. Unit <mux8to1_32Bit> generated.
+
+Analyzing Entity <compareModule> in library <work> (Architecture <behavioral>).
+Entity <compareModule> analyzed. Unit <compareModule> generated.
+
+Analyzing Entity <Adder> in library <work> (Architecture <behavioral>).
+Entity <Adder> analyzed. Unit <Adder> generated.
+
+Analyzing Entity <Reg8Bit> in library <work> (Architecture <behavioral>).
+Entity <Reg8Bit> analyzed. Unit <Reg8Bit> generated.
+
+Analyzing Entity <mux4to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux4to1_32Bit> analyzed. Unit <mux4to1_32Bit> generated.
+
+Analyzing Entity <ALUSTAGE> in library <work> (Architecture <behavioral>).
+WARNING:Xst:754 - "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd" line 45: Unconnected inout port 'Zero' of component 'ALU'.
+WARNING:Xst:754 - "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd" line 45: Unconnected inout port 'Cout' of component 'ALU'.
+WARNING:Xst:754 - "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd" line 45: Unconnected inout port 'Ovf' of component 'ALU'.
+Entity <ALUSTAGE> analyzed. Unit <ALUSTAGE> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Cache> in library <work> (Architecture <syn>).
+Entity <Cache> analyzed. Unit <Cache> generated.
+
+Analyzing Entity <hitFinder> in library <work> (Architecture <behavioral>).
+Entity <hitFinder> analyzed. Unit <hitFinder> generated.
+
+Analyzing Entity <Reg128BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg128BitR> analyzed. Unit <Reg128BitR> generated.
+
+Analyzing Entity <Control> in library <work> (Architecture <behavioral>).
+Entity <Control> analyzed. Unit <Control> generated.
+
+Analyzing Entity <Table> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <Sl_Control> in unit <Table> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <Table> analyzed. Unit <Table> generated.
+
+Analyzing Entity <Reg32BitR> in library <work> (Architecture <structural>).
+Entity <Reg32BitR> analyzed. Unit <Reg32BitR> generated.
+
+Analyzing Entity <Forwarding_Unit> in library <work> (Architecture <behavioral>).
+Entity <Forwarding_Unit> analyzed. Unit <Forwarding_Unit> generated.
+
+Analyzing Entity <Stall_Unit> in library <work> (Architecture <behavioral>).
+Entity <Stall_Unit> analyzed. Unit <Stall_Unit> generated.
+
+Analyzing Entity <Reg4BitR> in library <work> (Architecture <behavioral>).
+Entity <Reg4BitR> analyzed. Unit <Reg4BitR> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Forwarding_Unit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Forwarding_Unit.vhd".
+    Found 5-bit comparator equal for signal <forwardCtrA$cmp_eq0002> created at line 25.
+    Found 5-bit comparator equal for signal <forwardCtrA$cmp_eq0003> created at line 26.
+    Found 5-bit comparator equal for signal <forwardCtrB$cmp_eq0001> created at line 37.
+    Found 5-bit comparator equal for signal <forwardCtrB$cmp_eq0002> created at line 38.
+    Summary:
+	inferred   4 Comparator(s).
+Unit <Forwarding_Unit> synthesized.
+
+
+Synthesizing Unit <Stall_Unit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Stall_Unit.vhd".
+    Found 5-bit comparator equal for signal <killCommand$cmp_eq0002> created at line 23.
+    Found 5-bit comparator equal for signal <killCommand$cmp_eq0003> created at line 23.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Stall_Unit> synthesized.
+
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Adder.vhd".
+    Found 32-bit adder for signal <output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+Synthesizing Unit <Cache>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Cache.vhd".
+WARNING:Xst:1781 - Signal <CACHE> is used but never assigned. Tied to default value.
+    Found 32x132-bit ROM for signal <$varindex0000> created at line 36.
+    Found 132-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred 132 D-type flip-flop(s).
+Unit <Cache> synthesized.
+
+
+Synthesizing Unit <hitFinder>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/hitFinder.vhd".
+    Found 3-bit comparator equal for signal <hit$cmp_eq0001> created at line 48.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <hitFinder> synthesized.
+
+
+Synthesizing Unit <IF_MEM>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/IF_MEM.vhd".
+WARNING:Xst:1781 - Signal <ROM> is used but never assigned. Tied to default value.
+    Found 1024x32-bit ROM for signal <$varindex0000> created at line 36.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <IF_MEM> synthesized.
+
+
+Synthesizing Unit <Incrementor>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Incrementor.vhd".
+    Found 32-bit adder for signal <output>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Incrementor> synthesized.
+
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <flipflop>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/flipflop.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflop> synthesized.
+
+
+Synthesizing Unit <exceptionFinder>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionFinder.vhd".
+WARNING:Xst:647 - Input <address<11:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <exceptionFinder> synthesized.
+
+
+Synthesizing Unit <exceptionFSM>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionFSM.vhd".
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | Clk                       (rising_edge)        |
+    | Reset              | Reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | normalstate                                    |
+    | Power Up State     | normalstate                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <exceptionFSM> synthesized.
+
+
+Synthesizing Unit <compareModule>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/compareModule.vhd".
+    Found 1-bit xor2 for signal <output$xor0000>.
+    Found 1-bit xor2 for signal <output$xor0001>.
+    Found 1-bit xor2 for signal <output$xor0002>.
+    Found 1-bit xor2 for signal <output$xor0003>.
+    Found 1-bit xor2 for signal <output$xor0004>.
+Unit <compareModule> synthesized.
+
+
+Synthesizing Unit <demux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux1bit.vhd".
+Unit <demux> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/top.vhd".
+    Found 32-bit adder for signal <OutEs$add0000> created at line 38.
+    Found 33-bit adder for signal <OutEs$addsub0000>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Table>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Table.vhd".
+WARNING:Xst:647 - Input <Instr<25:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <Zf_Se_Control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RF_B_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_Bin_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RF_WrData_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <ALU_func>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit 4-to-1 multiplexer for signal <ALU_func$mux0006> created at line 28.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Table> synthesized.
+
+
+Synthesizing Unit <Reg1BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg1BitR.vhd".
+Unit <Reg1BitR> synthesized.
+
+
+Synthesizing Unit <mux32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux32Bit.vhd".
+Unit <mux32Bit> synthesized.
+
+
+Synthesizing Unit <mux5Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux5Bit.vhd".
+Unit <mux5Bit> synthesized.
+
+
+Synthesizing Unit <mux16Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux16bit.vhd".
+Unit <mux16Bit> synthesized.
+
+
+Synthesizing Unit <demux2to4>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux2to4.vhd".
+Unit <demux2to4> synthesized.
+
+
+Synthesizing Unit <Reg1Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg1Bit.vhd".
+Unit <Reg1Bit> synthesized.
+
+
+Synthesizing Unit <Reg4BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg4BitR.vhd".
+Unit <Reg4BitR> synthesized.
+
+
+Synthesizing Unit <mux4to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux4to1_32Bit.vhd".
+Unit <mux4to1_32Bit> synthesized.
+
+
+Synthesizing Unit <ALUSTAGE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/ALUSTAGE.vhd".
+Unit <ALUSTAGE> synthesized.
+
+
+Synthesizing Unit <ImmedBox>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Extender16to32.vhd".
+Unit <ImmedBox> synthesized.
+
+
+Synthesizing Unit <demux3to8>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux3to8.vhd".
+Unit <demux3to8> synthesized.
+
+
+Synthesizing Unit <Reg4Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg4Bit.vhd".
+Unit <Reg4Bit> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Control.vhd".
+Unit <Control> synthesized.
+
+
+Synthesizing Unit <Reg32BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg32BitR.vhd".
+Unit <Reg32BitR> synthesized.
+
+
+Synthesizing Unit <Reg8Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg8Bit.vhd".
+Unit <Reg8Bit> synthesized.
+
+
+Synthesizing Unit <Reg32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg32Bit.vhd".
+Unit <Reg32Bit> synthesized.
+
+
+Synthesizing Unit <demux4to16>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux4to16.vhd".
+Unit <demux4to16> synthesized.
+
+
+Synthesizing Unit <mux8to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux8to1_32Bit.vhd".
+Unit <mux8to1_32Bit> synthesized.
+
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/IFSTAGE.vhd".
+WARNING:Xst:647 - Input <PC_immed> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <AdderOut> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <IFSTAGE> synthesized.
+
+
+Synthesizing Unit <exceptionHandler>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/exceptionHandler.vhd".
+WARNING:Xst:647 - Input <PCbeforeIMEM> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <exceptionHandler> synthesized.
+
+
+Synthesizing Unit <Reg128BitR>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Reg128BitR.vhd".
+Unit <Reg128BitR> synthesized.
+
+
+Synthesizing Unit <Decoder5to32>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/demux5to32.vhd".
+Unit <Decoder5to32> synthesized.
+
+
+Synthesizing Unit <mux16to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux16to1_32Bit.vhd".
+Unit <mux16to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux32to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/mux32to1_32Bit.vhd".
+Unit <mux32to1_32Bit> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/RegisterFile.vhd".
+WARNING:Xst:646 - Signal <decoderEn<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <RegisterFile> synthesized.
+
+
+Synthesizing Unit <DECODE>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/DECODE.vhd".
+WARNING:Xst:647 - Input <Instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <DECODE> synthesized.
+
+
+Synthesizing Unit <Datapath>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/Datapath.vhd".
+Unit <Datapath> synthesized.
+
+
+Synthesizing Unit <PipelinedProcessor>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab6/ExceptionAndCache/PipelinedProcessor.vhd".
+Unit <PipelinedProcessor> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 1024x32-bit ROM                                       : 1
+ 32x132-bit ROM                                        : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 33-bit adder                                          : 1
+# Registers                                            : 1864
+ 1-bit register                                        : 1862
+ 132-bit register                                      : 1
+ 32-bit register                                       : 1
+# Latches                                              : 5
+ 1-bit latch                                           : 4
+ 4-bit latch                                           : 1
+# Comparators                                          : 7
+ 3-bit comparator equal                                : 1
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Datapath0/exceptionHandler0/exceptionFSM0/currentState/FSM> on signal <currentState[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ normalstate | 00
+ secondkill  | 01
+ thirdkill   | 11
+ waitforjump | 10
+-------------------------
+WARNING:Xst:1290 - Hierarchical block <CSreg> is unconnected in block <exceptionHandler0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <W_DecodeR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1Bit1> is unconnected in block <Reg4Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1Bit0> is unconnected in block <Reg4Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <W_ALUR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1Bit1> is unconnected in block <Reg4Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1Bit0> is unconnected in block <Reg4Bit0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <W_CacheR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <W_memR>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <ArdReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <ArdReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR1> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR7> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR6> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR5> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR4> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR3> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg4BitR2> is unconnected in block <OpcodeReg>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <Reg4BitR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <StallForwardReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <StallForwardReg0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR3> is unconnected in block <StallForwardReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg1BitR2> is unconnected in block <StallForwardReg1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux31> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux30> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux29> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux28> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux27> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux26> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux25> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux24> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux23> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux22> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux21> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux20> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux19> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux18> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux17> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux16> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux15> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux14> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux13> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux12> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux11> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux10> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux8> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux7> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux6> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux5> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux4> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux3> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux2> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux0> is unconnected in block <mux32Bit1>.
+   It will be removed from the design.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q> has a constant value of 0 in block <flipflop0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Reg32Bit0> is unconnected in block <RegisterFile0>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <Cache>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <dout>.
+INFO:Xst:3225 - The RAM <Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 132-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <index>         |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Cache> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IF_MEM>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <dout>.
+INFO:Xst:3225 - The RAM <Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <IF_MEM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 1024x32-bit single-port block RAM                     : 1
+ 32x132-bit single-port block RAM                      : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 33-bit adder                                          : 1
+# Registers                                            : 1862
+ Flip-Flops                                            : 1862
+# Latches                                              : 5
+ 1-bit latch                                           : 4
+ 4-bit latch                                           : 1
+# Comparators                                          : 7
+ 3-bit comparator equal                                : 1
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Instr_ALUR/Reg4Bit0/Reg1Bit0/flipflop0/q> of sequential type is unconnected in block <Datapath>.
+WARNING:Xst:2677 - Node <Instr_ALUR/Reg4Bit0/Reg1Bit1/flipflop0/q> of sequential type is unconnected in block <Datapath>.
+WARNING:Xst:2677 - Node <Instr_DecodeR/Reg4Bit0/Reg1Bit0/flipflop0/q> of sequential type is unconnected in block <Datapath>.
+WARNING:Xst:2677 - Node <Instr_DecodeR/Reg4Bit0/Reg1Bit1/flipflop0/q> of sequential type is unconnected in block <Datapath>.
+WARNING:Xst:2677 - Node <StallForwardReg1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <StallForwardReg1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <StallForwardReg0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <StallForwardReg0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+
+Optimizing unit <PipelinedProcessor> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Table> ...
+
+Optimizing unit <Control> ...
+
+Optimizing unit <Reg32BitR> ...
+
+Optimizing unit <Reg32Bit> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <Datapath> ...
+WARNING:Xst:1293 - FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit1/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit2/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit3/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit4/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit5/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit6/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit3/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit2/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit1/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit7/Reg1Bit0/flipflop0/q> has a constant value of 0 in block <PipelinedProcessor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <OpcodeReg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg1/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <ArdReg0/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_firstDelay/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/EPC_secondDelay/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_DecodeR/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_ALUR/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_CacheR/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/W_memR/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/IFSTAGE0/Reg32BitR0/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR1/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR2/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/CSreg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR0/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR0/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR3/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR4/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR5/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR6/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR3/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR2/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR1/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+WARNING:Xst:2677 - Node <Datapath0/exceptionHandler0/EPCreg/Reg4BitR7/Reg1BitR0/flipflop0/q> of sequential type is unconnected in block <PipelinedProcessor>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR0/Reg1BitR3/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit1/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR1/Reg1BitR1/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit3/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR0/Reg1BitR1/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit0/Reg1Bit3/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR0/Reg1BitR2/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit0/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR3/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following 14 FFs/Latches, which will be removed : <Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR2/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR1/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR4/Reg1BitR0/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR3/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR2/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR1/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR5/Reg1BitR0/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR3/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR2/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR1/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR6/Reg1BitR0/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR2/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR1/flipflop0/q> <Datapath0/Immed_DecodeR/Reg4BitR7/Reg1BitR0/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR1/Reg1BitR0/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit1/Reg1Bit2/flipflop0/q> 
+INFO:Xst:2261 - The FF/Latch <OpcodeReg/Reg4BitR0/Reg1BitR0/flipflop0/q> in Unit <PipelinedProcessor> is equivalent to the following FF/Latch, which will be removed : <Datapath0/Instr_DecodeR/Reg4Bit0/Reg1Bit2/flipflop0/q> 
+Found area constraint ratio of 100 (+ 5) on block PipelinedProcessor, actual ratio is 14.
+FlipFlop Datapath0/IRegister/Reg4BitR5/Reg1BitR3/flipflop0/q has been replicated 1 time(s)
+FlipFlop Datapath0/IRegister/Reg4BitR6/Reg1BitR1/flipflop0/q has been replicated 1 time(s)
+FlipFlop Datapath0/W_memR/Reg4BitR0/Reg1BitR1/flipflop0/q has been replicated 1 time(s)
+FlipFlop Datapath0/W_memR/Reg4BitR0/Reg1BitR2/flipflop0/q has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <PipelinedProcessor> :
+	Found 4-bit shift register for signal <Control0/RF_WrData_selMEM_reg/flipflop0/q>.
+Unit <PipelinedProcessor> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1496
+ Flip-Flops                                            : 1496
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PipelinedProcessor.ngr
+Top Level Output File Name         : PipelinedProcessor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 35
+
+Cell Usage :
+# BELS                             : 2868
+#      GND                         : 1
+#      LUT2                        : 27
+#      LUT2_D                      : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 1289
+#      LUT3_D                      : 19
+#      LUT3_L                      : 44
+#      LUT4                        : 792
+#      LUT4_D                      : 37
+#      LUT4_L                      : 145
+#      MUXCY                       : 102
+#      MUXF5                       : 314
+#      VCC                         : 1
+#      XORCY                       : 94
+# FlipFlops/Latches                : 1509
+#      FD                          : 1
+#      FDC                         : 454
+#      FDCE                        : 1046
+#      LD                          : 8
+# RAMS                             : 6
+#      RAMB16_S18                  : 2
+#      RAMB16_S36                  : 4
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 34
+#      IBUF                        : 1
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                     1856  out of  14752    12%  
+ Number of Slice Flip Flops:           1509  out of  29504     5%  
+ Number of 4 input LUTs:               2357  out of  29504     7%  
+    Number used as logic:              2356
+    Number used as Shift registers:       1
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of    250    14%  
+ Number of BRAMs:                         6  out of     36    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------+---------------------------------------+-------+
+Clock Signal                                                                   | Clock buffer(FF name)                 | Load  |
+-------------------------------------------------------------------------------+---------------------------------------+-------+
+Clk                                                                            | BUFGP                                 | 1508  |
+Control0/Table0/ALU_func_not0001(Control0/Table0/ALU_func_not00011:O)          | NONE(*)(Control0/Table0/RF_WrData_sel)| 6     |
+Control0/Table0/RF_B_sel_not0001(Control0/Table0/RF_B_sel_not0001:O)           | NONE(*)(Control0/Table0/RF_B_sel)     | 1     |
+Control0/Table0/Zf_Se_Control_not0001(Control0/Table0/Zf_Se_Control_not00012:O)| NONE(*)(Control0/Table0/Zf_Se_Control)| 1     |
+-------------------------------------------------------------------------------+---------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+Control Signal                                                               | Buffer(FF name)                              | Load  |
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+Datapath0/DECODE0/RegisterFile0/Reg32Bit0/Reg4Bit0/Reg1Bit0/muxOut(XST_GND:G)| NONE(ArdReg0/Reg4BitR0/Reg1BitR0/flipflop0/q)| 1488  |
+Reset                                                                        | IBUF                                         | 12    |
+-----------------------------------------------------------------------------+----------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 13.968ns (Maximum Frequency: 71.591MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 9.021ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 13.968ns (frequency: 71.591MHz)
+  Total number of paths / destination ports: 1129284 / 2581
+-------------------------------------------------------------------------
+Delay:               13.968ns (Levels of Logic = 33)
+  Source:            Datapath0/IRegister/Reg4BitR6/Reg1BitR0/flipflop0/q (FF)
+  Destination:       Control0/RF_WrEnDecode_reg/flipflop0/q (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Datapath0/IRegister/Reg4BitR6/Reg1BitR0/flipflop0/q to Control0/RF_WrEnDecode_reg/flipflop0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            69   0.514   1.086  Datapath0/IRegister/Reg4BitR6/Reg1BitR0/flipflop0/q (Datapath0/IRegister/Reg4BitR6/Reg1BitR0/flipflop0/q)
+     LUT4:I3->O            1   0.612   0.509  Datapath0/DECODE0/RegisterFile0/compareModule0/output61 (Datapath0/DECODE0/RegisterFile0/compareModule0/output61)
+     LUT2:I0->O            1   0.612   0.360  Datapath0/DECODE0/RegisterFile0/compareModule0/output62 (Datapath0/DECODE0/RegisterFile0/compareModule0/output62)
+     LUT4_D:I3->O         53   0.612   1.109  Datapath0/DECODE0/RegisterFile0/compareModule0/output75 (Datapath0/DECODE0/RegisterFile0/mux1sel)
+     LUT4:I2->O            2   0.612   0.449  Datapath0/DECODE0/RegisterFile0/mux32Bit_0/mux0/output622 (Datapath0/A_DecodeR/Reg4BitR0/Reg1BitR0/muxOut)
+     LUT2:I1->O            1   0.612   0.000  Datapath0/Adder0/Madd_output_lut<0> (Datapath0/Adder0/Madd_output_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Datapath0/Adder0/Madd_output_cy<0> (Datapath0/Adder0/Madd_output_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<1> (Datapath0/Adder0/Madd_output_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<2> (Datapath0/Adder0/Madd_output_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<3> (Datapath0/Adder0/Madd_output_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<4> (Datapath0/Adder0/Madd_output_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<5> (Datapath0/Adder0/Madd_output_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<6> (Datapath0/Adder0/Madd_output_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<7> (Datapath0/Adder0/Madd_output_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<8> (Datapath0/Adder0/Madd_output_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<9> (Datapath0/Adder0/Madd_output_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<10> (Datapath0/Adder0/Madd_output_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<11> (Datapath0/Adder0/Madd_output_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<12> (Datapath0/Adder0/Madd_output_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<13> (Datapath0/Adder0/Madd_output_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<14> (Datapath0/Adder0/Madd_output_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<15> (Datapath0/Adder0/Madd_output_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<16> (Datapath0/Adder0/Madd_output_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<17> (Datapath0/Adder0/Madd_output_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<18> (Datapath0/Adder0/Madd_output_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<19> (Datapath0/Adder0/Madd_output_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<20> (Datapath0/Adder0/Madd_output_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<21> (Datapath0/Adder0/Madd_output_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Datapath0/Adder0/Madd_output_cy<22> (Datapath0/Adder0/Madd_output_cy<22>)
+     XORCY:CI->O           1   0.699   0.387  Datapath0/Adder0/Madd_output_xor<23> (Datapath0/address<23>)
+     LUT3:I2->O            1   0.612   0.387  Datapath0/exceptionHandler0/exceptionFinder0/cs_and00008 (Datapath0/exceptionHandler0/exceptionFinder0/cs_and00008)
+     LUT4:I2->O           11   0.612   0.796  Datapath0/exceptionHandler0/exceptionFinder0/cs_and000014 (Datapath0/exceptionHandler0/exceptionFinder0/cs_and000014)
+     LUT4_D:I3->O          1   0.612   0.360  Datapath0/exceptionHandler0/exceptionFinder0/cs_and000066 (Datapath0/PC_sel<1>)
+     LUT4:I3->O            1   0.612   0.000  Control0/RF_WrEnKill/output_and000143 (Control0/RF_WrEnDecode)
+     FDC:D                     0.268          Control0/RF_WrEnDecode_reg/flipflop0/q
+    ----------------------------------------
+    Total                     13.968ns (8.526ns logic, 5.442ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 45 / 33
+-------------------------------------------------------------------------
+Offset:              9.021ns (Levels of Logic = 4)
+  Source:            Datapath0/Cache0/Mrom__varindex00004 (RAM)
+  Destination:       hitOut (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Datapath0/Cache0/Mrom__varindex00004 to hitOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S36:CLK->DO20    1   2.436   0.426  Datapath0/Cache0/Mrom__varindex00004 (Datapath0/cacheOut<128>)
+     LUT4:I1->O            1   0.612   0.387  Datapath0/hitFinder0/hit_cmp_eq00013_SW0 (N183)
+     LUT3:I2->O            2   0.612   0.410  Datapath0/hitFinder0/hit_cmp_eq00013 (Datapath0/hitFinder0/hit_cmp_eq0001)
+     LUT3:I2->O            1   0.612   0.357  Datapath0/hitFinder0/hitOut1 (hitOut_OBUF)
+     OBUF:I->O                 3.169          hitOut_OBUF (hitOut)
+    ----------------------------------------
+    Total                      9.021ns (7.441ns logic, 1.580ns route)
+                                       (82.5% logic, 17.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.73 secs
+ 
+--> 
+
+Total memory usage is 343876 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  500 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

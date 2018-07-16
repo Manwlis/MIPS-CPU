@@ -1,0 +1,25 @@
+li $1, 2	-- $1 = 2
+li $2, 3	-- $2 = 3
+li $3, 4096 	-- $3 = 4096
+--WRONG INSTRUCTION (Exception $31 = 2) 
+li $4, 5	-- $4 = 5
+--WRONG INSTRUCTION (Exception $31 = 4)
+add $6, $2, $2 	-- $6 = 6
+lw $4, 4($3)	-- WRONG ADDRESS (4100) (Exception $31 = 7)
+add $7, $2, $2 	-- $7 = 6
+lw $6, 10($3)	-- WRONG ADDRESS (4106) (Exception $31 = 10)
+li $1, 2	-- $1 = 2
+li $2, 3	-- $2 = 3
+lw $10, 0($2)	-- HIT ($10 = 1024)
+lw $11, 1($2)   -- MISS (NOT THE SAME TAG) ($11 = No change)
+lw $12, 5($2)  	-- MISS (NO VALID BIT) ($12 = No change)
+......
+------------------------Wrong INstruction Exception Handler
+add $31, $1, $31  -- $31 += 2
+jump_epc
+------------------------
+........
+------------------------Wrong INstruction Exception Handler
+add $31, $2, $31  -- $31 += 3
+jump_epc
+------------------------

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Mike\Desktop\organwsh\ALUSTAGE\ALUSTAGE.ncd
+OUTFILE=C:\Users\Mike\Desktop\organwsh\ALUSTAGE\ALUSTAGE.bit
+FAMILY=Spartan3E
+PART=xc3s1600e-5fg320
+WORKINGDIR=C:\Users\Mike\Desktop\organwsh\ALUSTAGE
+LICENSE=WebPack
+USER_INFO=211158840_0_0_518

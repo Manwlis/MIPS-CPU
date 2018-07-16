@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/PipelinedProcessor.xst" -ofn "C:/Users/Mike/Desktop/organwsh/lab5/Pipeline/PipelinedProcessor.syr" 

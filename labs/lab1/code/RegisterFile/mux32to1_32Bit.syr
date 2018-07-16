@@ -1,0 +1,354 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: mux32to1_32Bit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mux32to1_32Bit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mux32to1_32Bit"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-5-fg320
+
+---- Source Options
+Top Module Name                    : mux32to1_32Bit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux4to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux4to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux8to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux16to1_32Bit.vhd" in Library work.
+Architecture behavioral of Entity mux16to1_32bit is up to date.
+Compiling vhdl file "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.vhd" in Library work.
+Entity <mux32to1_32bit> compiled.
+Entity <mux32to1_32bit> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mux32to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux16to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux8to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4to1_32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32Bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mux32to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32to1_32Bit> analyzed. Unit <mux32to1_32Bit> generated.
+
+Analyzing Entity <mux16to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux16to1_32Bit> analyzed. Unit <mux16to1_32Bit> generated.
+
+Analyzing Entity <mux8to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux8to1_32Bit> analyzed. Unit <mux8to1_32Bit> generated.
+
+Analyzing Entity <mux4to1_32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux4to1_32Bit> analyzed. Unit <mux4to1_32Bit> generated.
+
+Analyzing Entity <mux32Bit> in library <work> (Architecture <behavioral>).
+Entity <mux32Bit> analyzed. Unit <mux32Bit> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <mux32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux32Bit.vhd".
+Unit <mux32Bit> synthesized.
+
+
+Synthesizing Unit <mux4to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux4to1_32Bit.vhd".
+Unit <mux4to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux8to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux8to1_32Bit.vhd".
+Unit <mux8to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux16to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux16to1_32Bit.vhd".
+Unit <mux16to1_32Bit> synthesized.
+
+
+Synthesizing Unit <mux32to1_32Bit>.
+    Related source file is "C:/Users/Mike/Desktop/organwsh/lab1b/mux32to1_32Bit.vhd".
+Unit <mux32to1_32Bit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mux32to1_32Bit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mux32to1_32Bit, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mux32to1_32Bit.ngr
+Top Level Output File Name         : mux32to1_32Bit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 1061
+
+Cell Usage :
+# BELS                             : 928
+#      LUT2                        : 32
+#      LUT3                        : 320
+#      LUT4                        : 352
+#      MUXF5                       : 224
+# IO Buffers                       : 1061
+#      IBUF                        : 1029
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-5 
+
+ Number of Slices:                      371  out of  14752     2%  
+ Number of 4 input LUTs:                704  out of  29504     2%  
+ Number of IOs:                        1061
+ Number of bonded IOBs:                1061  out of    250   424% (*) 
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.196ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2208 / 32
+-------------------------------------------------------------------------
+Delay:               9.196ns (Levels of Logic = 7)
+  Source:            sel<2> (PAD)
+  Destination:       output<31> (PAD)
+
+  Data Path: sel<2> to output<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           224   1.106   1.276  sel_2_IBUF (sel_2_IBUF)
+     LUT4:I0->O            1   0.612   0.000  mux32Bit0/mux9/output346_F (N256)
+     MUXF5:I0->O           1   0.278   0.509  mux32Bit0/mux9/output346 (mux32Bit0/mux9/output346)
+     LUT2:I0->O            1   0.612   0.000  mux32Bit0/mux9/output5801 (mux32Bit0/mux9/output5801)
+     MUXF5:I1->O           1   0.278   0.387  mux32Bit0/mux9/output580_f5 (mux32Bit0/mux9/output580)
+     LUT4:I2->O            1   0.612   0.357  mux32Bit0/mux9/output610 (output_9_OBUF)
+     OBUF:I->O                 3.169          output_9_OBUF (output<9>)
+    ----------------------------------------
+    Total                      9.196ns (6.667ns logic, 2.529ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.01 secs
+ 
+--> 
+
+Total memory usage is 261568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+xst -intstyle ise -ifn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.xst" -ofn "C:/Users/Mike/Desktop/organwsh/DECODE/DECODE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-5 DECODE.ngc DECODE.ngd  
+map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off -c 100 -o DECODE_map.ncd DECODE.ngd DECODE.pcf 
+par -w -intstyle ise -ol high -t 1 DECODE_map.ncd DECODE.ncd DECODE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DECODE.twx DECODE.ncd -o DECODE.twr DECODE.pcf 

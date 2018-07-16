@@ -1,0 +1,107 @@
+Release 13.4 Map O.87xd (nt)
+Xilinx Map Application Log File for Design 'processor'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1600e-fg320-5 -cm area -ir off -pr off
+-c 100 -o processor_map.ncd processor.ngd processor.pcf 
+Target Device  : xc3s1600e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sun Mar 12 21:36:20 2017
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net RF_WrEn is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/sizeControl_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/IR_Control_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/PC_LdEn_mux0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/B_Control_mux0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/B_Control_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/ALU_Bin_sel_or0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CONTROL0/FSM0/PC_LdEn_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<Datapath0/Data_MEM0/Mram_RAM2.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<Datapath0/Data_MEM0/Mram_RAM2.A>:<RAMB16_RAMB16A>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   10
+Logic Utilization:
+  Total Number Slice Registers:       1,157 out of  29,504    3%
+    Number used as Flip Flops:        1,146
+    Number used as Latches:              11
+  Number of 4 input LUTs:             2,272 out of  29,504    7%
+Logic Distribution:
+  Number of occupied Slices:          2,317 out of  14,752   15%
+    Number of Slices containing only related logic:   2,317 out of   2,317 100%
+    Number of Slices containing unrelated logic:          0 out of   2,317   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,281 out of  29,504    7%
+    Number used as logic:             2,272
+    Number used as a route-thru:          9
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 34 out of     250   13%
+  Number of RAMB16s:                      4 out of      36   11%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.42
+
+Peak Memory Usage:  265 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "processor_map.mrp" for details.
