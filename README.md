@@ -6,7 +6,7 @@ Gradual implementation of a simple mips-like instruction set on VHDL using Xilin
 * Write and read memory operations.
 * Pipelining.
 * Locate and handle data and instruction hazards using stalls and forwards.
-* ~~Simple and conditional brances.~~ Supported up to 5th lab.
+* ~~Simple and conditional branches~~. Supported up to 5th lab.
 
 
 ## Changes per lab
@@ -14,7 +14,7 @@ Gradual implementation of a simple mips-like instruction set on VHDL using Xilin
 
 2.  Created ALU, command recall, decode and memory stages.
 
-3.  United previous stages in a multiple cicle processor and created control using an FSM.
+3.  United previous stages in a multiple circle processor and created control using an FSM.
 
 4.  Added complex commands.
 
