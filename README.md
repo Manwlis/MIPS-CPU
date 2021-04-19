@@ -1,4 +1,4 @@
-# HRY312 lab
+# MIPS-CPU
 Gradual implementation of a simple mips-like instruction set on VHDL using Xilinx. 
 
 ##### Final processor supports:
